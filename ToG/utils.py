@@ -1,4 +1,3 @@
-from prompt_list import *
 import json
 import time
 import openai
@@ -102,31 +101,73 @@ def clean_relations_bm25_sent(topn_relations, topn_scores, entity_id, head_relat
         i+=1
     return True, relations
 
-
+from openai import OpenAI
+import os
+from dotenv import load_dotenv
+load_dotenv()
 def run_llm(prompt, temperature, max_tokens, opeani_api_keys, engine="gpt-3.5-turbo"):
     if "llama" in engine.lower():
-        openai.api_key = "EMPTY"
-        openai.api_base = "http://localhost:8000/v1"  # your local llama server port
-        engine = openai.Model.list()["data"][0]["id"]
+        client = OpenAI(
+            base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
+            # api_key="token-abc123",
+            api_key=os.getenv("GEMINI_API_KEY"),
+        )
+        messages = [
+            {"role": "system", "content": "Answer according to the example format. Pay attention to the formatting of the answers, usually the answer is within curly brackets."}
+                    ]
+        message_prompt = {"role": "user", "content": prompt}
+        messages.append(message_prompt)
+        response = None
+        while response is None:
+            try:
+                completion_response = client.chat.completions.create(
+                    # model="Qwen/Qwen2.5-14B-Instruct-GPTQ-Int4",
+                    model="gemini-2.0-flash",
+                    messages=messages,
+                    temperature=temperature,
+                    # max_tokens=max_tokens,
+                    # frequency_penalty=0,
+                    # presence_penalty=0
+                )
+                response = completion_response
+            except Exception as e:
+                print(f"Error: {e}")
+                print("LLM error, retry")
+                time.sleep(2)
+        result = response.choices[0].message.content
+        return result
     else:
         openai.api_key = opeani_api_keys
 
-    messages = [{"role":"system","content":"You are an AI assistant that helps people find information."}]
+    messages = [{"role":"system","content":"You are an AI assistant that helps people find information. Pay attention to the formatting of the answers, usually the answer is within curly brackets."}]
     message_prompt = {"role":"user","content":prompt}
     messages.append(message_prompt)
     f = 0
+    client = OpenAI(api_key=opeani_api_keys)
     while(f == 0):
         try:
-            response = openai.ChatCompletion.create(
+            # response = client.responses.create(
+            #     model=engine,
+            #     input=messages,
+            #     temperature=temperature,
+            #     max_tokens=max_tokens,
+            #     frequency_penalty=0,
+            #     presence_penalty=0,
+            # )
+            # result = response.output_text
+
+            response = client.chat.completions.create(
                     model=engine,
                     messages = messages,
                     temperature=temperature,
                     max_tokens=max_tokens,
                     frequency_penalty=0,
                     presence_penalty=0)
-            result = response["choices"][0]['message']['content']
+            result = response.choices[0].message.content
+
             f = 1
-        except:
+        except Exception as e:
+            print(f"Error: {e}")
             print("openai error, retry")
             time.sleep(2)
     return result
@@ -191,7 +232,7 @@ def if_finish_list(lst):
 
 def prepare_dataset(dataset_name):
     if dataset_name == 'cwq':
-        with open('../data/cwq.json',encoding='utf-8') as f:
+        with open('../data/cwq.json', encoding='utf-8') as f:
             datas = json.load(f)
         question_string = 'question'
     elif dataset_name == 'webqsp':
@@ -226,6 +267,30 @@ def prepare_dataset(dataset_name):
         with open('../data/creak.json',encoding='utf-8') as f:
             datas = json.load(f)
         question_string = 'sentence'
+    elif dataset_name == 'creak_test':
+        with open('../data/creak_test.json',encoding='utf-8') as f:
+            datas = json.load(f)
+        question_string = 'sentence'
+    elif dataset_name == 'qald_test':
+        with open('../data/qald_test.json',encoding='utf-8') as f:
+            datas = json.load(f)
+        question_string = 'question'
+    elif dataset_name == 'cwq_test':
+        with open('../data/cwq_test.json',encoding='utf-8') as f:
+            datas = json.load(f)
+        question_string = 'question'
+    elif dataset_name == 'trex_test':
+        with open('../data/T-REX_test.json',encoding='utf-8') as f:
+            datas = json.load(f)
+        question_string = 'input'
+    elif dataset_name == 'webquestions_test':
+        with open('../data/WebQuestions_test.json',encoding='utf-8') as f:
+            datas = json.load(f)
+        question_string = 'question'
+    elif dataset_name == 'zeroshotre_test':
+        with open('../data/Zero_Shot_RE_test.json',encoding='utf-8') as f:
+            datas = json.load(f)
+        question_string = 'input'
     else:
         print("dataset not found, you should pick from {cwq, webqsp, grailqa, simpleqa, qald, webquestions, trex, zeroshotre, creak}.")
         exit(-1)

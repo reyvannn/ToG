@@ -35,8 +35,9 @@ if __name__ == '__main__':
     datas, question_string = prepare_dataset(args.dataset)
     print("Start Running ToG on %s dataset." % args.dataset)
     for data in tqdm(datas):
+        relation_to_label = {}
         question = data[question_string]
-        topic_entity = data['topic_entity']
+        topic_entity = (data.get("qid_topic_entity") or data.get("topic_entity")) or {} # CHANGED
         cluster_chain_of_entities = []
         if len(topic_entity) == 0:
             results = generate_without_explored_paths(question, args)
@@ -50,8 +51,9 @@ if __name__ == '__main__':
             i=0
             for entity in topic_entity:
                 if entity!="[FINISH_ID]":
-                    retrieve_relations_with_scores = relation_search_prune(entity, topic_entity[entity], pre_relations, pre_heads[i], question, args)  # best entity triplet, entitiy_id
+                    retrieve_relations_with_scores, rel_labels = relation_search_prune(entity, topic_entity[entity], pre_relations, pre_heads[i], question, args)  # best entity triplet, entitiy_id
                     current_entity_relations_list.extend(retrieve_relations_with_scores)
+                    relation_to_label.update(rel_labels)
                 i+=1
             total_candidates = []
             total_scores = []
@@ -65,16 +67,16 @@ if __name__ == '__main__':
                     entity_candidates_id = entity_search(entity['entity'], entity['relation'], True)
                 else:
                     entity_candidates_id = entity_search(entity['entity'], entity['relation'], False)
-                
+
                 if args.prune_tools == "llm":
                     if len(entity_candidates_id) >=20:
                         entity_candidates_id = random.sample(entity_candidates_id, args.num_retain_entity)
 
                 if len(entity_candidates_id) ==0:
                     continue
-                scores, entity_candidates, entity_candidates_id = entity_score(question, entity_candidates_id, entity['score'], entity['relation'], args)
+                scores, entity_candidates, entity_candidates_id = entity_score(question, entity_candidates_id, entity['score'], entity['relation'], args, relation_to_label)
                 
-                total_candidates, total_scores, total_relations, total_entities_id, total_topic_entities, total_head = update_history(entity_candidates, entity, scores, entity_candidates_id, total_candidates, total_scores, total_relations, total_entities_id, total_topic_entities, total_head)
+                total_candidates, total_scores, total_relations, total_entities_id, total_topic_entities, total_head = update_history(entity_candidates, entity, scores, entity_candidates_id, total_candidates, total_scores, total_relations, total_entities_id, total_topic_entities, total_head, relation_to_label)
             
             if len(total_candidates) ==0:
                 half_stop(question, cluster_chain_of_entities, depth, args)

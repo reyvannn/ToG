@@ -1,0 +1,7 @@
+{
+    "dataset": "webquestions_test",
+    "method": "ToG",
+    "Exact Match": 0.3,
+    "Right Samples": 3,
+    "Error Sampels": 7
+}

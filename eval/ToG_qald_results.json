@@ -1,0 +1,7 @@
+{
+    "dataset": "qald",
+    "method": "ToG",
+    "Exact Match": 0.2247191011235955,
+    "Right Samples": 20,
+    "Error Sampels": 69
+}

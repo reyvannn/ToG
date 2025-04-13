@@ -33,7 +33,7 @@ def run_llm(prompt, temperature, max_tokens, opeani_api_keys, engine="gpt-3.5-tu
 
 def prepare_dataset(dataset_name):
     if dataset_name == 'cwq':
-        with open('../data/cwq.json',encoding='utf-8') as f:
+        with open('../data/cwq.json', encoding='utf-8') as f:
             datas = json.load(f)
         question_string = 'question'
     elif dataset_name == 'webqsp':

@@ -1,5 +1,13 @@
 import argparse
 from utils import *
+import json
+
+def jsonl_to_json(jsonl_file, json_file):
+    with open(jsonl_file, 'r') as infile:
+        with open(json_file, 'w') as outfile:
+            json_lines = infile.readlines()
+            json_list = [json.loads(line) for line in json_lines]
+            json.dump(json_list, outfile, indent=4)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -10,6 +18,10 @@ if __name__ == '__main__':
     parser.add_argument("--constraints_refuse", type=bool,
                         default=True, help="LLM may have refuse erorr, enable this option to skip current sample.")
     args = parser.parse_args()
+
+    if str(args.output_file).endswith(".jsonl"):
+        jsonl_to_json(args.output_file, args.output_file[:-1])
+        args.output_file = args.output_file[:-1]
 
     ground_truth_datas, question_string, output_datas = prepare_dataset_for_eval(args.dataset, args.output_file)
 
@@ -40,4 +52,3 @@ if __name__ == '__main__':
     print("right: {}, error: {}".format(num_right, num_error))
 
     save_result2json(args.dataset, num_right, num_error, len(output_datas))
-    

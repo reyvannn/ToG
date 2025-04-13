@@ -4,7 +4,7 @@ Topic Entity: Brahui Language
 Relations: language.human_language.main_country; language.human_language.language_family; language.human_language.iso_639_3_code; base.rosetta.languoid.parent; language.human_language.writing_system; base.rosetta.languoid.languoid_class; language.human_language.countries_spoken_in; kg.object_profile.prominent_type; base.rosetta.languoid.document; base.ontologies.ontology_instance.equivalent_instances; base.rosetta.languoid.local_name; language.human_language.region
 A: 1. {language.human_language.main_country (Score: 0.4))}: This relation is highly relevant as it directly relates to the country whose president is being asked for, and the main country where Brahui language is spoken in 1980.
 2. {language.human_language.countries_spoken_in (Score: 0.3)}: This relation is also relevant as it provides information on the countries where Brahui language is spoken, which could help narrow down the search for the president.
-3. {base.rosetta.languoid.parent (Score: 0.2)}: This relation is less relevant but still provides some context on the language family to which Brahui belongs, which could be useful in understanding the linguistic and cultural background of the country in question.
+3. {base.rosetta.languoid.parent (Score: 0.3)}: This relation is less relevant but still provides some context on the language family to which Brahui belongs, which could be useful in understanding the linguistic and cultural background of the country in question.
 
 Q: """
 
@@ -18,7 +18,6 @@ The movie that matches the given criteria is "So Undercover" with Miley Cyrus an
 Q: {}
 Relation: {}
 Entites: """
-
 answer_prompt = """Given a question and the associated retrieved knowledge graph triplets (entity, relation, entity), you are asked to answer the question with these triplets and your knowledge.
 Q: Find the person who said \"Taste cannot be controlled by law\", what did this person die from?
 Knowledge Triplets: Taste cannot be controlled by law., media_common.quotation.author, Thomas Jefferson
@@ -226,7 +225,9 @@ A: Based on the given knowledge triplets and my knowledge, Mychal George Thompso
 Q: {}
 """
 
-cot_prompt = """Q: What state is home to the university that is represented in sports by George Washington Colonials men's basketball?
+# CHANGED
+cot_prompt = """The answer has to be in brackets {answer}.
+Q: What state is home to the university that is represented in sports by George Washington Colonials men's basketball?
 A: First, the education institution has a sports team named George Washington Colonials men's basketball in is George Washington University , Second, George Washington University is in Washington D.C. The answer is {Washington, D.C.}.
 
 Q: Who lists Pramatha Chaudhuri as an influence and wrote Jana Gana Mana?
