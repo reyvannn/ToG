@@ -53,7 +53,7 @@ A: Based on the given knowledge triplets, we can infer that the National Anthem 
 Q: {}
 """
 
-prompt_evaluate="""Given a question and the associated retrieved knowledge graph triplets (entity, relation, entity), you are asked to answer whether it's sufficient for you to answer the question with these triplets and your knowledge (Yes or No).
+prompt_evaluate="""Given a question and the associated retrieved knowledge graph triplets (entity, relation, entity), you are asked to answer whether it's sufficient for you to answer the question with these triplets and your knowledge (Yes or No). Provide only the one primary answer entity in brackets {entity_answer}.
 Q: Find the person who said \"Taste cannot be controlled by law\", what did this person die from?
 Knowledge Triplets: Taste cannot be controlled by law., media_common.quotation.author, Thomas Jefferson
 A: {No}. Based on the given knowledge triplets, it's not sufficient to answer the entire question. The triplets only provide information about the person who said "Taste cannot be controlled by law," which is Thomas Jefferson. To answer the second part of the question, it's necessary to have additional knowledge about where Thomas Jefferson's dead.
@@ -226,7 +226,7 @@ Q: {}
 """
 
 # CHANGED
-cot_prompt = """The answer has to be in brackets {answer}.
+cot_prompt = """Provide only the one primary answer entity in brackets {entity_answer}.
 Q: What state is home to the university that is represented in sports by George Washington Colonials men's basketball?
 A: First, the education institution has a sports team named George Washington Colonials men's basketball in is George Washington University , Second, George Washington University is in Washington D.C. The answer is {Washington, D.C.}.
 

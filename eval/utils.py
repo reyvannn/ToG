@@ -199,6 +199,7 @@ def check_refuse(string):
 
 def exact_match(response, answers):
     clean_result = response.strip().replace(" ","").lower()
+    clean_result = select_first_value(clean_result)
     for answer in answers:
         clean_answer = answer.strip().replace(" ","").lower()
         if clean_result == clean_answer or clean_result in clean_answer or clean_answer in clean_result:
@@ -209,19 +210,27 @@ def save_result2json(dataset_name, num_right, num_error, total_nums, method="ToG
     results_data = {
         'dataset': dataset_name,
         'method': method,
-        'Exact Match': float(num_right/total_nums),
+        'Hits@1': float(num_right/total_nums),
         'Right Samples': num_right,
         'Error Sampels': num_error
     }
     with open('ToG_{}_results.json'.format(dataset_name), 'w', encoding='utf-8') as f:
         json.dump(results_data, f, ensure_ascii=False, indent=4)
 
-# CHANGED
-def extract_content(s):
-    matches = re.findall(r'\{(.*?)\}', s)
-    if len(matches) >= 2 and matches[0].lower() == 'yes':
-        return matches[1]
-    elif len(matches) >= 1:
-        return matches[0]
-    else:
-        return 'NULL'
+# def extract_content(s):
+#     matches = re.findall(r'\{(.+?)\}', s)
+#     if len(matches) >= 2 and matches[0].lower() == 'yes':
+#         return matches[1]
+#     elif len(matches) >= 1:
+#         return matches[0]
+#     else:
+#         return 'NULL'
+
+def select_first_value(s):
+    values = [value.strip() for value in s.split(',')]
+
+    # Return the first non-empty value
+    for value in values:
+        if value:
+            return value
+    return None
