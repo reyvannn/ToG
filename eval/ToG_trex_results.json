@@ -1,0 +1,7 @@
+{
+    "dataset": "trex",
+    "method": "ToG",
+    "Hits@1": 0.6776315789473685,
+    "Right Samples": 618,
+    "Error Sampels": 290
+}

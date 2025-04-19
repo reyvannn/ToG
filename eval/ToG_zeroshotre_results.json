@@ -1,0 +1,7 @@
+{
+    "dataset": "zeroshotre",
+    "method": "ToG",
+    "Hits@1": 0.7473233404710921,
+    "Right Samples": 1047,
+    "Error Sampels": 347
+}

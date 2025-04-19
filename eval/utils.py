@@ -121,6 +121,10 @@ def align(dataset_name, question_string, data, ground_truth_datas):
     elif dataset_name == 'creak':
         answer = origin_data['label']
         answer_list.append(answer)
+        if str(answer).lower().strip() == 'false':
+            answer_list.append("no")
+        elif str(answer).lower().strip() == 'true':
+            answer_list.append("yes")
 
     elif dataset_name == 'qald_test':
         answers = origin_data["answer"]

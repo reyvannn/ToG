@@ -2,10 +2,35 @@ import json
 import time
 import openai
 import re
+
 from prompt_list import *
 from rank_bm25 import BM25Okapi
 from sentence_transformers import util
 from sentence_transformers import SentenceTransformer
+
+class Log:
+    def __init__(self, start_time, **kwargs):
+        self.start_time = start_time
+        self.llm_call_count = 0
+        self.wikidata_call_count = 0
+        self.depth = 0
+        self.errors = []
+        self.logs = {}
+        if kwargs:
+            self.logs = kwargs
+
+    def update_log(self, **kwargs):
+        self.logs.update(kwargs)
+
+    def generate_logs(self):
+        total_run_time = time.time() - self.start_time
+        runtime_str = "%.2f" % total_run_time
+        self.update_log(runtime=runtime_str)
+        self.logs.update(llm_call_count=self.llm_call_count)
+        self.logs.update(wikidata_call_count=self.wikidata_call_count)
+        self.logs.update(depth=self.depth)
+        self.logs.update(errors=self.errors)
+        return self.logs
 
 def retrieve_top_docs(query, docs, model, width=3):
     """
@@ -107,27 +132,31 @@ from dotenv import load_dotenv
 load_dotenv()
 def run_llm(prompt, temperature, max_tokens, opeani_api_keys, engine="gpt-3.5-turbo"):
     if "llama" in engine.lower():
+        url = "https://8mgifevo4.localto.net/v1"
+        response = None
         client = OpenAI(
-            base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
-            # api_key="token-abc123",
-            api_key=os.getenv("GEMINI_API_KEY"),
+            base_url = url,
+            api_key="token-abc123",
+            # base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
+            # api_key=os.getenv("GEMINI_API_KEY"),
         )
         messages = [
             {"role": "system", "content": "Answer according to the example format. Pay attention to the formatting of the answers, usually the answer is within curly brackets."}
                     ]
         message_prompt = {"role": "user", "content": prompt}
         messages.append(message_prompt)
-        response = None
+
         while response is None:
             try:
                 completion_response = client.chat.completions.create(
-                    # model="Qwen/Qwen2.5-14B-Instruct-GPTQ-Int4",
-                    model="gemini-2.0-flash",
+                    model="Qwen/Qwen2.5-7B-Instruct",
+                    # model="gemini-2.0-flash",
                     messages=messages,
                     temperature=temperature,
                     # max_tokens=max_tokens,
-                    # frequency_penalty=0,
-                    # presence_penalty=0
+                    frequency_penalty=0,
+                    presence_penalty=0,
+                    extra_headers={'localtonet-skip-warning': 'localtonet-skip-warning'},
                 )
                 response = completion_response
             except Exception as e:
@@ -194,13 +223,16 @@ def clean_scores(string, entity_candidates):
         return [1/len(entity_candidates)] * len(entity_candidates)
     
 
-def save_2_jsonl(question, answer, cluster_chain_of_entities, file_name):
-    dict = {"question":question, "results": answer, "reasoning_chains": cluster_chain_of_entities}
+def save_2_jsonl(question, answer, cluster_chain_of_entities, file_name, log:Log=None):
+    logs = "No logging was done."
+    if log is not None:
+        logs = log.generate_logs()
+    dict = {"question":question, "results": answer, "reasoning_chains": cluster_chain_of_entities, "logs": logs}
     with open("ToG_{}.jsonl".format(file_name), "a") as outfile:
         json_str = json.dumps(dict)
         outfile.write(json_str + "\n")
 
-    
+
 def extract_answer(text):
     start_index = text.find("{")
     end_index = text.find("}")
@@ -216,9 +248,10 @@ def if_true(prompt):
     return False
 
 
-def generate_without_explored_paths(question, args):
+def generate_without_explored_paths(question, args, log:Log):
     prompt = cot_prompt + "\n\nQ: " + question + "\nA:"
     response = run_llm(prompt, args.temperature_reasoning, args.max_length, args.opeani_api_keys, args.LLM_type)
+    log.llm_call_count+=1
     return response
 
 

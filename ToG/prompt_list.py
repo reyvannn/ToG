@@ -18,7 +18,7 @@ The movie that matches the given criteria is "So Undercover" with Miley Cyrus an
 Q: {}
 Relation: {}
 Entites: """
-answer_prompt = """Given a question and the associated retrieved knowledge graph triplets (entity, relation, entity), you are asked to answer the question with these triplets and your knowledge.
+answer_prompt = """Given a question and the associated retrieved knowledge graph triplets (entity, relation, entity), you are asked to answer the question with these triplets and your knowledge. Provide only the one primary answer in brackets {answer}, it could be an entity, a relationship, or true/false.
 Q: Find the person who said \"Taste cannot be controlled by law\", what did this person die from?
 Knowledge Triplets: Taste cannot be controlled by law., media_common.quotation.author, Thomas Jefferson
 A: Based on the given knowledge triplets, it's not sufficient to answer the entire question. The triplets only provide information about the person who said "Taste cannot be controlled by law," which is Thomas Jefferson. To answer the second part of the question, it's necessary to have additional knowledge about where Thomas Jefferson's dead.
@@ -53,7 +53,7 @@ A: Based on the given knowledge triplets, we can infer that the National Anthem 
 Q: {}
 """
 
-prompt_evaluate="""Given a question and the associated retrieved knowledge graph triplets (entity, relation, entity), you are asked to answer whether it's sufficient for you to answer the question with these triplets and your knowledge (Yes or No). Provide only the one primary answer entity in brackets {entity_answer}.
+prompt_evaluate="""Given a question and the associated retrieved knowledge graph triplets (entity, relation, entity), you are asked to answer whether it's sufficient for you to answer the question with these triplets and your knowledge (Yes or No). Then provide only the one primary answer in brackets {answer}, it could be an entity, a relationship, or true/false.
 Q: Find the person who said \"Taste cannot be controlled by law\", what did this person die from?
 Knowledge Triplets: Taste cannot be controlled by law., media_common.quotation.author, Thomas Jefferson
 A: {No}. Based on the given knowledge triplets, it's not sufficient to answer the entire question. The triplets only provide information about the person who said "Taste cannot be controlled by law," which is Thomas Jefferson. To answer the second part of the question, it's necessary to have additional knowledge about where Thomas Jefferson's dead.
@@ -119,7 +119,7 @@ Q: {}
 Relation: {}
 Entites: """
 
-prompt_evaluate_wiki="""Given a question and the associated retrieved knowledge graph triplets (entity, relation, entity), you are asked to answer whether it's sufficient for you to answer the question with these triplets and your knowledge (Yes or No).
+prompt_evaluate_wiki="""Given a question and the associated retrieved knowledge graph triplets (entity, relation, entity), you are asked to answer whether it's sufficient for you to answer the question with these triplets and your knowledge (Yes or No). Then provide only the one primary answer in brackets {answer}, it could be an entity, a relationship, or true/false.
 Q: Viscount Yamaji Motoharu was a general in the early Imperial Japanese Army which belonged to which Empire?
 Knowledge Triplets: Imperial Japanese Army, allegiance, Emperor of Japan
 Yamaji Motoharu, allegiance, Emperor of Japan
@@ -191,7 +191,7 @@ A: 1. {wiki.relation.affiliation (Score: 0.4)}: This relation is relevant becaus
 
 Q: """
 
-answer_prompt_wiki = """Given a question and the associated retrieved knowledge graph triplets (entity, relation, entity), you are asked to answer the question with these triplets and your own knowledge.
+answer_prompt_wiki = """Given a question and the associated retrieved knowledge graph triplets (entity, relation, entity), you are asked to answer the question with these triplets and your own knowledge. Provide only the one primary answer in brackets {answer}, it could be an entity, a relationship, or true/false.
 Q: Viscount Yamaji Motoharu was a general in the early Imperial Japanese Army which belonged to which Empire?
 Knowledge Triplets: Imperial Japanese Army, allegiance, Emperor of Japan
 Yamaji Motoharu, allegiance, Emperor of Japan
@@ -226,7 +226,7 @@ Q: {}
 """
 
 # CHANGED
-cot_prompt = """Provide only the one primary answer entity in brackets {entity_answer}.
+cot_prompt = """Provide only the one primary answer in brackets {answer}.
 Q: What state is home to the university that is represented in sports by George Washington Colonials men's basketball?
 A: First, the education institution has a sports team named George Washington Colonials men's basketball in is George Washington University , Second, George Washington University is in Washington D.C. The answer is {Washington, D.C.}.
 
