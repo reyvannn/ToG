@@ -1,0 +1,2802 @@
+[
+    {
+        "question": "Yarrow River [SEP] mouth of the watercourse",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the Yarrow River's mouth is where it meets another watercourse. Specifically, the triplet states that the 'Yarrow River' has a relation 'mouth of the watercourse' with 'Mann River'. Therefore, the answer to the question regarding the mouth of the Yarrow River is {Mann River}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Yarrow River",
+                        "mouth of the watercourse",
+                        "Mann River"
+                    ],
+                    [
+                        "Yarrow River",
+                        "located in the administrative territorial entity",
+                        "New South Wales"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "25.69",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Philip Ehrlich [SEP] employer",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Philip Ehrlich's employer is Ohio University. Therefore, the answer to the question is {Ohio University}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Philip Ehrlich",
+                        "employer",
+                        "Ohio University"
+                    ],
+                    [
+                        "Philip Ehrlich",
+                        "given name",
+                        "Philip"
+                    ],
+                    [
+                        "Philip Ehrlich",
+                        "occupation",
+                        "mathematician"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "36.91",
+            "llm_call_count": 3,
+            "wikidata_call_count": 12,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Song of Summer [SEP] production company",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the production company for \"Song of Summer\" is the BBC. Therefore, the answer to the question is {BBC}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Song of Summer",
+                        "production company",
+                        "BBC"
+                    ],
+                    [
+                        "Song of Summer",
+                        "director",
+                        "Ken Russell"
+                    ],
+                    [
+                        "Song of Summer",
+                        "producer",
+                        "Ken Russell"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "23.06",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Gennady Komov [SEP] from fictional universe",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Gennady Komov is from the Noon Universe, a fictional universe. Therefore, the answer to the question regarding the fictional universe Gennady Komov is from is {Noon Universe}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Gennady Komov",
+                        "from narrative universe",
+                        "Noon Universe"
+                    ],
+                    [
+                        "Gennady Komov",
+                        "occupation",
+                        "explorer"
+                    ],
+                    [
+                        "Gennady Komov",
+                        "sex or gender",
+                        "male"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "21.88",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Kyle Wanvig [SEP] drafted by",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Kyle Wanvig was drafted by both the Boston Bruins and Minnesota Wild. However, since the question asks for a single primary answer, we should consider the context provided by the additional triplet indicating his membership in the Minnesota Wild. Thus, the most relevant answer would be {Minnesota Wild}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Kyle Wanvig",
+                        "drafted by",
+                        "Boston Bruins"
+                    ],
+                    [
+                        "Kyle Wanvig",
+                        "drafted by",
+                        "Minnesota Wild"
+                    ],
+                    [
+                        "Kyle Wanvig",
+                        "member of sports team",
+                        "Minnesota Wild"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "39.27",
+            "llm_call_count": 4,
+            "wikidata_call_count": 12,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Suzanne Scotchmer [SEP] employer",
+        "results": "{University of California, Berkeley}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "436.96",
+            "llm_call_count": 23,
+            "wikidata_call_count": 106,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q30 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q34 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Prince Claus of the Netherlands [SEP] spouse",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Prince Claus of the Netherlands' spouse was Beatrix of the Netherlands. Therefore, the answer to the question is {Beatrix of the Netherlands}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Prince Claus, Prince Consort of the Netherlands",
+                        "spouse",
+                        "Beatrix of the Netherlands"
+                    ],
+                    [
+                        "Prince Claus, Prince Consort of the Netherlands",
+                        "father",
+                        "Claus Felix von Amsberg"
+                    ],
+                    [
+                        "Prince Claus, Prince Consort of the Netherlands",
+                        "country of citizenship",
+                        "Germany"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "30.01",
+            "llm_call_count": 3,
+            "wikidata_call_count": 12,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Astan Dabo [SEP] drafted by",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Astan Dabo was drafted by the Connecticut Sun. Therefore, the answer to the question is {'Connecticut Sun'}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Astan Dabo",
+                        "drafted by",
+                        "Connecticut Sun"
+                    ],
+                    [
+                        "Astan Dabo",
+                        "member of sports team",
+                        "Cavigal Nice Basket"
+                    ],
+                    [
+                        "Astan Dabo",
+                        "member of sports team",
+                        "Tarbes Gespe Bigorre"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "43.32",
+            "llm_call_count": 3,
+            "wikidata_call_count": 12,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "The Education of Elizabeth [SEP] production company",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the production company for \"The Education of Elizabeth\" is the Famous Players-Lasky Corporation. Therefore, the answer to the question is {Famous Players-Lasky Corporation}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "The Education of Elizabeth",
+                        "production company",
+                        "Famous Players-Lasky Corporation"
+                    ],
+                    [
+                        "The Education of Elizabeth",
+                        "director",
+                        "Edward Dillon"
+                    ],
+                    [
+                        "The Education of Elizabeth",
+                        "producer",
+                        "Adolph Zukor"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "29.08",
+            "llm_call_count": 3,
+            "wikidata_call_count": 12,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Harald Fuchs [SEP] employer",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Harald Fuchs' employer is the University of Basel. Therefore, the answer to the question is {University of Basel}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Harald Fuchs",
+                        "employer",
+                        "University of Basel"
+                    ],
+                    [
+                        "Harald Fuchs",
+                        "country of citizenship",
+                        "Germany"
+                    ],
+                    [
+                        "Harald Fuchs",
+                        "occupation",
+                        "classical philologist"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "27.82",
+            "llm_call_count": 3,
+            "wikidata_call_count": 12,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Bridge of Arta [SEP] crosses",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the Bridge of Arta crosses the Arachthos river. Therefore, the answer to the question is {Arachthos}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Bridge of Arta",
+                        "crosses",
+                        "Arachthos"
+                    ],
+                    [
+                        "Bridge of Arta",
+                        "located in the administrative territorial entity",
+                        "Artaion Municipality"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "22.28",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Dysna [SEP] mouth of the watercourse",
+        "results": "{delta}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "188.78",
+            "llm_call_count": 14,
+            "wikidata_call_count": 71,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Star-Lord [SEP] from fictional universe",
+        "results": "{Marvel Comics}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "273.43",
+            "llm_call_count": 19,
+            "wikidata_call_count": 83,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Joseph Altonji [SEP] employer",
+        "results": "{SEP (Stanford Educational Research Laboratory)}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "303.70",
+            "llm_call_count": 18,
+            "wikidata_call_count": 81,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q30 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Dredd [SEP] production company",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the production companies for the movie \"Dredd\" include DNA Films and IM Global. Since the question asks for a single primary answer, we can provide one of the production companies as the answer. For consistency, the answer will be {DNA Films}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Dredd",
+                        "production company",
+                        "DNA Films"
+                    ],
+                    [
+                        "Dredd",
+                        "production company",
+                        "IM Global"
+                    ],
+                    [
+                        "Dredd",
+                        "director",
+                        "Pete Travis"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "42.17",
+            "llm_call_count": 3,
+            "wikidata_call_count": 13,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Rough Run [SEP] mouth of the watercourse",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Rough Run is a tributary of West Branch Fishing Creek, whose mouth of the watercourse is in Fishing Creek. Therefore, the answer to the question regarding the mouth of the watercourse for Rough Run is {Fishing Creek}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Rough Run",
+                        "mouth of the watercourse",
+                        "West Branch Fishing Creek"
+                    ],
+                    [
+                        "Rough Run",
+                        "tributary",
+                        "West Branch Fishing Creek"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "West Branch Fishing Creek",
+                        "mouth of the watercourse",
+                        "Fishing Creek"
+                    ],
+                    [
+                        "West Branch Fishing Creek",
+                        "located in the administrative territorial entity",
+                        "Columbia County"
+                    ],
+                    [
+                        "West Branch Fishing Creek",
+                        "located in the administrative territorial entity",
+                        "Sullivan County"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Fishing Creek",
+                        "mouth of the watercourse",
+                        "Susquehanna River"
+                    ],
+                    [
+                        "Columbia County",
+                        "located in the administrative territorial entity",
+                        "Pennsylvania"
+                    ],
+                    [
+                        "Columbia County",
+                        "country",
+                        "United States"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "191.33",
+            "llm_call_count": 12,
+            "wikidata_call_count": 66,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Luther Bridge [SEP] crosses",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the Luther Bridge crosses the Spree river. Therefore, the answer to the question is {Spree}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Luther Bridge",
+                        "crosses",
+                        "Spree"
+                    ],
+                    [
+                        "Luther Bridge",
+                        "start point",
+                        "Q111011333"
+                    ],
+                    [
+                        "Luther Bridge",
+                        "heritage designation",
+                        "architectural heritage monument"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "34.63",
+            "llm_call_count": 3,
+            "wikidata_call_count": 12,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Illawarra Light Railway Museum [SEP] date of official opening",
+        "results": "{2013}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "154.65",
+            "llm_call_count": 11,
+            "wikidata_call_count": 62,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Tia Dalma [SEP] from fictional universe",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Tia Dalma is from the Pirates of the Caribbean universe. Therefore, the answer to the question regarding which fictional universe Tia Dalma belongs to is {Pirates of the Caribbean universe}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Tia Dalma",
+                        "from narrative universe",
+                        "Pirates of the Caribbean universe"
+                    ],
+                    [
+                        "Tia Dalma",
+                        "performer",
+                        "Naomie Harris"
+                    ],
+                    [
+                        "Tia Dalma",
+                        "creator",
+                        "Ted Elliott"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "34.25",
+            "llm_call_count": 3,
+            "wikidata_call_count": 12,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Bulkeley Bridge [SEP] crosses",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the Bulkeley Bridge crosses the Connecticut River. Therefore, the answer to the question is {Connecticut River}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Bulkeley Bridge",
+                        "crosses",
+                        "Connecticut River"
+                    ],
+                    [
+                        "Bulkeley Bridge",
+                        "location",
+                        "Hartford"
+                    ],
+                    [
+                        "Bulkeley Bridge",
+                        "located in the administrative territorial entity",
+                        "Hartford"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "22.23",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Dror Bar-Natan [SEP] employer",
+        "results": "{University of Toronto}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "383.13",
+            "llm_call_count": 24,
+            "wikidata_call_count": 97,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Mystery Team [SEP] production company",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Mystery Team's production company is Derrick Comedy. Therefore, the answer to the question is {Derrick Comedy}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Mystery Team",
+                        "production company",
+                        "Derrick Comedy"
+                    ],
+                    [
+                        "Mystery Team",
+                        "director",
+                        "Dan Eckman"
+                    ],
+                    [
+                        "Mystery Team",
+                        "cast member",
+                        "Aubrey Plaza"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "30.62",
+            "llm_call_count": 3,
+            "wikidata_call_count": 18,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Progress M-34 [SEP] time of spacecraft launch",
+        "results": "First, Progress M-34 [SEP] is a Russian spacecraft. Second, the launch date of Progress M-34 [SEP] was on September 21, 2011. The answer is {September 21, 2011}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "216.44",
+            "llm_call_count": 15,
+            "wikidata_call_count": 65,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Amber Harris [SEP] drafted by",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Amber Harris was drafted by the Minnesota Lynx. Therefore, the answer to the question is {Minnesota Lynx}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Amber Harris",
+                        "drafted by",
+                        "Minnesota Lynx"
+                    ],
+                    [
+                        "Amber Harris",
+                        "sport",
+                        "basketball"
+                    ],
+                    [
+                        "Amber Harris",
+                        "member of sports team",
+                        "Minnesota Lynx"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "38.93",
+            "llm_call_count": 3,
+            "wikidata_call_count": 12,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "SARAL [SEP] time of spacecraft launch",
+        "results": "{2014}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "140.17",
+            "llm_call_count": 11,
+            "wikidata_call_count": 60,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "The Flying Irishman [SEP] production company",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the production company for \"The Flying Irishman\" is RKO Pictures. Therefore, the answer to the question is {RKO Pictures}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "The Flying Irishman",
+                        "production company",
+                        "RKO Pictures"
+                    ],
+                    [
+                        "The Flying Irishman",
+                        "director",
+                        "Leigh Jason"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "18.70",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Sevenmile Bridge [SEP] crosses",
+        "results": "{Sevenmile Bridge crosses the Mosquito Lagoon}. However, based on the context of the question and typical geographical knowledge, it seems there might be a misunderstanding. The Seven Mile Bridge is actually located in Florida and connects Knight Key and Little Duck Key over the waters of the Florida Bay. If we strictly follow the format and assume the question is asking about the geographical feature it spans, the correct answer would be {Florida Bay}. But typically, the Seven Mile Bridge doesn't cross a lagoon called \"Mosquito Lagoon\"; this might be a mix-up or specific context not commonly known. Given the format and directness required, the answer should reflect what the bridge actually crosses, which is {Florida Bay}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "193.55",
+            "llm_call_count": 13,
+            "wikidata_call_count": 56,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Salmon Falls River [SEP] mouth of the watercourse",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the Salmon Falls River's mouth is at the Piscataqua River. Therefore, the answer to the question regarding the mouth of the Salmon Falls River is {Piscataqua River}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Salmon Falls River",
+                        "mouth of the watercourse",
+                        "Piscataqua River"
+                    ],
+                    [
+                        "Salmon Falls River",
+                        "located in the administrative territorial entity",
+                        "Maine"
+                    ],
+                    [
+                        "Salmon Falls River",
+                        "outflows",
+                        "Great East Lake"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Maine",
+                        "located in or next to body of water",
+                        "Atlantic Ocean"
+                    ],
+                    [
+                        "Piscataqua River",
+                        "mouth of the watercourse",
+                        "Atlantic Ocean"
+                    ],
+                    [
+                        "Great East Lake",
+                        "outflows",
+                        "Salmon Falls River"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "825.40",
+            "llm_call_count": 8,
+            "wikidata_call_count": 41,
+            "depth": 2,
+            "errors": []
+        }
+    },
+    {
+        "question": "Jos\u00e9 Feghali [SEP] employer",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Jos\u00e9 Feghali's employer is {Texas Christian University}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Jos\u00e9 Feghali",
+                        "employer",
+                        "Texas Christian University"
+                    ],
+                    [
+                        "Jos\u00e9 Feghali",
+                        "educated at",
+                        "Royal Academy of Music"
+                    ],
+                    [
+                        "Jos\u00e9 Feghali",
+                        "country of citizenship",
+                        "Brazil"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "17.75",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Union of Leftists [SEP] chairperson",
+        "results": "First, the Union of Leftists [SEP] is a political organization. Second, the current chairperson of the Socialist Equality Party (SEP), which might be what you meant by \"Union of Leftists [SEP],\" is David North. The answer is {David North}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "207.90",
+            "llm_call_count": 15,
+            "wikidata_call_count": 70,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Killer Croc [SEP] from fictional universe",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Killer Croc is from the DC Universe, which is a fictional universe. Therefore, the answer to the question \"Killer Croc is from which fictional universe?\" is {DC Universe}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Killer Croc",
+                        "from narrative universe",
+                        "DC Universe"
+                    ],
+                    [
+                        "Killer Croc",
+                        "present in work",
+                        "Batman Unlimited: Animal Instincts"
+                    ],
+                    [
+                        "Killer Croc",
+                        "present in work",
+                        "Batman Unlimited: Mech vs. Mutants"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "DC Universe",
+                        "fictional universe described in",
+                        "Creature Commandos"
+                    ],
+                    [
+                        "DC Universe",
+                        "depicts",
+                        "LGBT antagonist"
+                    ],
+                    [
+                        "Batman Unlimited: Animal Instincts",
+                        "director",
+                        "Butch Lukic"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "155.18",
+            "llm_call_count": 11,
+            "wikidata_call_count": 60,
+            "depth": 2,
+            "errors": []
+        }
+    },
+    {
+        "question": "Khlong Kui [SEP] mouth of the watercourse",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Khlong Kui is the mouth of the watercourse that flows into the Gulf of Thailand. Therefore, the answer to the question regarding where Khlong Kui is the mouth of the watercourse is {Gulf of Thailand}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Khlong Kui",
+                        "mouth of the watercourse",
+                        "Gulf of Thailand"
+                    ],
+                    [
+                        "Khlong Kui",
+                        "located in the administrative territorial entity",
+                        "Kui Buri"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "26.10",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Eva Harris [SEP] employer",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Eva Harris has been employed by both the University of California, Berkeley and the University of California, San Francisco. However, since the question asks for her employer without specifying a time period or a preference for one over the other, we can provide one of them as the answer. Thus, the answer to the question is {University of California, Berkeley}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Eva Harris",
+                        "employer",
+                        "University of California, Berkeley"
+                    ],
+                    [
+                        "Eva Harris",
+                        "employer",
+                        "University of California, San Francisco"
+                    ],
+                    [
+                        "Eva Harris",
+                        "occupation",
+                        "epidemiologist"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "University of California, Berkeley",
+                        "occupation",
+                        "Antonio Montalb\u00e1n"
+                    ],
+                    [
+                        "University of California, Berkeley",
+                        "occupation",
+                        "Antonio Montalb\u00e1n"
+                    ],
+                    [
+                        "epidemiologist",
+                        "practiced by",
+                        "computational epidemiology"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "221.69",
+            "llm_call_count": 17,
+            "wikidata_call_count": 74,
+            "depth": 2,
+            "errors": []
+        }
+    },
+    {
+        "question": "Klaus-J\u00fcrgen Bathe [SEP] employer",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Klaus-J\u00fcrgen Bathe's employer is the Massachusetts Institute of Technology. Therefore, the answer to the question is {Massachusetts Institute of Technology}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Klaus-J\u00fcrgen Bathe",
+                        "employer",
+                        "Massachusetts Institute of Technology"
+                    ],
+                    [
+                        "Klaus-J\u00fcrgen Bathe",
+                        "occupation",
+                        "engineer"
+                    ],
+                    [
+                        "Klaus-J\u00fcrgen Bathe",
+                        "occupation",
+                        "university teacher"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "36.38",
+            "llm_call_count": 4,
+            "wikidata_call_count": 14,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Blyde River [SEP] mouth of the watercourse",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the mouth of the Blyde River is where it meets another river, which is the Olifants River. Therefore, the answer to the question is {Olifants River}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Blyde River",
+                        "mouth of the watercourse",
+                        "Olifants River"
+                    ],
+                    [
+                        "Blyde River",
+                        "country",
+                        "South Africa"
+                    ],
+                    [
+                        "Blyde River",
+                        "crosses",
+                        "Blyderivierpoort Dam"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "31.41",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Vietnam Memorial Bridge [SEP] crosses",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the Vietnam Memorial Bridge crosses the Connecticut River. Therefore, the answer to the question is {Connecticut River}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Vietnam Memorial Bridge",
+                        "crosses",
+                        "Connecticut River"
+                    ],
+                    [
+                        "Vietnam Memorial Bridge",
+                        "located in the administrative territorial entity",
+                        "Massachusetts"
+                    ],
+                    [
+                        "Vietnam Memorial Bridge",
+                        "country",
+                        "United States"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "17.75",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Stephen B\u00e1thory [SEP] spouse",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Stephen B\u00e1thory's spouse was Anna Jagiellon. Therefore, the answer to the question is {Anna Jagiellon}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Stephen B\u00e1thory",
+                        "spouse",
+                        "Anna Jagiellon"
+                    ],
+                    [
+                        "Stephen B\u00e1thory",
+                        "father",
+                        "Stephen VIII B\u00e1thory"
+                    ],
+                    [
+                        "Stephen B\u00e1thory",
+                        "coat of arms",
+                        "Q4191320"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "19.85",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "LaSalle Thompson [SEP] drafted by",
+        "results": "{Yes}. Based on the given knowledge triplet, LaSalle Thompson was drafted by the Sacramento Kings. Therefore, the answer to the question is {Sacramento Kings}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "LaSalle Thompson",
+                        "drafted by",
+                        "Sacramento Kings"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "20.19",
+            "llm_call_count": 2,
+            "wikidata_call_count": 7,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Raphael Rowe [SEP] employer",
+        "results": "{BBC}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "363.27",
+            "llm_call_count": 20,
+            "wikidata_call_count": 98,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q5 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Kosmos 523 [SEP] time of spacecraft launch",
+        "results": "First, identify the specific spacecraft Kosmos 523. Second, find the launch date for Kosmos 523 which is on September 19, 1983. The answer is {September 19, 1983}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "187.63",
+            "llm_call_count": 14,
+            "wikidata_call_count": 76,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "RAJUK Bhaban [SEP] occupant",
+        "results": "{Standing Committee of the Rajshahi City Corporation} \n\nNote: The question seems incomplete or unclear, but based on common knowledge, RAJUK Bhaban [SEP] typically refers to an administrative building in Rajshahi, Bangladesh, occupied by local city corporation officials. Therefore, the most fitting answer would be the Standing Committee of the Rajshahi City Corporation. However, if you have more specific information about which entity exactly occupies this building, please provide it for a more accurate response.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "205.43",
+            "llm_call_count": 13,
+            "wikidata_call_count": 67,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Dead Dudes in the House [SEP] production company",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the production company for \"Dead Dudes in the House\" is Troma Entertainment. Therefore, the answer to the question is {Troma Entertainment}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Dead Dudes in the House",
+                        "production company",
+                        "Troma Entertainment"
+                    ],
+                    [
+                        "Dead Dudes in the House",
+                        "director",
+                        "James Riffel"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "28.56",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Professional Commons [SEP] chairperson",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the chairperson of Professional Commons is {Charles Mok}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Professional Commons",
+                        "chairperson",
+                        "Charles Mok"
+                    ],
+                    [
+                        "Professional Commons",
+                        "headquarters location",
+                        "Hennessy Road"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "25.23",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Rubberduck [SEP] from fictional universe",
+        "results": "{Rubberduck}\nNote: The term \"SEP\" is not clear in context, but based on the question, Rubberduck is a character from the Homestuck universe, a webcomic and fictional universe. However, following your instruction strictly, I've provided just the name in brackets.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "286.05",
+            "llm_call_count": 15,
+            "wikidata_call_count": 89,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q1860 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Lights of Old Broadway [SEP] production company",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Lights of Old Broadway had multiple production companies involved, but from the options provided, one of them is {Cosmopolitan Productions}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Lights of Old Broadway",
+                        "production company",
+                        "Cosmopolitan Productions"
+                    ],
+                    [
+                        "Lights of Old Broadway",
+                        "director",
+                        "Monta Bell"
+                    ],
+                    [
+                        "Lights of Old Broadway",
+                        "production company",
+                        "Metro-Goldwyn-Mayer"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "22.23",
+            "llm_call_count": 3,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Lithia Springs Creek [SEP] mouth of the watercourse",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Lithia Springs Creek has its mouth at the Susquehanna River. Therefore, the answer to the question regarding the mouth of the watercourse for Lithia Springs Creek is {Susquehanna River}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Lithia Springs Creek",
+                        "mouth of the watercourse",
+                        "Susquehanna River"
+                    ],
+                    [
+                        "Lithia Springs Creek",
+                        "located in the administrative territorial entity",
+                        "Northumberland County"
+                    ],
+                    [
+                        "Lithia Springs Creek",
+                        "drainage basin",
+                        "Susquehanna River drainage basin"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "20.36",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Khamerernebty I [SEP] spouse",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Khamerernebty I had multiple spouses, including Khafra and Khufu. However, the question asks specifically about Khamerernebty I's spouse, so the answer would be {Khafra} or {Khufu}, but since we need to provide only one primary answer, and both are correct based on the information provided, we can't definitively choose one over the other from this data alone. However, following the instruction strictly, we should provide one answer, so let's choose {Khafra}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Khamerernebty I",
+                        "spouse",
+                        "Khafra"
+                    ],
+                    [
+                        "Khamerernebty I",
+                        "spouse",
+                        "Khufu"
+                    ],
+                    [
+                        "Khamerernebty I",
+                        "family",
+                        "Fourth Dynasty of Egypt"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Fourth Dynasty of Egypt",
+                        "instance of",
+                        "Egyptian dynasty"
+                    ],
+                    [
+                        "Khufu",
+                        "spouse",
+                        "Henutsen"
+                    ],
+                    [
+                        "Khufu",
+                        "spouse",
+                        "Khamerernebty I"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "134.90",
+            "llm_call_count": 10,
+            "wikidata_call_count": 47,
+            "depth": 2,
+            "errors": []
+        }
+    },
+    {
+        "question": "Doctor Bong [SEP] from fictional universe",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Doctor Bong is from the Earth-616 universe, which is a part of the Marvel Comics fictional universe. Therefore, the answer to the question regarding which fictional universe Doctor Bong belongs to is {Earth-616}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Doctor Bong",
+                        "from narrative universe",
+                        "Earth-616"
+                    ],
+                    [
+                        "Doctor Bong",
+                        "instance of",
+                        "comics character"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "26.17",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "USA-265 [SEP] time of spacecraft launch",
+        "results": "{United States Air Force}\nBased on the given knowledge triplets, the operator of USA-265 is the United States Air Force. However, the question seems to be asking for the time of spacecraft launch, which cannot be answered from the provided information. The correct format should include a specific answer related to the question if available, but here we have only identified the operator. If the intention was to ask about the launch time, additional information would be needed. Given the instruction and the information provided, the relevant answer based on the question's format is {United States Air Force}. But strictly speaking, for the launch time, more data is required.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "USA-265",
+                        "operator",
+                        "United States Air Force"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "60.88",
+            "llm_call_count": 4,
+            "wikidata_call_count": 12,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "To the Devil a Daughter [SEP] production company",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the production company for \"To the Devil a Daughter\" is {Hammer Film Productions}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "To the Devil a Daughter",
+                        "production company",
+                        "Hammer Film Productions"
+                    ],
+                    [
+                        "To the Devil a Daughter",
+                        "director",
+                        "Peter Sykes"
+                    ],
+                    [
+                        "To the Devil a Daughter",
+                        "distributed by",
+                        "EMI"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "36.08",
+            "llm_call_count": 3,
+            "wikidata_call_count": 12,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Kamandi [SEP] from fictional universe",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Kamandi is from the DC Universe. Therefore, the answer to the question is {DC Universe}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Kamandi",
+                        "present in work",
+                        "Batman: The Brave and the Bold"
+                    ],
+                    [
+                        "Kamandi",
+                        "based on",
+                        "DC Showcase: Kamandi: The Last Boy on Earth!"
+                    ],
+                    [
+                        "Kamandi",
+                        "from narrative universe",
+                        "DC Universe"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "22.37",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Lawrence M. Principe [SEP] employer",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Lawrence M. Principe has been employed by Johns Hopkins University and Utrecht University. However, since the question asks for his employer without specifying a particular institution, we can only provide one primary answer based on the information given. Since both institutions are listed, and the question does not specify which one to choose, we can select one as the primary answer. For the purpose of this response, I'll use the first one provided: {Johns Hopkins University}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Lawrence M. Principe",
+                        "employer",
+                        "Johns Hopkins University"
+                    ],
+                    [
+                        "Lawrence M. Principe",
+                        "employer",
+                        "Utrecht University"
+                    ],
+                    [
+                        "Lawrence M. Principe",
+                        "occupation",
+                        "historian of science"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "59.63",
+            "llm_call_count": 5,
+            "wikidata_call_count": 17,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "George R. Rossman [SEP] employer",
+        "results": "{SEP} stands for Strategic Environmental Planning, which was the company George R. Rossman worked for. Therefore, the answer is {Strategic Environmental Planning}. However, based on the requested format and the given example, the direct answer should be:\n\n{Strategic Environmental Planning}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "215.53",
+            "llm_call_count": 15,
+            "wikidata_call_count": 79,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "La Romareda [SEP] occupant",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, La Romareda is the stadium where Real Zaragoza plays its home games. Therefore, the answer to the implicit question \"At which stadium does Real Zaragoza play its home games?\" is {La Romareda}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "La Romareda",
+                        "occupant",
+                        "Real Zaragoza"
+                    ],
+                    [
+                        "La Romareda",
+                        "home venue",
+                        "Real Zaragoza"
+                    ],
+                    [
+                        "La Romareda",
+                        "operator",
+                        "Real Zaragoza"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "18.74",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Bamboes Spruit [SEP] mouth of the watercourse",
+        "results": "Q: {}\nKnowledge Triplets: Bamboes Spruit, mouth, sea\nA: Based on the given knowledge triplet, the mouth of Bamboes Spruit is at the {sea}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "4.59",
+            "llm_call_count": 1,
+            "wikidata_call_count": 0,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Maciej Stachowiak [SEP] employer",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Maciej Stachowiak's employer is {Apple}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Maciej Stachowiak",
+                        "employer",
+                        "Apple"
+                    ],
+                    [
+                        "Maciej Stachowiak",
+                        "educated at",
+                        "Massachusetts Institute of Technology"
+                    ],
+                    [
+                        "Maciej Stachowiak",
+                        "country of citizenship",
+                        "Poland"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "14.71",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Lammer [SEP] mouth of the watercourse",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Lammer is the mouth of the watercourse Salzach. Therefore, the answer to the question regarding the mouth of the watercourse for Lammer is {Salzach}. However, please note that the original question was not provided, and this answer assumes the question was asking about the watercourse related to Lammer.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Lammer",
+                        "mouth of the watercourse",
+                        "Salzach"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Salzach",
+                        "mouth of the watercourse",
+                        "Inn"
+                    ],
+                    [
+                        "Salzach",
+                        "basin country",
+                        "Austria"
+                    ],
+                    [
+                        "Salzach",
+                        "place of death",
+                        "Markus Faulhaber"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Markus Faulhaber",
+                        "instance of",
+                        "human"
+                    ],
+                    [
+                        "Inn",
+                        "mouth of the watercourse",
+                        "Danube"
+                    ],
+                    [
+                        "Markus Faulhaber",
+                        "given name",
+                        "Markus"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "229.68",
+            "llm_call_count": 11,
+            "wikidata_call_count": 56,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Patterson River [SEP] mouth of the watercourse",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the Patterson River's mouth is at Port Phillip. Therefore, the answer to the question is {Port Phillip}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Patterson River",
+                        "mouth of the watercourse",
+                        "Port Phillip"
+                    ],
+                    [
+                        "Patterson River",
+                        "located in the administrative territorial entity",
+                        "Victoria"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "23.47",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Journey to Saturn [SEP] production company",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the production company for \"Journey to Saturn\" is {A. Film A/S}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Journey to Saturn",
+                        "production company",
+                        "A. Film A/S"
+                    ],
+                    [
+                        "Journey to Saturn",
+                        "based on",
+                        "Journey to Saturn"
+                    ],
+                    [
+                        "Journey to Saturn",
+                        "director",
+                        "Craig Frank"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "27.89",
+            "llm_call_count": 3,
+            "wikidata_call_count": 13,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Henry Hudson Bridge [SEP] crosses",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the Henry Hudson Bridge crosses Spuyten Duyvil Creek. Therefore, the answer to the question is {Spuyten Duyvil Creek}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Henry Hudson Bridge",
+                        "crosses",
+                        "Spuyten Duyvil Creek"
+                    ],
+                    [
+                        "Henry Hudson Bridge",
+                        "located in the administrative territorial entity",
+                        "Manhattan"
+                    ],
+                    [
+                        "Henry Hudson Bridge",
+                        "named after",
+                        "Henry Hudson"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "20.32",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Society for Threatened Peoples [SEP] chairperson",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the chairperson of Society for Threatened Peoples [SEP] is Tilman Z\u00fclch. Therefore, the answer to the question is {'Tilman Z\u00fclch'}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Society for Threatened Peoples",
+                        "chairperson",
+                        "Tilman Z\u00fclch"
+                    ],
+                    [
+                        "Society for Threatened Peoples",
+                        "founded by",
+                        "Tilman Z\u00fclch"
+                    ],
+                    [
+                        "Society for Threatened Peoples",
+                        "country",
+                        "Germany"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "29.46",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Orljava [SEP] mouth of the watercourse",
+        "results": "{orifice}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "201.73",
+            "llm_call_count": 14,
+            "wikidata_call_count": 61,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Thog [SEP] from fictional universe",
+        "results": "{Thog} is from the SEP (Stanford Encyclopedia of Philosophy) fictional universe. However, since the question seems to be asking for a direct answer without elaboration, the answer is {SEP}. But typically, \"Thog\" is used in philosophical discussions about language and reality as part of an example created by Nelson Goodman, not directly related to the Stanford Encyclopedia of Philosophy itself. If strictly following the instruction format and assuming \"SEP\" refers to the source where this example might be found discussed, then the answer would be {SEP}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "170.55",
+            "llm_call_count": 11,
+            "wikidata_call_count": 45,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q4167410 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "James D. Gordon III [SEP] employer",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, James D. Gordon III's employer is Brigham Young University. Therefore, the answer to the question is {Brigham Young University}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "James D. Gordon III",
+                        "employer",
+                        "Brigham Young University"
+                    ],
+                    [
+                        "James D. Gordon III",
+                        "occupation",
+                        "missionary"
+                    ],
+                    [
+                        "James D. Gordon III",
+                        "country of citizenship",
+                        "United States"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "26.23",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Scaredycat [SEP] from fictional universe",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Scaredycat is from the Earth-616 fictional universe. Therefore, the answer to the question is {Earth-616}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Scaredycat",
+                        "from narrative universe",
+                        "Earth-616"
+                    ],
+                    [
+                        "Scaredycat",
+                        "character type",
+                        "superhero"
+                    ],
+                    [
+                        "Scaredycat",
+                        "instance of",
+                        "comics character"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "40.66",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "John Reif [SEP] employer",
+        "results": "{Rice University}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "1429.84",
+            "llm_call_count": 22,
+            "wikidata_call_count": 105,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Ariel Pakes [SEP] employer",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Ariel Pakes' employer is {Harvard University}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Ariel Pakes",
+                        "employer",
+                        "Harvard University"
+                    ],
+                    [
+                        "Ariel Pakes",
+                        "country of citizenship",
+                        "United States"
+                    ],
+                    [
+                        "Ariel Pakes",
+                        "educated at",
+                        "Harvard University"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "50.82",
+            "llm_call_count": 3,
+            "wikidata_call_count": 12,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "It Happened in Brooklyn [SEP] production company",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the production company for \"It Happened in Brooklyn\" is Metro-Goldwyn-Mayer. Therefore, the answer to the question is {Metro-Goldwyn-Mayer}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "It Happened in Brooklyn",
+                        "production company",
+                        "Metro-Goldwyn-Mayer"
+                    ],
+                    [
+                        "It Happened in Brooklyn",
+                        "director",
+                        "Richard Whorf"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "17.44",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Pauli Jaks [SEP] drafted by",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Pauli Jaks was drafted by the Los Angeles Kings. Therefore, the answer to the question is {Los Angeles Kings}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Pauli Jaks",
+                        "drafted by",
+                        "Los Angeles Kings"
+                    ],
+                    [
+                        "Pauli Jaks",
+                        "given name",
+                        "Pauli"
+                    ],
+                    [
+                        "Pauli Jaks",
+                        "member of sports team",
+                        "Gen\u00e8ve-Servette HC"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "49.44",
+            "llm_call_count": 3,
+            "wikidata_call_count": 15,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "The Ridin' Renegade [SEP] production company",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the production company for \"The Ridin' Renegade\" is the Film Booking Offices of America. Therefore, the answer to the question is {\"Film Booking Offices of America\"}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "The Ridin' Renegade",
+                        "production company",
+                        "Film Booking Offices of America"
+                    ],
+                    [
+                        "The Ridin' Renegade",
+                        "director",
+                        "Wallace Fox"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "17.80",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Dinder River [SEP] mouth of the watercourse",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the Dinder River's mouth is at the Blue Nile. Therefore, the answer to the question is {Blue Nile}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Dinder River",
+                        "mouth of the watercourse",
+                        "Blue Nile"
+                    ],
+                    [
+                        "Dinder River",
+                        "country",
+                        "Ethiopia"
+                    ],
+                    [
+                        "Dinder River",
+                        "country",
+                        "Sudan"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "27.57",
+            "llm_call_count": 3,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Lufira River [SEP] mouth of the watercourse",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the Lufira River's mouth is at the Lualaba River. Therefore, the answer to the question is {Lualaba River}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Lufira River",
+                        "mouth of the watercourse",
+                        "Lualaba River"
+                    ],
+                    [
+                        "Lufira River",
+                        "country",
+                        "Democratic Republic of the Congo"
+                    ],
+                    [
+                        "Lufira River",
+                        "continent",
+                        "Africa"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "20.66",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "An Unseen Enemy [SEP] production company",
+        "results": "{Anonymous Content}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "218.92",
+            "llm_call_count": 14,
+            "wikidata_call_count": 77,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q30 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Vinxtbach [SEP] mouth of the watercourse",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the Vinxtbach is a tributary that flows into the Rhine, and its mouth is at the Rhine. Therefore, the answer to the question regarding the mouth of the watercourse for Vinxtbach is {Rhine}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Vinxtbach",
+                        "mouth of the watercourse",
+                        "Rhine"
+                    ],
+                    [
+                        "Vinxtbach",
+                        "tributary",
+                        "Rhine"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "25.09",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Nazis at the Center of the Earth [SEP] production company",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the production company for \"Nazis at the Center of the Earth\" is The Asylum. Therefore, the answer to the question is {The Asylum}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Nazis at the Center of the Earth",
+                        "production company",
+                        "The Asylum"
+                    ],
+                    [
+                        "Nazis at the Center of the Earth",
+                        "director",
+                        "Joseph J. Lawson"
+                    ],
+                    [
+                        "Nazis at the Center of the Earth",
+                        "distributed by",
+                        "ADS Service"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "36.99",
+            "llm_call_count": 3,
+            "wikidata_call_count": 13,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "The Bugs Bunny/Road Runner Movie [SEP] production company",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the production company for \"The Bugs Bunny/Road Runner Movie\" is {Warner Bros.}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "The Bugs Bunny/Road Runner Movie",
+                        "production company",
+                        "Warner Bros."
+                    ],
+                    [
+                        "The Bugs Bunny/Road Runner Movie",
+                        "director",
+                        "Chuck Jones"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "24.45",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Umm Farwah bint al-Qasim [SEP] spouse",
+        "results": "{Umm Farwah} based on the provided context, it seems Umm Farwah is identified as the spouse of Al-Qasim, though the exact phrasing and available information is somewhat limited. However, the question format asks for a direct answer in brackets, and from the given \"Umm Farwah bint al-Qasim [SEP] spouse\", we can infer that Umm Farwah is the answer being sought. Please note, the original question prompt seems incomplete or unclear, leading to this interpretation.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "6.54",
+            "llm_call_count": 1,
+            "wikidata_call_count": 0,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Ebro [SEP] mouth of the watercourse",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the Ebro river's mouth is located at the Mediterranean Sea. Therefore, the answer to the question regarding the mouth of the watercourse Ebro is {Mediterranean Sea}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Ebro",
+                        "mouth of the watercourse",
+                        "Mediterranean Sea"
+                    ],
+                    [
+                        "Ebro",
+                        "located in/on physical feature",
+                        "Reservoir of Mequinenza"
+                    ],
+                    [
+                        "Ebro",
+                        "delta of",
+                        "Ebro Delta"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "27.20",
+            "llm_call_count": 3,
+            "wikidata_call_count": 17,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Civilian Clothes [SEP] production company",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the production company for \"Civilian Clothes\" is the Famous Players-Lasky Corporation. Therefore, the answer to the question is {Famous Players-Lasky Corporation}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Civilian Clothes",
+                        "production company",
+                        "Famous Players-Lasky Corporation"
+                    ],
+                    [
+                        "Civilian Clothes",
+                        "director",
+                        "Hugh Ford"
+                    ],
+                    [
+                        "Civilian Clothes",
+                        "producer",
+                        "Adolph Zukor"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "32.15",
+            "llm_call_count": 3,
+            "wikidata_call_count": 12,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Hillsgrove Covered Bridge [SEP] crosses",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the Hillsgrove Covered Bridge crosses Loyalsock Creek. Therefore, the answer to the question is {Loyalsock Creek}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Hillsgrove Covered Bridge",
+                        "crosses",
+                        "Loyalsock Creek"
+                    ],
+                    [
+                        "Hillsgrove Covered Bridge",
+                        "located in the administrative territorial entity",
+                        "Hillsgrove Township"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "17.18",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "A Cat in Paris [SEP] production company",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the production companies involved in \"A Cat in Paris\" include Folimage, France 3, and Lunanime. Since the question asks for a production company of \"A Cat in Paris\", any of these could be the answer. However, as we need to provide one primary answer, I'll choose the first one listed: {Folimage}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "A Cat in Paris",
+                        "production company",
+                        "Folimage"
+                    ],
+                    [
+                        "A Cat in Paris",
+                        "production company",
+                        "France 3"
+                    ],
+                    [
+                        "A Cat in Paris",
+                        "production company",
+                        "Lunanime"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "49.69",
+            "llm_call_count": 4,
+            "wikidata_call_count": 13,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Irving P. Krick [SEP] employer",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Irving P. Krick had multiple employers, including the California Institute of Technology and the United States Army Air Forces. However, since the question does not specify which employer to choose, we can only provide one of them as the answer. For the purpose of this response, I will select one of his known employers. Therefore, the answer to the question is {California Institute of Technology}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Irving P. Krick",
+                        "employer",
+                        "California Institute of Technology"
+                    ],
+                    [
+                        "Irving P. Krick",
+                        "employer",
+                        "United States Army Air Forces"
+                    ],
+                    [
+                        "Irving P. Krick",
+                        "occupation",
+                        "meteorologist"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "33.19",
+            "llm_call_count": 3,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Dabney Donovan [SEP] from fictional universe",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Dabney Donovan is from the DC Universe. Therefore, the answer to the question is {DC Universe}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Dabney Donovan",
+                        "from narrative universe",
+                        "DC Universe"
+                    ],
+                    [
+                        "Dabney Donovan",
+                        "creator",
+                        "Jack Kirby"
+                    ],
+                    [
+                        "Dabney Donovan",
+                        "present in work",
+                        "Superman's Pal, Jimmy Olsen"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "25.65",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Thar She Blows! [SEP] production company",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the production company for \"Thar She Blows!\" is Cinesound Productions. Therefore, the answer to the question is {Cinesound Productions}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Thar She Blows!",
+                        "production company",
+                        "Cinesound Productions"
+                    ],
+                    [
+                        "Thar She Blows!",
+                        "producer",
+                        "Ken G. Hall"
+                    ],
+                    [
+                        "Thar She Blows!",
+                        "country of origin",
+                        "Australia"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "20.43",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Bylong River [SEP] mouth of the watercourse",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the Bylong River's mouth of the watercourse is at the Goulburn River. Therefore, the answer to the question is {Goulburn River}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Bylong River",
+                        "mouth of the watercourse",
+                        "Goulburn River"
+                    ],
+                    [
+                        "Bylong River",
+                        "located in the administrative territorial entity",
+                        "New South Wales"
+                    ],
+                    [
+                        "Bylong River",
+                        "tributary",
+                        "Growee River"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Growee River",
+                        "mouth of the watercourse",
+                        "Bylong River"
+                    ],
+                    [
+                        "Goulburn River",
+                        "mouth of the watercourse",
+                        "Hunter River"
+                    ],
+                    [
+                        "New South Wales",
+                        "located in or next to body of water",
+                        "Pacific Ocean"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "110.55",
+            "llm_call_count": 8,
+            "wikidata_call_count": 46,
+            "depth": 2,
+            "errors": []
+        }
+    },
+    {
+        "question": "Kuta River [SEP] mouth of the watercourse",
+        "results": "{Kuta Beach} \n\nNote: The question seems incomplete or unclear, but based on the context provided, it appears to be asking about the mouth of the Kuta River, which flows into Kuta Beach in Bali, Indonesia.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "365.11",
+            "llm_call_count": 16,
+            "wikidata_call_count": 88,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q4022 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Kehta Hai Dil Jee Le Zara [SEP] production company",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the production company of 'Kehta Hai Dil Jee Le Zara' is {Sony Group}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Kehta Hai Dil Jee Le Zara",
+                        "production company",
+                        "Sony Group"
+                    ],
+                    [
+                        "Kehta Hai Dil Jee Le Zara",
+                        "country",
+                        "India"
+                    ],
+                    [
+                        "Kehta Hai Dil Jee Le Zara",
+                        "cast member",
+                        "Sangita Ghosh"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "15.18",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Maged N. Kamel Boulos [SEP] employer",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Maged N. Kamel Boulos has multiple employers listed. However, the question does not specify which one to choose, so we can only confirm that the information provided is sufficient to state that Maged N. Kamel Boulos is employed by at least one of the following institutions: University of Plymouth, University of the Highlands and Islands, or City, University of London. Since the question asks for one primary answer, and without further context to determine which is the most relevant, we cannot pinpoint a single institution as the definitive answer. But if we have to provide one based on the data, we can select any of them. For the sake of providing an answer, let's choose the first one mentioned: {University of Plymouth}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Maged N. Kamel Boulos",
+                        "employer",
+                        "University of Plymouth"
+                    ],
+                    [
+                        "Maged N. Kamel Boulos",
+                        "employer",
+                        "University of the Highlands and Islands"
+                    ],
+                    [
+                        "Maged N. Kamel Boulos",
+                        "employer",
+                        "City, University of London"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "40.05",
+            "llm_call_count": 3,
+            "wikidata_call_count": 14,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Stacey King [SEP] drafted by",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Stacey King was drafted by the Chicago Bulls. Therefore, the answer to the question is {Chicago Bulls}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Stacey King",
+                        "drafted by",
+                        "Chicago Bulls"
+                    ],
+                    [
+                        "Stacey King",
+                        "member of sports team",
+                        "Antalya Greater Metropolitan Municipality Sports Club"
+                    ],
+                    [
+                        "Stacey King",
+                        "member of sports team",
+                        "Asociaci\u00f3n Deportiva Atenas"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "49.04",
+            "llm_call_count": 3,
+            "wikidata_call_count": 21,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Aggie Field [SEP] occupant",
+        "results": "{Aggie}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "264.44",
+            "llm_call_count": 18,
+            "wikidata_call_count": 98,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Mackinac Bridge [SEP] crosses",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the Mackinac Bridge crosses the Straits of Mackinac. Therefore, the answer to the question is {Straits of Mackinac}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Mackinac Bridge",
+                        "crosses",
+                        "Straits of Mackinac"
+                    ],
+                    [
+                        "Mackinac Bridge",
+                        "located in the administrative territorial entity",
+                        "Michigan"
+                    ],
+                    [
+                        "Mackinac Bridge",
+                        "location",
+                        "St. Ignace"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "18.77",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Brainiac 5 [SEP] from fictional universe",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Brainiac 5 is from the DC Universe, which is a fictional universe. Therefore, the answer to the question is {DC Universe}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Brainiac 5",
+                        "from narrative universe",
+                        "DC Universe"
+                    ],
+                    [
+                        "Brainiac 5",
+                        "performer",
+                        "James Marsters"
+                    ],
+                    [
+                        "Brainiac 5",
+                        "performer",
+                        "Jesse Rath"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "DC Universe",
+                        "fictional universe described in",
+                        "Creature Commandos"
+                    ],
+                    [
+                        "Jesse Rath",
+                        "instance of",
+                        "human"
+                    ],
+                    [
+                        "DC Universe",
+                        "founded by",
+                        "DC Comics"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "130.49",
+            "llm_call_count": 9,
+            "wikidata_call_count": 43,
+            "depth": 2,
+            "errors": []
+        }
+    },
+    {
+        "question": "Carol Myers-Scotton [SEP] employer",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Carol Myers-Scotton's employer is the University of South Carolina. Therefore, the answer to the question is {University of South Carolina}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Carol Myers-Scotton",
+                        "employer",
+                        "University of South Carolina"
+                    ],
+                    [
+                        "Carol Myers-Scotton",
+                        "occupation",
+                        "linguist"
+                    ],
+                    [
+                        "Carol Myers-Scotton",
+                        "educated at",
+                        "Grinnell College"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "37.57",
+            "llm_call_count": 3,
+            "wikidata_call_count": 12,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Teresa de Lauretis [SEP] employer",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Teresa de Lauretis has been employed by multiple universities, but the question does not specify which one. However, any of the provided options would be correct as an answer to where she was employed. Since we need to provide one primary answer, we can choose one of them. For the purpose of this response, I'll select the first one listed: {University of California, Santa Cruz}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Teresa de Lauretis",
+                        "employer",
+                        "University of California, Santa Cruz"
+                    ],
+                    [
+                        "Teresa de Lauretis",
+                        "employer",
+                        "University of Colorado"
+                    ],
+                    [
+                        "Teresa de Lauretis",
+                        "employer",
+                        "University of Wisconsin\u2013Madison"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "49.21",
+            "llm_call_count": 4,
+            "wikidata_call_count": 15,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Shooting High [SEP] production company",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the production company for \"Shooting High\" is {20th Century Studios}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Shooting High",
+                        "production company",
+                        "20th Century Studios"
+                    ],
+                    [
+                        "Shooting High",
+                        "director",
+                        "Alfred Edward Green"
+                    ],
+                    [
+                        "Shooting High",
+                        "producer",
+                        "John Stone"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "15.07",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Donauw\u00f6rth station [SEP] date of official opening",
+        "results": "{1840} \n\nNote: The specific date isn't provided in the question or widely known without research, but typically when such a query is made about infrastructure openings, a year is often sufficient. Donauw\u00f6rth railway station opened in 1840 as part of the Munich-Ulm railway line extension. If a more precise date is needed, further investigation would be required.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "143.78",
+            "llm_call_count": 12,
+            "wikidata_call_count": 51,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "James Aspnes [SEP] employer",
+        "results": "{SEP}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "269.43",
+            "llm_call_count": 21,
+            "wikidata_call_count": 111,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Iriri River [SEP] mouth of the watercourse",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the Iriri River's mouth is at the Xingu River. Therefore, the answer to the question is {Xingu River}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Iriri River",
+                        "mouth of the watercourse",
+                        "Xingu River"
+                    ],
+                    [
+                        "Iriri River",
+                        "country",
+                        "Brazil"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "16.99",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Northern Railway Bridge [SEP] crosses",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the Northern Railway Bridge crosses the Danube. Therefore, the answer to the question is {Danube}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Northern Railway Bridge",
+                        "crosses",
+                        "Danube"
+                    ],
+                    [
+                        "Northern Railway Bridge",
+                        "located in the administrative territorial entity",
+                        "Vienna"
+                    ],
+                    [
+                        "Northern Railway Bridge",
+                        "carries",
+                        "North railway line"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "18.84",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Essence Carson [SEP] drafted by",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Essence Carson was drafted by the New York Liberty. Therefore, the answer to the question is {New York Liberty}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Essence Carson",
+                        "drafted by",
+                        "New York Liberty"
+                    ],
+                    [
+                        "Essence Carson",
+                        "member of sports team",
+                        "New York Liberty"
+                    ],
+                    [
+                        "Essence Carson",
+                        "member of sports team",
+                        "Rutgers Scarlet Knights women's basketball"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "36.58",
+            "llm_call_count": 3,
+            "wikidata_call_count": 12,
+            "depth": 1,
+            "errors": []
+        }
+    }
+]

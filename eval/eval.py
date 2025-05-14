@@ -41,7 +41,7 @@ if __name__ == '__main__':
                     num_error+=1
         else:
             response = results
-            if args.constraints_refuse and check_string(response):
+            if args.constraints_refuse:
                 continue
             if exact_match(response, answers):
                 num_right+=1

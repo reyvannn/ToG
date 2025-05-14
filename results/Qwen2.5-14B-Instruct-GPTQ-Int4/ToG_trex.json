@@ -1,0 +1,2691 @@
+[
+    {
+        "question": "Rabbi III [SEP] performer",
+        "results": "{Rabbi III} is not clearly associated with any specific performer without additional context. However, if we consider \"Rabbi III\" as a reference to a musical act or artist, no widely recognized performer goes by this exact name. If you meant to ask about a specific performer or if there's more context to provide, please clarify. As per the given format and information, the answer based on the question provided would be {N/A}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "205.92",
+            "llm_call_count": 15,
+            "wikidata_call_count": 67,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Glipostena nigricans [SEP] taxon rank",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Glipostena nigricans has a taxon rank of species. Therefore, the answer to the question is {species}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Glipostena nigricans",
+                        "taxon rank",
+                        "species"
+                    ],
+                    [
+                        "Glipostena nigricans",
+                        "parent taxon",
+                        "Glipostena"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "27.48",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "S\u00e3o Sebasti\u00e3o da Bela Vista [SEP] instance of",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, S\u00e3o Sebasti\u00e3o da Bela Vista is an instance of a municipality of Brazil. Therefore, the answer to the question is {municipality of Brazil}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "S\u00e3o Sebasti\u00e3o da Bela Vista",
+                        "instance of",
+                        "municipality of Brazil"
+                    ],
+                    [
+                        "S\u00e3o Sebasti\u00e3o da Bela Vista",
+                        "located in the administrative territorial entity",
+                        "Minas Gerais"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "14.77",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Christian Kramer [SEP] occupation",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Christian Kramer has multiple occupations. However, the question asks for his occupation, so we can provide one of them as the answer. Since both 'composer' and 'conductor' are valid answers, we can choose one. For the purpose of this response, I'll use the first one provided: {composer}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Christian Kramer",
+                        "occupation",
+                        "composer"
+                    ],
+                    [
+                        "Christian Kramer",
+                        "occupation",
+                        "conductor"
+                    ],
+                    [
+                        "Christian Kramer",
+                        "position held",
+                        "Master of the King's Music"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "27.34",
+            "llm_call_count": 3,
+            "wikidata_call_count": 12,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Snapshots [SEP] performer",
+        "results": "{Alicia Keys} \n\nNote: The term \"Snapshots [SEP]\" seems vague without additional context. However, given the format and previous examples, it appears the question is asking about a performer associated with \"Snapshots\" possibly in relation to an album or performance. Alicia Keys performed a song titled \"Snapshot\" which could be inferred from the question. If this is not the correct interpretation, more context would be needed to provide an accurate answer.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "221.27",
+            "llm_call_count": 14,
+            "wikidata_call_count": 79,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Charros, gauchos y manolas [SEP] director",
+        "results": "{Yes}. Based on the given knowledge triplet, the director of \"Charros, gauchos y manolas\" is {Xavier Cugat}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Charros, gauchos y manolas",
+                        "director",
+                        "Xavier Cugat"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "25.96",
+            "llm_call_count": 2,
+            "wikidata_call_count": 7,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Am\u00e9d\u00e9e Ozenfant [SEP] languages spoken, written or signed",
+        "results": "{French}\nBased on the name Am\u00e9d\u00e9e Ozenfant and general knowledge, he likely spoke French as it is his origin language, being a French artist known for his work in art theory and painting. However, the exact languages spoken, written, or signed by Am\u00e9d\u00e9e Ozenfant are not directly provided in the given knowledge triplets. Given the context and common knowledge, {French} is the most probable answer.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "23.59",
+            "llm_call_count": 2,
+            "wikidata_call_count": 5,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Tongod District [SEP] country",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Tongod District is in Peru. Therefore, the answer to the question is {Peru}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Tongod District",
+                        "country",
+                        "Peru"
+                    ],
+                    [
+                        "Tongod District",
+                        "located in the administrative territorial entity",
+                        "San Miguel Province"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "24.65",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Smallingerland [SEP] located in the administrative territorial entity",
+        "results": "{Netherlands}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "265.89",
+            "llm_call_count": 14,
+            "wikidata_call_count": 79,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q55 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Chvojnica (river) [SEP] instance of",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Chvojnica is a river in Slovakia. The question can be answered directly from the provided information. Therefore, the answer to the question \"Chvojnica (river) [SEP] instance of\" is {river}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Chvojnica (river)",
+                        "instance of",
+                        "river"
+                    ],
+                    [
+                        "Chvojnica (river)",
+                        "country",
+                        "Slovakia"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "25.65",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Continuing Education School District 50 [SEP] located in the administrative territorial entity",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Continuing Education School District 50 is located in the administrative territorial entity Sandspit. Therefore, the answer to the question is {Sandspit}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Continuing Education School District 50",
+                        "located in the administrative territorial entity",
+                        "Sandspit"
+                    ],
+                    [
+                        "Continuing Education School District 50",
+                        "country",
+                        "Canada"
+                    ],
+                    [
+                        "Continuing Education School District 50",
+                        "instance of",
+                        "high school"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "23.03",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Kumteng [SEP] located in the administrative territorial entity",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Kumteng is located in Hkamti District. Therefore, the answer to the question is {Hkamti District}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Kumteng",
+                        "located in the administrative territorial entity",
+                        "Hkamti District"
+                    ],
+                    [
+                        "Kumteng",
+                        "country",
+                        "Myanmar"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "19.10",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Lovey Mary [SEP] genre",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Lovey Mary has multiple genres listed: comedy drama and silent film. Since the question does not specify which genre to choose, we can provide one of them as the primary answer. Given that \"silent film\" is a defining characteristic that distinguishes it from modern films, the answer to the question regarding the genre of Lovey Mary is {silent film}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Lovey Mary",
+                        "genre",
+                        "comedy drama"
+                    ],
+                    [
+                        "Lovey Mary",
+                        "director",
+                        "King Baggot"
+                    ],
+                    [
+                        "Lovey Mary",
+                        "genre",
+                        "silent film"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "46.15",
+            "llm_call_count": 3,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Nan-sous-Thil [SEP] instance of",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Nan-sous-Thil is an instance of a commune of France. Therefore, the answer to the question is {commune of France}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Nan-sous-Thil",
+                        "instance of",
+                        "commune of France"
+                    ],
+                    [
+                        "Nan-sous-Thil",
+                        "located in the administrative territorial entity",
+                        "C\u00f4te-d\u2019Or"
+                    ],
+                    [
+                        "Nan-sous-Thil",
+                        "country",
+                        "France"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "34.79",
+            "llm_call_count": 3,
+            "wikidata_call_count": 13,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "La Tour-de-Peilz [SEP] country",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, La Tour-de-Peilz is in Switzerland. Therefore, the answer to the question is {Switzerland}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "La Tour-de-Peilz",
+                        "country",
+                        "Switzerland"
+                    ],
+                    [
+                        "La Tour-de-Peilz",
+                        "located in the administrative territorial entity",
+                        "Riviera-Pays-d'Enhaut District"
+                    ],
+                    [
+                        "La Tour-de-Peilz",
+                        "located in the administrative territorial entity",
+                        "canton Vaud"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "45.65",
+            "llm_call_count": 4,
+            "wikidata_call_count": 13,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Maala [SEP] country",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Maala is in the Republic of the Congo. Therefore, the answer to the question is {Republic of the Congo}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Maala",
+                        "country",
+                        "Republic of the Congo"
+                    ],
+                    [
+                        "Maala",
+                        "located in the administrative territorial entity",
+                        "Niari Department"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "17.85",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Lovoni [SEP] country",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Lovoni is located in the country of Fiji. Therefore, the answer to the question is {Fiji}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Lovoni",
+                        "country",
+                        "Fiji"
+                    ],
+                    [
+                        "Lovoni",
+                        "located in the administrative territorial entity",
+                        "Fiji"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "21.98",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "John Baker [SEP] instrument",
+        "results": "First, identify the context of \"John Baker [SEP]\" which refers to John Baker, a British jazz musician known for playing the saxophone. The abbreviation [SEP] might refer to his style or specific recordings, but it doesn't change his primary instrument.\nThe answer is {saxophone}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "141.58",
+            "llm_call_count": 10,
+            "wikidata_call_count": 38,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Craig Goldy [SEP] country of citizenship",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Craig Goldy's country of citizenship is the United States. Therefore, the answer to the question is {United States}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Craig Goldy",
+                        "country of citizenship",
+                        "United States"
+                    ],
+                    [
+                        "Craig Goldy",
+                        "given name",
+                        "Craig"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "18.54",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Midnight Special [SEP] country of origin",
+        "results": "{United States}\nBased on common knowledge, \"Midnight Special\" is a term and concept originating from the United States, often associated with train rides and radio broadcasts. However, since no specific triplet directly states this, the answer is inferred from general knowledge.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "25.18",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Sharnbrook railway station [SEP] instance of",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Sharnbrook railway station is an instance of a railway station. Therefore, the answer to the question is {railway station}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Sharnbrook railway station",
+                        "instance of",
+                        "railway station"
+                    ],
+                    [
+                        "Sharnbrook railway station",
+                        "located on linear feature",
+                        "St Pancras to Chesterfield Line, Bedford to Wellingborough"
+                    ],
+                    [
+                        "Sharnbrook railway station",
+                        "named after",
+                        "Sharnbrook"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "18.55",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Chicago Sting [SEP] sport",
+        "results": "{Soccer}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "293.66",
+            "llm_call_count": 13,
+            "wikidata_call_count": 55,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q2736 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q2736 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Bernard Lord [SEP] member of political party",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Bernard Lord is a member of the Progressive Conservative Party of New Brunswick. Therefore, the answer to the question is {Progressive Conservative Party of New Brunswick}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Bernard Lord",
+                        "member of political party",
+                        "Progressive Conservative Party of New Brunswick"
+                    ],
+                    [
+                        "Bernard Lord",
+                        "position held",
+                        "Premier of New Brunswick"
+                    ],
+                    [
+                        "Bernard Lord",
+                        "position held",
+                        "member of the Legislative Assembly of New Brunswick"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "25.66",
+            "llm_call_count": 3,
+            "wikidata_call_count": 12,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Give Yourself Away [SEP] instance of",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, \"Give Yourself Away\" is an instance of an album. Therefore, the answer to the question is {\"album\"}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Give Yourself Away",
+                        "instance of",
+                        "album"
+                    ],
+                    [
+                        "Give Yourself Away",
+                        "performer",
+                        "Robbie Seay Band"
+                    ],
+                    [
+                        "Give Yourself Away",
+                        "genre",
+                        "contemporary Christian music"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "29.48",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Piezasteria helenae [SEP] taxon rank",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Piezasteria helenae has a taxon rank of species. Therefore, the answer to the implied question about the taxon rank of Piezasteria helenae is {species}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Piezasteria helenae",
+                        "taxon rank",
+                        "species"
+                    ],
+                    [
+                        "Piezasteria helenae",
+                        "parent taxon",
+                        "Piezasteria"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "26.81",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Skip Barber Racing School [SEP] country",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Skip Barber Racing School is in the United States. Therefore, the answer to the question is {United States}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Skip Barber Racing School",
+                        "country",
+                        "United States"
+                    ],
+                    [
+                        "Skip Barber Racing School",
+                        "headquarters location",
+                        "Braselton"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "23.96",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Lukas P\u00e4gelow [SEP] sport",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Lukas P\u00e4gelow's sport is association football. Therefore, the answer to the question is {association football}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Lukas P\u00e4gelow",
+                        "sport",
+                        "association football"
+                    ],
+                    [
+                        "Lukas P\u00e4gelow",
+                        "position played on team / speciality",
+                        "centre-back"
+                    ],
+                    [
+                        "Lukas P\u00e4gelow",
+                        "member of sports team",
+                        "F.C. Hansa Rostock"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "34.25",
+            "llm_call_count": 3,
+            "wikidata_call_count": 13,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Elmore Philpott [SEP] country of citizenship",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Elmore Philpott's country of citizenship is {Canada}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Elmore Philpott",
+                        "country of citizenship",
+                        "Canada"
+                    ],
+                    [
+                        "Elmore Philpott",
+                        "occupation",
+                        "journalist"
+                    ],
+                    [
+                        "Elmore Philpott",
+                        "occupation",
+                        "politician"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "25.61",
+            "llm_call_count": 3,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Hoard, West Virginia [SEP] located in the administrative territorial entity",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Hoard is located in Monongalia County, which is in West Virginia. Therefore, the answer to the question is {West Virginia}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Hoard",
+                        "located in the administrative territorial entity",
+                        "Monongalia County"
+                    ],
+                    [
+                        "Hoard",
+                        "country",
+                        "United States"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Monongalia County",
+                        "located in the administrative territorial entity",
+                        "West Virginia"
+                    ],
+                    [
+                        "United States",
+                        "contains the administrative territorial entity",
+                        "West Virginia"
+                    ],
+                    [
+                        "Monongalia County",
+                        "country",
+                        "United States"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "143.04",
+            "llm_call_count": 6,
+            "wikidata_call_count": 31,
+            "depth": 2,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q30 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Luz Valdez [SEP] place of birth",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Luz Valdez's place of birth is the Philippines. Therefore, the answer to the question is {Philippines}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Luz Valdez",
+                        "place of birth",
+                        "Philippines"
+                    ],
+                    [
+                        "Luz Valdez",
+                        "country of citizenship",
+                        "Philippines"
+                    ],
+                    [
+                        "Luz Valdez",
+                        "instance of",
+                        "human"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "24.08",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Leamington Lift Bridge [SEP] crosses",
+        "results": "{Leam River}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "219.06",
+            "llm_call_count": 14,
+            "wikidata_call_count": 72,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Edge of the Cedars State Park Museum [SEP] country",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Edge of the Cedars State Park Museum is in the United States. Therefore, the answer to the question is {United States}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Edge of the Cedars State Park Museum",
+                        "country",
+                        "United States"
+                    ],
+                    [
+                        "Edge of the Cedars State Park Museum",
+                        "located in the administrative territorial entity",
+                        "Utah"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "19.99",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Synalamis [SEP] taxon rank",
+        "results": "{synonym}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "284.41",
+            "llm_call_count": 16,
+            "wikidata_call_count": 71,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Johnny Mack Brown [SEP] country of citizenship",
+        "results": "{Yes}. Based on the given knowledge triplet, Johnny Mack Brown's country of citizenship is {United States}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Johnny Mack Brown",
+                        "country of citizenship",
+                        "United States"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "20.00",
+            "llm_call_count": 2,
+            "wikidata_call_count": 5,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Andy Pafko [SEP] member of sports team",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Andy Pafko has been a member of multiple sports teams. However, the question does not specify which team to choose. Since we need to provide only one primary answer, and without further context to determine which team is being referred to, we can't definitively state just one. But if we have to pick one based on the information provided and common knowledge, Andy Pafko is most famously known as a member of the Chicago Cubs. So, the answer would be {Chicago Cubs}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Andy Pafko",
+                        "member of sports team",
+                        "Atlanta Braves"
+                    ],
+                    [
+                        "Andy Pafko",
+                        "member of sports team",
+                        "Chicago Cubs"
+                    ],
+                    [
+                        "Andy Pafko",
+                        "member of sports team",
+                        "Macon Peaches"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "43.28",
+            "llm_call_count": 3,
+            "wikidata_call_count": 12,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Ted Hemsley [SEP] member of sports team",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Ted Hemsley has been a member of multiple sports teams. Since the question does not specify which team, any of the provided teams would be correct. However, since we need to provide one primary answer, we can choose one of them. For the purpose of this response, I'll use the first one listed: {Doncaster Rovers F.C.}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Ted Hemsley",
+                        "member of sports team",
+                        "Doncaster Rovers F.C."
+                    ],
+                    [
+                        "Ted Hemsley",
+                        "member of sports team",
+                        "Sheffield United F.C."
+                    ],
+                    [
+                        "Ted Hemsley",
+                        "member of sports team",
+                        "Shrewsbury Town F.C."
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "44.22",
+            "llm_call_count": 4,
+            "wikidata_call_count": 14,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Double or Nothing [SEP] country of origin",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Dennis Foon, the author of \"Double or Nothing,\" has United States as his country of citizenship. Therefore, the answer to the question is {\"United States\"}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Double or Nothing",
+                        "instance of",
+                        "Wikimedia disambiguation page"
+                    ],
+                    [
+                        "Double or Nothing",
+                        "different from",
+                        "Double or Nothing"
+                    ],
+                    [
+                        "Double or Nothing",
+                        "different from",
+                        "Double or nothing"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Double or Nothing",
+                        "author",
+                        "Dennis Foon"
+                    ],
+                    [
+                        "Double or Nothing",
+                        "genre",
+                        "fiction"
+                    ],
+                    [
+                        "Double or nothing",
+                        "sport",
+                        "poker"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Dennis Foon",
+                        "country of citizenship",
+                        "United States"
+                    ],
+                    [
+                        "poker",
+                        "genre",
+                        "The Professor, the Banker, and the Suicide King"
+                    ],
+                    [
+                        "poker",
+                        "described by source",
+                        "Encyclop\u00e6dia Britannica 11th edition"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "259.09",
+            "llm_call_count": 13,
+            "wikidata_call_count": 65,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q4167410 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Aberdeen Dad Vail Regatta [SEP] country",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the Aberdeen Dad Vail Regatta is in the United States. Therefore, the answer to the question is {United States}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Aberdeen Dad Vail Regatta",
+                        "country",
+                        "United States"
+                    ],
+                    [
+                        "Aberdeen Dad Vail Regatta",
+                        "subclass of",
+                        "rowing regatta"
+                    ],
+                    [
+                        "Aberdeen Dad Vail Regatta",
+                        "sport",
+                        "rowing"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "22.50",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Frantsishak Alyakhnovich [SEP] place of birth",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Frantsishak Alyakhnovich's place of birth is {Vilnius}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Frantsishak Alyakhnovich",
+                        "place of birth",
+                        "Vilnius"
+                    ],
+                    [
+                        "Frantsishak Alyakhnovich",
+                        "given name",
+                        "Frantsishak"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "25.50",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Bo\u0161tjan \u017dnuderl [SEP] sport",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Bo\u0161tjan \u017dnuderl plays association football. Therefore, the answer to the question regarding his sport is {association football}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Bo\u0161tjan \u017dnuderl",
+                        "sport",
+                        "association football"
+                    ],
+                    [
+                        "Bo\u0161tjan \u017dnuderl",
+                        "position played on team / speciality",
+                        "midfielder"
+                    ],
+                    [
+                        "Bo\u0161tjan \u017dnuderl",
+                        "member of sports team",
+                        "NK Celje"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "44.48",
+            "llm_call_count": 3,
+            "wikidata_call_count": 13,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Rainsars [SEP] instance of",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Rainsars is an instance of a commune of France. Therefore, the answer to the question is {commune of France}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Rainsars",
+                        "instance of",
+                        "commune of France"
+                    ],
+                    [
+                        "Rainsars",
+                        "country",
+                        "France"
+                    ],
+                    [
+                        "Rainsars",
+                        "located in the administrative territorial entity",
+                        "Nord"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "41.47",
+            "llm_call_count": 3,
+            "wikidata_call_count": 13,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Emscher [SEP] instance of",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the question \"Emscher [SEP] instance of\" can be answered directly from the provided information. The triplet ('Emscher', 'instance of', 'river') clearly states that Emscher is an instance of a river. Therefore, the answer to the question is {river}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Emscher",
+                        "instance of",
+                        "river"
+                    ],
+                    [
+                        "Emscher",
+                        "drainage basin",
+                        "Rhine basin"
+                    ],
+                    [
+                        "Emscher",
+                        "named after",
+                        "Emscher Lippe Energie"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "49.30",
+            "llm_call_count": 3,
+            "wikidata_call_count": 18,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Fabi\u00e1n Moyano [SEP] member of sports team",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Fabi\u00e1n Moyano is a member of the sports team Boca Juniors. Therefore, the answer to the question is {Boca Juniors}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Fabi\u00e1n Moyano",
+                        "sport",
+                        "association football"
+                    ],
+                    [
+                        "Fabi\u00e1n Moyano",
+                        "position played on team / speciality",
+                        "goalkeeper"
+                    ],
+                    [
+                        "Fabi\u00e1n Moyano",
+                        "member of sports team",
+                        "Boca Juniors"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "40.97",
+            "llm_call_count": 3,
+            "wikidata_call_count": 16,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Cagliari Calcio [SEP] country",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Cagliari Calcio is from Italy. Therefore, the answer to the question is {Italy}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Cagliari Calcio",
+                        "country",
+                        "Italy"
+                    ],
+                    [
+                        "Cagliari Calcio",
+                        "league or competition",
+                        "Serie A"
+                    ],
+                    [
+                        "Cagliari Calcio",
+                        "headquarters location",
+                        "CRAI Sport Center"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "731.62",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Nicolas de Bralion [SEP] languages spoken, written or signed",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Nicolas de Bralion speaks, writes, or signs French. Therefore, the answer to the question regarding the language spoken, written, or signed by Nicolas de Bralion is {French}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Nicolas de Bralion",
+                        "languages spoken, written or signed",
+                        "French"
+                    ],
+                    [
+                        "Nicolas de Bralion",
+                        "instance of",
+                        "human"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "27.67",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Alfred Janson [SEP] country of citizenship",
+        "results": "{Yes}. Based on the given knowledge triplet, Alfred Janson's country of citizenship is {Norway}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Alfred Janson",
+                        "country of citizenship",
+                        "Norway"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "18.60",
+            "llm_call_count": 2,
+            "wikidata_call_count": 7,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Borat [SEP] screenwriter",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Borat has multiple screenwriters including Dan Mazer, Peter Baynham, and Sacha Baron Cohen. Since the question does not specify which screenwriter to choose, we can provide any of them as the answer. For the purpose of this response, I'll use the first one listed: {Dan Mazer}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Borat",
+                        "screenwriter",
+                        "Dan Mazer"
+                    ],
+                    [
+                        "Borat",
+                        "screenwriter",
+                        "Peter Baynham"
+                    ],
+                    [
+                        "Borat",
+                        "screenwriter",
+                        "Sacha Baron Cohen"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "40.64",
+            "llm_call_count": 3,
+            "wikidata_call_count": 12,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Ohio Vortex [SEP] sport",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Ohio Vortex plays association football. Therefore, the answer to the question \"What is the sport of Ohio Vortex?\" is {association football}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Ohio Vortex",
+                        "sport",
+                        "association football"
+                    ],
+                    [
+                        "Ohio Vortex",
+                        "league or competition",
+                        "Major Arena Soccer League"
+                    ],
+                    [
+                        "Ohio Vortex",
+                        "member of sports team",
+                        "Allen Eller"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "28.06",
+            "llm_call_count": 3,
+            "wikidata_call_count": 13,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Tillsonburg [SEP] shares border with",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Tillsonburg shares a border with Norfolk County. Therefore, the answer to the question is {Norfolk County}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Tillsonburg",
+                        "shares border with",
+                        "Norfolk County"
+                    ],
+                    [
+                        "Tillsonburg",
+                        "contains the administrative territorial entity",
+                        "Oxford County"
+                    ],
+                    [
+                        "Tillsonburg",
+                        "located in the administrative territorial entity",
+                        "Oxford County"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Oxford County",
+                        "shares border with",
+                        "Perth County"
+                    ],
+                    [
+                        "Norfolk County",
+                        "shares border with",
+                        "Haldimand County"
+                    ],
+                    [
+                        "Norfolk County",
+                        "shares border with",
+                        "Norwich"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "84.99",
+            "llm_call_count": 7,
+            "wikidata_call_count": 34,
+            "depth": 2,
+            "errors": []
+        }
+    },
+    {
+        "question": "Judy Lewis [SEP] country of citizenship",
+        "results": "{Yes}. Based on the given knowledge triplet, Judy Lewis's country of citizenship is {United States}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Judy Lewis",
+                        "country of citizenship",
+                        "United States"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "19.05",
+            "llm_call_count": 2,
+            "wikidata_call_count": 7,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Stella Maris [SEP] screenwriter",
+        "results": "{unknown}\nBased on the given knowledge triplets, there is no information provided about the screenwriter of \"Stella Maris\". Therefore, the answer is {unknown}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "17.21",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Mohall [SEP] located in the administrative territorial entity",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Mohall is located in Renville County. Therefore, the answer to the question regarding the administrative territorial entity where Mohall is located is {Renville County}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Mohall",
+                        "located in the administrative territorial entity",
+                        "Renville County"
+                    ],
+                    [
+                        "Mohall",
+                        "country",
+                        "United States"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "28.64",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Phil Nimmons [SEP] occupation",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Phil Nimmons had multiple occupations including composer, conductor, and jazz musician. Since the question asks for his occupation without specifying which one, we can provide any of these as the primary answer. For simplicity, let's choose the first one listed: {composer}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Phil Nimmons",
+                        "occupation",
+                        "composer"
+                    ],
+                    [
+                        "Phil Nimmons",
+                        "occupation",
+                        "conductor"
+                    ],
+                    [
+                        "Phil Nimmons",
+                        "occupation",
+                        "jazz musician"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "41.87",
+            "llm_call_count": 4,
+            "wikidata_call_count": 15,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Gazey [SEP] located on terrain feature",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Gazey is located on the terrain feature of the Pirin mountain range. Therefore, the answer to the question is {Pirin}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Gazey",
+                        "mountain range",
+                        "Pirin"
+                    ],
+                    [
+                        "Gazey",
+                        "located in the administrative territorial entity",
+                        "Blagoevgrad"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "14.81",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Leo Wright [SEP] place of death",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Leo Wright's place of death is {Vienna}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Leo Wright",
+                        "place of death",
+                        "Vienna"
+                    ],
+                    [
+                        "Leo Wright",
+                        "place of birth",
+                        "Wichita Falls"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "27.37",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Iiro Pakarinen [SEP] country of citizenship",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Iiro Pakarinen's country of citizenship is Finland. Therefore, the answer to the question is {Finland}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Iiro Pakarinen",
+                        "country of citizenship",
+                        "Finland"
+                    ],
+                    [
+                        "Iiro Pakarinen",
+                        "place of birth",
+                        "Suonenjoki"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "24.36",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Big Dick Lake [SEP] located in the administrative territorial entity",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Big Dick Lake is located in the administrative territorial entity of Itasca County. Therefore, the answer to the question is {Itasca County}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Big Dick Lake",
+                        "located in the administrative territorial entity",
+                        "Itasca County"
+                    ],
+                    [
+                        "Big Dick Lake",
+                        "country",
+                        "United States"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "20.93",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Uripao [SEP] parent taxon",
+        "results": "{SEP}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "236.76",
+            "llm_call_count": 12,
+            "wikidata_call_count": 55,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Camille Chevillard [SEP] employer",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Camille Chevillard's employer is the Conservatoire de Paris. Therefore, the answer to the question is {Conservatoire de Paris}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Camille Chevillard",
+                        "employer",
+                        "Conservatoire de Paris"
+                    ],
+                    [
+                        "Camille Chevillard",
+                        "sex or gender",
+                        "male"
+                    ],
+                    [
+                        "Camille Chevillard",
+                        "country of citizenship",
+                        "France"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "30.43",
+            "llm_call_count": 3,
+            "wikidata_call_count": 12,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Sim\u00f3n Trinidad [SEP] country of citizenship",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Sim\u00f3n Trinidad's country of citizenship is {Colombia}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Sim\u00f3n Trinidad",
+                        "country of citizenship",
+                        "Colombia"
+                    ],
+                    [
+                        "Sim\u00f3n Trinidad",
+                        "sex or gender",
+                        "male"
+                    ],
+                    [
+                        "Sim\u00f3n Trinidad",
+                        "place of birth",
+                        "Valledupar"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "17.80",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Theretairus [SEP] parent taxon",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Theretairus' parent taxon is Sphenodontia. Therefore, the answer to the question is {Sphenodontia}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Theretairus",
+                        "parent taxon",
+                        "Sphenodontia"
+                    ],
+                    [
+                        "Theretairus",
+                        "taxon rank",
+                        "genus"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "16.80",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Resident Evil [SEP] country of origin",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Resident Evil originated from Japan. Therefore, the answer to the question is {Japan}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Resident Evil",
+                        "country",
+                        "Japan"
+                    ],
+                    [
+                        "Resident Evil",
+                        "country of origin",
+                        "Japan"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "18.43",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Redwood City Ruckus [SEP] sport",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Redwood City Ruckus plays association football. Therefore, the answer to the question regarding the sport played by Redwood City Ruckus is {association football}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Redwood City Ruckus",
+                        "sport",
+                        "association football"
+                    ],
+                    [
+                        "Redwood City Ruckus",
+                        "league or competition",
+                        "National Premier Soccer League"
+                    ],
+                    [
+                        "Redwood City Ruckus",
+                        "instance of",
+                        "association football club"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "19.98",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Yevgeni Korotayev [SEP] sport",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Yevgeni Korotayev's sport is association football. Therefore, the answer to the question is {association football}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Yevgeni Korotayev",
+                        "sport",
+                        "association football"
+                    ],
+                    [
+                        "Yevgeni Korotayev",
+                        "position played on team / speciality",
+                        "forward"
+                    ],
+                    [
+                        "Yevgeni Korotayev",
+                        "member of sports team",
+                        "FC Akademiya Tolyatti"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "41.28",
+            "llm_call_count": 3,
+            "wikidata_call_count": 18,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Charles IX of Sweden [SEP] child",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Charles IX of Sweden had a child named Carl Gyllenhielm. Therefore, the answer to the question regarding if Charles IX of Sweden had children is {Carl Gyllenhielm}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Charles IX of Sweden",
+                        "mother",
+                        "Margaret Leijonhufvud"
+                    ],
+                    [
+                        "Charles IX of Sweden",
+                        "father",
+                        "Gustav I of Sweden"
+                    ],
+                    [
+                        "Charles IX of Sweden",
+                        "child",
+                        "Carl Gyllenhielm"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "36.37",
+            "llm_call_count": 3,
+            "wikidata_call_count": 17,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Niono [SEP] country",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Niono is in the country of Mali. Therefore, the answer to the question is {Mali}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Niono",
+                        "country",
+                        "Mali"
+                    ],
+                    [
+                        "Niono",
+                        "located in the administrative territorial entity",
+                        "S\u00e9gou Region"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "28.85",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Brachyphylla [SEP] taxon rank",
+        "results": "{species}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "218.96",
+            "llm_call_count": 14,
+            "wikidata_call_count": 62,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Carl Friedrich Gauss [SEP] field of work",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Carl Friedrich Gauss worked in multiple fields including algebra, astronomy, and differential geometry. Since the question asks for his field of work, and all provided options are correct, we can provide any of them as a representative answer. For the purpose of this response, I'll use one of them: {algebra}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Carl Friedrich Gauss",
+                        "field of work",
+                        "algebra"
+                    ],
+                    [
+                        "Carl Friedrich Gauss",
+                        "field of work",
+                        "astronomy"
+                    ],
+                    [
+                        "Carl Friedrich Gauss",
+                        "field of work",
+                        "differential geometry"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "49.81",
+            "llm_call_count": 3,
+            "wikidata_call_count": 20,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Tata Institute of Fundamental Research [SEP] located in the administrative territorial entity",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Tata Institute of Fundamental Research is located in the administrative territorial entity of Mumbai. Therefore, the answer to the question is {Mumbai}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Tata Institute of Fundamental Research",
+                        "located in the administrative territorial entity",
+                        "Mumbai"
+                    ],
+                    [
+                        "Tata Institute of Fundamental Research",
+                        "country",
+                        "India"
+                    ],
+                    [
+                        "Tata Institute of Fundamental Research",
+                        "operator",
+                        "Ooty Radio Telescope"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "30.48",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Webster Lewis [SEP] country of citizenship",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Webster Lewis's country of citizenship is {United States}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Webster Lewis",
+                        "country of citizenship",
+                        "United States"
+                    ],
+                    [
+                        "Webster Lewis",
+                        "given name",
+                        "Webster"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "23.41",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Bomberai Peninsula [SEP] country",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the Bomberai Peninsula is in Indonesia. Therefore, the answer to the question is {Indonesia}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Bomberai Peninsula",
+                        "country",
+                        "Indonesia"
+                    ],
+                    [
+                        "Bomberai Peninsula",
+                        "located in the administrative territorial entity",
+                        "West Papua"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "40.39",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Bapatla [SEP] located in the administrative territorial entity",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Bapatla is located in the administrative territorial entity of Bapatla mandal. Therefore, the answer to the question is {Bapatla mandal}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Bapatla",
+                        "located in the administrative territorial entity",
+                        "Bapatla mandal"
+                    ],
+                    [
+                        "Bapatla",
+                        "country",
+                        "India"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "17.24",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Bertil Elmstedt [SEP] country of citizenship",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Bertil Elmstedt's country of citizenship is Sweden. Therefore, the answer to the question is {Sweden}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Bertil Elmstedt",
+                        "country of citizenship",
+                        "Sweden"
+                    ],
+                    [
+                        "Bertil Elmstedt",
+                        "place of birth",
+                        "Sweden"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "18.24",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Charles Manson [SEP] occupation",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Charles Manson had multiple occupations including criminal, cult leader, and musician. Since the question does not specify which occupation to choose, any of these would be correct based on the information provided. However, if we need to provide just one primary answer, we can consider his most notorious role, which is {criminal}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Charles Manson",
+                        "occupation",
+                        "criminal"
+                    ],
+                    [
+                        "Charles Manson",
+                        "occupation",
+                        "cult leader"
+                    ],
+                    [
+                        "Charles Manson",
+                        "occupation",
+                        "musician"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "37.58",
+            "llm_call_count": 3,
+            "wikidata_call_count": 12,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Esgl\u00e9sia de Sant Rom\u00e0 dels Vilars [SEP] located in the administrative territorial entity",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Esgl\u00e9sia de Sant Rom\u00e0 dels Vilars is located in the administrative territorial entity of Escaldes-Engordany. Therefore, the answer to the question is {Escaldes-Engordany}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Esgl\u00e9sia de Sant Rom\u00e0 dels Vilars",
+                        "located in the administrative territorial entity",
+                        "Escaldes-Engordany"
+                    ],
+                    [
+                        "Esgl\u00e9sia de Sant Rom\u00e0 dels Vilars",
+                        "country",
+                        "Andorra"
+                    ],
+                    [
+                        "Esgl\u00e9sia de Sant Rom\u00e0 dels Vilars",
+                        "instance of",
+                        "Catholic church building"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "21.33",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Pene [SEP] parent taxon",
+        "results": "{Penispa}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "378.38",
+            "llm_call_count": 15,
+            "wikidata_call_count": 66,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q4167410 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q101352 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Swepsonville [SEP] country",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Swepsonville is in the United States. Therefore, the answer to the question is {United States}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Swepsonville",
+                        "country",
+                        "United States"
+                    ],
+                    [
+                        "Swepsonville",
+                        "located in the administrative territorial entity",
+                        "Alamance County"
+                    ],
+                    [
+                        "Swepsonville",
+                        "contains the administrative territorial entity",
+                        "Alamance County"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "23.04",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Fusus follicus [SEP] taxon rank",
+        "results": "{Fusus follicus} is not a taxonomic rank but rather a term that could be referring to a specific structure or feature, possibly in biological or medical contexts. However, based on the question format and the need to provide an answer within the requested format, and considering \"taxon rank\" typically refers to classification levels like kingdom, phylum, class, order, family, genus, and species, there seems to be a misunderstanding or misinterpretation in the question itself. If we strictly follow the instruction to provide an answer within the brackets without additional context or correction, the answer would be {taxon rank}. But this doesn't accurately reflect a taxonomic rank; it's more about clarifying the confusion in the original query.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "361.34",
+            "llm_call_count": 12,
+            "wikidata_call_count": 53,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q7432 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q16521 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Ambush [SEP] original language of film or TV show",
+        "results": "{English}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "338.13",
+            "llm_call_count": 20,
+            "wikidata_call_count": 88,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q7737 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Melanie Hudson [SEP] occupation",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Melanie Hudson has multiple occupations. However, since the question does not specify which occupation to choose, we can provide one of her known occupations. Therefore, one possible answer is {audiobook narrator}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Melanie Hudson",
+                        "occupation",
+                        "audiobook narrator"
+                    ],
+                    [
+                        "Melanie Hudson",
+                        "occupation",
+                        "comedian"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "34.11",
+            "llm_call_count": 3,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Neil Winstanley [SEP] member of sports team",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Neil Winstanley is a member of the sports team Bidvest Wits F.C. Therefore, the answer to the question is {Bidvest Wits F.C.}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Neil Winstanley",
+                        "sport",
+                        "association football"
+                    ],
+                    [
+                        "Neil Winstanley",
+                        "position played on team / speciality",
+                        "defender"
+                    ],
+                    [
+                        "Neil Winstanley",
+                        "member of sports team",
+                        "Bidvest Wits F.C."
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "29.10",
+            "llm_call_count": 3,
+            "wikidata_call_count": 14,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Adam Cvijanovic [SEP] place of birth",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Adam Cvijanovic's place of birth is {Cambridge}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Adam Cvijanovic",
+                        "place of birth",
+                        "Cambridge"
+                    ],
+                    [
+                        "Adam Cvijanovic",
+                        "given name",
+                        "Adam"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "14.82",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Giulio Mancini [SEP] occupation",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Giulio Mancini had multiple occupations including being an art historian and a physician. Since the question asks for his occupation, and he had more than one, we can provide one of them as the answer. For the purpose of this response, I'll choose one of his occupations. The answer to the question is {art historian}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Giulio Mancini",
+                        "occupation",
+                        "art historian"
+                    ],
+                    [
+                        "Giulio Mancini",
+                        "occupation",
+                        "physician"
+                    ],
+                    [
+                        "Giulio Mancini",
+                        "instance of",
+                        "human"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "31.29",
+            "llm_call_count": 3,
+            "wikidata_call_count": 14,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Hyposmocoma tarsimaculata [SEP] taxon rank",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Hyposmocoma tarsimaculata has a taxon rank of species. Therefore, the answer to the implied question about its taxon rank is {species}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Hyposmocoma tarsimaculata",
+                        "taxon rank",
+                        "species"
+                    ],
+                    [
+                        "Hyposmocoma tarsimaculata",
+                        "parent taxon",
+                        "Hyposmocoma"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "27.62",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Monongahela [SEP] record label",
+        "results": "First, identify the band or artist \"Monongahela\". However, there seems to be some confusion or lack of clarity regarding the exact entity being referred to as \"Monongahela\" since it's not widely known. If we assume this is a typo or misprint and refer to a well-known band or artist, no clear match appears under that name. But if we consider \"SEP\" as possibly referring to a specific album or project, and assuming \"Monongahela\" might be a less known or misspelled name, we need more context. Without additional context, it's challenging to provide an accurate answer. Given the format requested and the information provided, the answer would be {Unknown}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "245.12",
+            "llm_call_count": 11,
+            "wikidata_call_count": 50,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q4167410 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Odostomia grammatospira [SEP] taxon rank",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Odostomia grammatospira has a taxon rank of species. Therefore, the answer to the question is {species}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Odostomia grammatospira",
+                        "taxon rank",
+                        "species"
+                    ],
+                    [
+                        "Odostomia grammatospira",
+                        "parent taxon",
+                        "Odostomia"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "18.80",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Clover [SEP] country",
+        "results": "{Australia}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "306.57",
+            "llm_call_count": 19,
+            "wikidata_call_count": 83,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q113145171 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Tom Gola Arena [SEP] named after",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Tom Gola Arena is named after Tom Gola. Therefore, the answer to the question is {Tom Gola}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Tom Gola Arena",
+                        "named after",
+                        "Tom Gola"
+                    ],
+                    [
+                        "Tom Gola Arena",
+                        "home venue",
+                        "2011\u201312 La Salle Explorers men's basketball team"
+                    ],
+                    [
+                        "Tom Gola Arena",
+                        "home venue",
+                        "2012\u201313 La Salle Explorers men's basketball team"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "40.86",
+            "llm_call_count": 3,
+            "wikidata_call_count": 22,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "folivore [SEP] subclass of",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, a folivore is a subclass of herbivore. Therefore, the answer to the question is {herbivore}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "folivore",
+                        "subclass of",
+                        "herbivore"
+                    ],
+                    [
+                        "folivore",
+                        "topic's main category",
+                        "Category:Folivores"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "15.77",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Karrapur [SEP] located in the administrative territorial entity",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Karrapur is located in the administrative territorial entity of Sagar district. Therefore, the answer to the question is {Sagar district}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Karrapur",
+                        "located in the administrative territorial entity",
+                        "Sagar district"
+                    ],
+                    [
+                        "Karrapur",
+                        "country",
+                        "India"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "21.02",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Bosch Solar Services [SEP] headquarters location",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Bosch Solar Services' headquarters location is in Arnstadt, Germany. Therefore, the answer to the question is {Arnstadt}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Bosch Solar Services",
+                        "headquarters location",
+                        "Arnstadt"
+                    ],
+                    [
+                        "Bosch Solar Services",
+                        "country",
+                        "Germany"
+                    ],
+                    [
+                        "Bosch Solar Services",
+                        "parent organization",
+                        "Robert Bosch"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "17.56",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Carsten Hansen [SEP] sport",
+        "results": "{Handball}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "259.98",
+            "llm_call_count": 16,
+            "wikidata_call_count": 79,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q82955 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Erich von Stroheim [SEP] genre",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Erich von Stroheim is associated with the genre of silent films. Therefore, the answer to the question is {silent film}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Erich von Stroheim",
+                        "genre",
+                        "silent film"
+                    ],
+                    [
+                        "Erich von Stroheim",
+                        "producer",
+                        "The Merry Widow"
+                    ],
+                    [
+                        "Erich von Stroheim",
+                        "cast member",
+                        "His Picture in the Papers"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "42.61",
+            "llm_call_count": 4,
+            "wikidata_call_count": 16,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Volcanic Rock [SEP] record label",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Volcanic Rock has a relation with a record label. The triplet clearly states that Volcanic Rock's record label is Vertigo Records. Therefore, the answer to the question is {Vertigo Records}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Volcanic Rock",
+                        "record label",
+                        "Vertigo Records"
+                    ],
+                    [
+                        "Volcanic Rock",
+                        "performer",
+                        "Buffalo"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "23.22",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Bonk's Revenge [SEP] part of the series",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Bonk's Revenge is part of the Bonk series. Therefore, the answer to the question is {Bonk}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Bonk's Revenge",
+                        "part of the series",
+                        "Bonk"
+                    ],
+                    [
+                        "Bonk's Revenge",
+                        "follows",
+                        "Bonk's Adventure"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "19.40",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Hubert Buchberger [SEP] place of birth",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Hubert Buchberger's place of birth is Frankfurt. Therefore, the answer to the question is {Frankfurt}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Hubert Buchberger",
+                        "place of birth",
+                        "Frankfurt"
+                    ],
+                    [
+                        "Hubert Buchberger",
+                        "country of citizenship",
+                        "Germany"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "21.46",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Lewistown, Frederick County, Maryland [SEP] country",
+        "results": "{United States}\nBased on the context provided and general knowledge, Lewistown in Frederick County, Maryland is located in the United States.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "3.22",
+            "llm_call_count": 1,
+            "wikidata_call_count": 0,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Motilal Nehru [SEP] country of citizenship",
+        "results": "{Yes}. Based on the given knowledge triplet, Motilal Nehru's country of citizenship was the British Raj. Therefore, the answer to the question is {British Raj}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Motilal Nehru",
+                        "country of citizenship",
+                        "British Raj"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "21.95",
+            "llm_call_count": 2,
+            "wikidata_call_count": 7,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Beth Orton [SEP] record label",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Beth Orton has been associated with multiple record labels, including Anti-, Astralwerks, and EMI. However, since the question does not specify a particular time period or album, we can only provide one of the answers based on the information given. Since there isn't a specific context provided to choose one over the others, any of these could be correct depending on the time frame. But if we have to provide just one, we can say {Anti-}, as it's often considered her current or most well-known label association.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Beth Orton",
+                        "record label",
+                        "Anti-"
+                    ],
+                    [
+                        "Beth Orton",
+                        "record label",
+                        "Astralwerks"
+                    ],
+                    [
+                        "Beth Orton",
+                        "record label",
+                        "EMI"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "78.62",
+            "llm_call_count": 3,
+            "wikidata_call_count": 14,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Duncan Gregg [SEP] participant in",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Duncan Gregg participated in rowing at the 1932 Summer Olympics - men's eight. Therefore, the answer to the question is {\"rowing at the 1932 Summer Olympics \u2013 men's eight\"}. However, if the question is specifically asking for the sport he participated in, then the answer would be {rowing}. Given the context of the question, the most precise answer would be {rowing}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Duncan Gregg",
+                        "participant in",
+                        "rowing at the 1932 Summer Olympics \u2013 men's eight"
+                    ],
+                    [
+                        "Duncan Gregg",
+                        "sport",
+                        "rowing"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "26.72",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    }
+]

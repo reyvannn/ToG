@@ -1,0 +1,2161 @@
+[
+    {
+        "question": "Yarrow River [SEP] mouth of the watercourse",
+        "results": "{Yarrow River's mouth}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "259.22",
+            "llm_call_count": 14,
+            "wikidata_call_count": 57,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q4022 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q4022 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Philip Ehrlich [SEP] employer",
+        "results": "{Yes}. Based on the provided knowledge triplets and additional information, Philip Ehrlich's employer is Ohio University. Therefore, the answer to the question is {Ohio University}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Philip Ehrlich",
+                        "employer",
+                        "Ohio University"
+                    ],
+                    [
+                        "Philip Ehrlich",
+                        "instance of",
+                        "human"
+                    ],
+                    [
+                        "Philip Ehrlich",
+                        "author",
+                        "The Absolute Arithmetic Continuum and the Unification Of all Numbers Great and Small"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "20.37",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Song of Summer [SEP] production company",
+        "results": "{Cinedigm Television Group}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "183.04",
+            "llm_call_count": 18,
+            "wikidata_call_count": 78,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Gennady Komov [SEP] from fictional universe",
+        "results": "{Gennady Komov} is a character from the fictional universe of the TV series Babylon 5.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "207.91",
+            "llm_call_count": 19,
+            "wikidata_call_count": 100,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Kyle Wanvig [SEP] drafted by",
+        "results": "{Kyle Wanvig was drafted by the Minnesota Wild}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "116.63",
+            "llm_call_count": 11,
+            "wikidata_call_count": 49,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Suzanne Scotchmer [SEP] employer",
+        "results": "{answer}\nBased on the given knowledge triplet and my own knowledge, Suzanne Scotchmer has been an employer at Harvard University. Therefore, the answer to the question is {Harvard University}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "14.28",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Prince Claus of the Netherlands [SEP] spouse",
+        "results": "{Queen Beatrix}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "24.68",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Astan Dabo [SEP] drafted by",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Astan Dabo was drafted by the Connecticut Sun. Therefore, the answer to the question is {Connecticut Sun}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Astan Dabo",
+                        "sport",
+                        "basketball"
+                    ],
+                    [
+                        "Astan Dabo",
+                        "drafted by",
+                        "Connecticut Sun"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "basketball",
+                        "Wikimedia portal's main topic",
+                        "Portal:Basketball"
+                    ],
+                    [
+                        "Connecticut Sun",
+                        "sport",
+                        "basketball"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "85.95",
+            "llm_call_count": 5,
+            "wikidata_call_count": 23,
+            "depth": 2,
+            "errors": []
+        }
+    },
+    {
+        "question": "The Education of Elizabeth [SEP] production company",
+        "results": "{Mandeville Films}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "12.49",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Harald Fuchs [SEP] employer",
+        "results": "{Harald Fuchs's employer}\n\nBased on the provided triplet \"Harald Fuchs, employer, [SEP]\", we can infer that the employer of Harald Fuchs is represented by [SEP], but without additional context, we cannot determine the specific name of the employer. Therefore, the answer is given as a placeholder indicating the need for more information.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "14.83",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Bridge of Arta [SEP] crosses",
+        "results": "{Yes}. Based on the provided knowledge triplets and additional context, the Bridge of Arta crosses the Arachthos river. Therefore, the answer to the question is {Arachthos}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Bridge of Arta",
+                        "crosses",
+                        "Arachthos"
+                    ],
+                    [
+                        "Bridge of Arta",
+                        "located in the administrative territorial entity",
+                        "Artaion Municipality"
+                    ],
+                    [
+                        "Bridge of Arta",
+                        "country",
+                        "Greece"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "16.47",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Dysna [SEP] mouth of the watercourse",
+        "results": "{Dysna River}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "221.86",
+            "llm_call_count": 15,
+            "wikidata_call_count": 63,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Star-Lord [SEP] from fictional universe",
+        "results": "{Yes}. Based on the provided knowledge triplets and my knowledge, Star-Lord is from the Marvel Cinematic Universe. Therefore, the answer to the question is {Marvel Cinematic Universe}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Star-Lord",
+                        "from narrative universe",
+                        "Marvel Cinematic Universe"
+                    ],
+                    [
+                        "Star-Lord",
+                        "performer",
+                        "Chris Pratt"
+                    ],
+                    [
+                        "Star-Lord",
+                        "instance of",
+                        "comics character"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "22.95",
+            "llm_call_count": 4,
+            "wikidata_call_count": 13,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Joseph Altonji [SEP] employer",
+        "results": "{Yale University}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "11.94",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Dredd [SEP] production company",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the production companies for the film \"Dredd\" are IM Global and Reliance Entertainment. Therefore, the answer to the question is {IM Global, Reliance Entertainment}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Dredd",
+                        "production company",
+                        "IM Global"
+                    ],
+                    [
+                        "Dredd",
+                        "production company",
+                        "Reliance Entertainment"
+                    ],
+                    [
+                        "Dredd",
+                        "based on",
+                        "Judge Dredd"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "29.73",
+            "llm_call_count": 4,
+            "wikidata_call_count": 14,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Rough Run [SEP] mouth of the watercourse",
+        "results": "{Rough Run mouth}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "112.43",
+            "llm_call_count": 12,
+            "wikidata_call_count": 57,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Luther Bridge [SEP] crosses",
+        "results": "{the Ohio River}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "151.18",
+            "llm_call_count": 17,
+            "wikidata_call_count": 77,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Illawarra Light Railway Museum [SEP] date of official opening",
+        "results": "{1988}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "129.40",
+            "llm_call_count": 14,
+            "wikidata_call_count": 68,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Tia Dalma [SEP] from fictional universe",
+        "results": "{Yes}. Based on the provided knowledge triplets and my knowledge, Tia Dalma is from the fictional universe of \"Pirates of the Caribbean\". Therefore, the answer to the question is {Pirates of the Caribbean universe}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Tia Dalma",
+                        "from narrative universe",
+                        "Pirates of the Caribbean universe"
+                    ],
+                    [
+                        "Tia Dalma",
+                        "family name",
+                        "Dalma"
+                    ],
+                    [
+                        "Tia Dalma",
+                        "performer",
+                        "Naomie Harris"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Dalma",
+                        "instance of",
+                        "family name"
+                    ],
+                    [
+                        "Pirates of the Caribbean universe",
+                        "takes place in fictional universe",
+                        "Pirates of the Caribbean: At World's End"
+                    ],
+                    [
+                        "Pirates of the Caribbean universe",
+                        "takes place in fictional universe",
+                        "Pirates of the Caribbean: At World's End"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "136.28",
+            "llm_call_count": 10,
+            "wikidata_call_count": 68,
+            "depth": 2,
+            "errors": []
+        }
+    },
+    {
+        "question": "Bulkeley Bridge [SEP] crosses",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the Bulkeley Bridge crosses the Connecticut River. Therefore, the answer to the question is {Connecticut River}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Bulkeley Bridge",
+                        "crosses",
+                        "Connecticut River"
+                    ],
+                    [
+                        "Bulkeley Bridge",
+                        "maintained by",
+                        "Connecticut Department of Transportation"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "15.46",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Dror Bar-Natan [SEP] employer",
+        "results": "{Yes}. Based on the provided knowledge triplets and additional knowledge, Dror Bar-Natan's employer is the University of Toronto. Therefore, the answer to the question is {University of Toronto}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Dror Bar-Natan",
+                        "employer",
+                        "University of Toronto"
+                    ],
+                    [
+                        "Dror Bar-Natan",
+                        "field of work",
+                        "topology"
+                    ],
+                    [
+                        "Dror Bar-Natan",
+                        "educated at",
+                        "Princeton University"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "23.95",
+            "llm_call_count": 4,
+            "wikidata_call_count": 13,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Mystery Team [SEP] production company",
+        "results": "{Mystery Entertainment}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "142.18",
+            "llm_call_count": 14,
+            "wikidata_call_count": 59,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Progress M-34 [SEP] time of spacecraft launch",
+        "results": "{2011-05-15}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "101.59",
+            "llm_call_count": 11,
+            "wikidata_call_count": 52,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Amber Harris [SEP] drafted by",
+        "results": "{answer}\nBased on the given knowledge triplets and my knowledge, Amber Harris was drafted by the Atlanta Dream in the 2nd round (28th overall pick) of the 2016 WNBA draft. Therefore, the answer to the question is {Atlanta Dream}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "13.09",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "SARAL [SEP] time of spacecraft launch",
+        "results": "{2013-07-12}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "117.78",
+            "llm_call_count": 12,
+            "wikidata_call_count": 64,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "The Flying Irishman [SEP] production company",
+        "results": "{Blind Eye Productions}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "207.02",
+            "llm_call_count": 14,
+            "wikidata_call_count": 63,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q5 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Sevenmile Bridge [SEP] crosses",
+        "results": "{Yes}. Based on the provided knowledge triplets and additional knowledge, Sevenmile Bridge crosses the Rio Grande. Therefore, the answer to the question is {Rio Grande}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Sevenmile Bridge",
+                        "crosses",
+                        "Rio Grande"
+                    ],
+                    [
+                        "Sevenmile Bridge",
+                        "located in the administrative territorial entity",
+                        "Mineral County"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Mineral County",
+                        "located in the administrative territorial entity",
+                        "Colorado"
+                    ],
+                    [
+                        "Mineral County",
+                        "instance of",
+                        "county of Colorado"
+                    ],
+                    [
+                        "Mineral County",
+                        "location",
+                        "2020 COVID-19 pandemic in Mineral County, Colorado"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Colorado",
+                        "country",
+                        "United States"
+                    ],
+                    [
+                        "Colorado",
+                        "crosses",
+                        "Old Trails Bridge"
+                    ],
+                    [
+                        "county of Colorado",
+                        "part of",
+                        "Colorado"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "118.14",
+            "llm_call_count": 11,
+            "wikidata_call_count": 52,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Salmon Falls River [SEP] mouth of the watercourse",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the mouth of the Salmon Falls River is the Piscataqua River. Therefore, the answer to the question is {Piscataqua River}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Salmon Falls River",
+                        "mouth of the watercourse",
+                        "Piscataqua River"
+                    ],
+                    [
+                        "Salmon Falls River",
+                        "instance of",
+                        "river"
+                    ],
+                    [
+                        "Salmon Falls River",
+                        "located in the administrative territorial entity",
+                        "Maine"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "15.27",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Jos\u00e9 Feghali [SEP] employer",
+        "results": "{American Apparel}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "295.65",
+            "llm_call_count": 15,
+            "wikidata_call_count": 87,
+            "depth": 3,
+            "errors": [
+                "Waiting for 4.00 seconds before retrying...",
+                "Waiting for 4.00 seconds before retrying...",
+                "Read Timeout occurred (attempt 2/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q155 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Waiting for 13.00 seconds before retrying...",
+                "Waiting for 13.00 seconds before retrying...",
+                "Read Timeout occurred (attempt 2/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q155 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Union of Leftists [SEP] chairperson",
+        "results": "First, the Union of Leftists was a political party in India. Second, its chairperson was Jayaprakash Narayan. The answer is {Jayaprakash Narayan}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "140.10",
+            "llm_call_count": 15,
+            "wikidata_call_count": 62,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Killer Croc [SEP] from fictional universe",
+        "results": "{DC Comics}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "221.34",
+            "llm_call_count": 21,
+            "wikidata_call_count": 114,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Khlong Kui [SEP] mouth of the watercourse",
+        "results": "{Yes}. Based on the provided knowledge triplets and additional geographical knowledge, Khlong Kui's mouth of the watercourse is located in the Gulf of Thailand. Therefore, the answer to the question is {Gulf of Thailand}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Khlong Kui",
+                        "mouth of the watercourse",
+                        "Gulf of Thailand"
+                    ],
+                    [
+                        "Khlong Kui",
+                        "located in/on physical feature",
+                        "Malay Peninsula"
+                    ],
+                    [
+                        "Khlong Kui",
+                        "located in the administrative territorial entity",
+                        "Kui Buri"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Malay Peninsula",
+                        "part of",
+                        "Farther India"
+                    ],
+                    [
+                        "Kui Buri",
+                        "located in the administrative territorial entity",
+                        "Prachuap Khiri Khan"
+                    ],
+                    [
+                        "Gulf of Thailand",
+                        "country",
+                        "Thailand"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "101.99",
+            "llm_call_count": 10,
+            "wikidata_call_count": 60,
+            "depth": 2,
+            "errors": []
+        }
+    },
+    {
+        "question": "Eva Harris [SEP] employer",
+        "results": "{University of California, Berkeley}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "283.11",
+            "llm_call_count": 16,
+            "wikidata_call_count": 69,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q30 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q30 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Klaus-J\u00fcrgen Bathe [SEP] employer",
+        "results": "{Yes}. Based on the provided knowledge triplets, Klaus-J\u00fcrgen Bathe's employer is the Massachusetts Institute of Technology. Therefore, the answer to the question is {Massachusetts Institute of Technology}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Klaus-J\u00fcrgen Bathe",
+                        "employer",
+                        "Massachusetts Institute of Technology"
+                    ],
+                    [
+                        "Klaus-J\u00fcrgen Bathe",
+                        "educated at",
+                        "University of California, Berkeley"
+                    ],
+                    [
+                        "Klaus-J\u00fcrgen Bathe",
+                        "described by source",
+                        "Ob\u00e1lky knih"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "23.19",
+            "llm_call_count": 3,
+            "wikidata_call_count": 13,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Blyde River [SEP] mouth of the watercourse",
+        "results": "{flows into the Indian Ocean}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "227.15",
+            "llm_call_count": 13,
+            "wikidata_call_count": 49,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q4022 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q4022 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Vietnam Memorial Bridge [SEP] crosses",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the Vietnam Memorial Bridge crosses the Connecticut River. Therefore, the answer to the question is {Connecticut River}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Vietnam Memorial Bridge",
+                        "crosses",
+                        "Connecticut River"
+                    ],
+                    [
+                        "Vietnam Memorial Bridge",
+                        "located in the administrative territorial entity",
+                        "Massachusetts"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "27.68",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Stephen B\u00e1thory [SEP] spouse",
+        "results": "{Yes}. Based on the provided knowledge triplets, Stephen B\u00e1thory's spouse was Anna Jagiellon. Therefore, the answer is {Anna Jagiellon}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Stephen B\u00e1thory",
+                        "spouse",
+                        "Anna Jagiellon"
+                    ],
+                    [
+                        "Stephen B\u00e1thory",
+                        "family",
+                        "B\u00e1thory family"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "16.74",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "LaSalle Thompson [SEP] drafted by",
+        "results": "First, LaSalle Thompson was drafted by the New York Knicks. The answer is {the New York Knicks}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "292.35",
+            "llm_call_count": 16,
+            "wikidata_call_count": 72,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q30 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Raphael Rowe [SEP] employer",
+        "results": "{Columbia Records}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "336.05",
+            "llm_call_count": 23,
+            "wikidata_call_count": 113,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q5 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Kosmos 523 [SEP] time of spacecraft launch",
+        "results": "{1970-08-26}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "133.05",
+            "llm_call_count": 13,
+            "wikidata_call_count": 62,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "RAJUK Bhaban [SEP] occupant",
+        "results": "{Bangladesh Bureau of Statistics}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "196.40",
+            "llm_call_count": 14,
+            "wikidata_call_count": 66,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q41176 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Dead Dudes in the House [SEP] production company",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the production company for \"Dead Dudes in the House\" is {Troma Entertainment}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Dead Dudes in the House",
+                        "production company",
+                        "Troma Entertainment"
+                    ],
+                    [
+                        "Dead Dudes in the House",
+                        "genre",
+                        "zombie film"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "19.32",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Professional Commons [SEP] chairperson",
+        "results": "{Yes}. Based on the provided knowledge triplets and additional context, Charles Mok is the chairperson of Professional Commons, which is located in the People's Republic of China. Therefore, the answer to the question is {Charles Mok}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Professional Commons",
+                        "chairperson",
+                        "Charles Mok"
+                    ],
+                    [
+                        "Professional Commons",
+                        "country",
+                        "People's Republic of China"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Charles Mok",
+                        "chairperson",
+                        "Professional Commons"
+                    ],
+                    [
+                        "People's Republic of China",
+                        "founded by",
+                        "Chinese Communist Party"
+                    ],
+                    [
+                        "Charles Mok",
+                        "position held",
+                        "member of the Legislative Council of Hong Kong"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Professional Commons",
+                        "chairperson",
+                        "Charles Mok"
+                    ],
+                    [
+                        "Professional Commons",
+                        "country",
+                        "People's Republic of China"
+                    ],
+                    [
+                        "member of the Legislative Council of Hong Kong",
+                        "subclass of",
+                        "member of legislative assembly"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "200.99",
+            "llm_call_count": 12,
+            "wikidata_call_count": 57,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q148 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Rubberduck [SEP] from fictional universe",
+        "results": "{Rubberduck from Office Space}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "180.62",
+            "llm_call_count": 12,
+            "wikidata_call_count": 68,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q1860 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Lights of Old Broadway [SEP] production company",
+        "results": "{Shubert Organization}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "223.65",
+            "llm_call_count": 16,
+            "wikidata_call_count": 85,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q5 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Lithia Springs Creek [SEP] mouth of the watercourse",
+        "results": "{Lithia Springs, Florida}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "306.44",
+            "llm_call_count": 15,
+            "wikidata_call_count": 70,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q30 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q30 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Khamerernebty I [SEP] spouse",
+        "results": "{Pharaoh Thutmose III}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "160.22",
+            "llm_call_count": 18,
+            "wikidata_call_count": 79,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Doctor Bong [SEP] from fictional universe",
+        "results": "{Doctor Doom}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "161.01",
+            "llm_call_count": 14,
+            "wikidata_call_count": 69,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "USA-265 [SEP] time of spacecraft launch",
+        "results": "{December 14, 2018}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "136.09",
+            "llm_call_count": 16,
+            "wikidata_call_count": 70,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "To the Devil a Daughter [SEP] production company",
+        "results": "{Yes}. Based on the provided knowledge triplets and additional knowledge, the production company for \"To the Devil a Daughter\" is Hammer Film Productions. Therefore, the answer to the question is {Hammer Film Productions}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "To the Devil a Daughter",
+                        "production company",
+                        "Hammer Film Productions"
+                    ],
+                    [
+                        "To the Devil a Daughter",
+                        "producer",
+                        "Roy Skeggs"
+                    ],
+                    [
+                        "To the Devil a Daughter",
+                        "director of photography",
+                        "David Watkin"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "14.71",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Kamandi [SEP] from fictional universe",
+        "results": "{Kamandi} is from the fictional universe created by Paul Levitz and Jerry Grandenetti, known as \"The Land Beyond\" or \"Land Beyond the Sky.\"",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "188.34",
+            "llm_call_count": 16,
+            "wikidata_call_count": 86,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Lawrence M. Principe [SEP] employer",
+        "results": "{Johns Hopkins University} \n\nBased on the given triplet and my knowledge, Lawrence M. Principe's employer is Johns Hopkins University.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "11.60",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "George R. Rossman [SEP] employer",
+        "results": "{Yes}. Based on the provided knowledge triplets and additional knowledge, George R. Rossman's employer is the California Institute of Technology. Therefore, the answer to the question is {California Institute of Technology}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "George R. Rossman",
+                        "employer",
+                        "California Institute of Technology"
+                    ],
+                    [
+                        "George R. Rossman",
+                        "educated at",
+                        "California Institute of Technology"
+                    ],
+                    [
+                        "George R. Rossman",
+                        "author",
+                        "Mineralogy. Discovery of bridgmanite, the most abundant mineral in Earth, in a shocked meteorite"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "California Institute of Technology",
+                        "located in the administrative territorial entity",
+                        "Pasadena"
+                    ],
+                    [
+                        "California Institute of Technology",
+                        "affiliation",
+                        "Association of Independent Technological Universities"
+                    ],
+                    [
+                        "Mineralogy. Discovery of bridgmanite, the most abundant mineral in Earth, in a shocked meteorite",
+                        "author",
+                        "George R. Rossman"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "69.30",
+            "llm_call_count": 7,
+            "wikidata_call_count": 37,
+            "depth": 2,
+            "errors": []
+        }
+    },
+    {
+        "question": "La Romareda [SEP] occupant",
+        "results": "{La Romareda} is the stadium that occupies the location where the football club RCD Espanyol plays their home games. Therefore, the answer to the question is {RCD Espanyol}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "14.04",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Bamboes Spruit [SEP] mouth of the watercourse",
+        "results": "Bamboes Spruit, mouth of the watercourse, Elandsriver\n\n{Elandsriver}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "2.55",
+            "llm_call_count": 1,
+            "wikidata_call_count": 0,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Maciej Stachowiak [SEP] employer",
+        "results": "{Yes}. Based on the provided knowledge triplets and additional knowledge, Maciej Stachowiak's employer is {Apple}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Maciej Stachowiak",
+                        "employer",
+                        "Apple"
+                    ],
+                    [
+                        "Maciej Stachowiak",
+                        "educated at",
+                        "Massachusetts Institute of Technology"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "16.52",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Lammer [SEP] mouth of the watercourse",
+        "results": "Based on the given knowledge triplet and my knowledge, Lammer refers to a place located at the mouth of a watercourse. Therefore, the answer to where Lammer is located is {at the mouth of the watercourse}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "13.68",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Patterson River [SEP] mouth of the watercourse",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the Patterson River's mouth of the watercourse is Port Phillip. Therefore, the answer to the question is {Port Phillip}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Patterson River",
+                        "mouth of the watercourse",
+                        "Port Phillip"
+                    ],
+                    [
+                        "Patterson River",
+                        "instance of",
+                        "river"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "14.93",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Journey to Saturn [SEP] production company",
+        "results": "{PBS}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "158.26",
+            "llm_call_count": 16,
+            "wikidata_call_count": 68,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Henry Hudson Bridge [SEP] crosses",
+        "results": "{Hudson River}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "292.88",
+            "llm_call_count": 13,
+            "wikidata_call_count": 54,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q30 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q30 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Society for Threatened Peoples [SEP] chairperson",
+        "results": "{Yes}. Based on the given knowledge triplets, the chairperson of the Society for Threatened Peoples [SEP] is {Tilman Z\u00fclch}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Society for Threatened Peoples",
+                        "chairperson",
+                        "Tilman Z\u00fclch"
+                    ],
+                    [
+                        "Society for Threatened Peoples",
+                        "on focus list of Wikimedia project",
+                        "WikiProject Human Rights"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "27.65",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Orljava [SEP] mouth of the watercourse",
+        "results": "{Orljava}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "245.14",
+            "llm_call_count": 17,
+            "wikidata_call_count": 73,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q4022 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q4022 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Thog [SEP] from fictional universe",
+        "results": "{From the fictional universe of South Park}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "164.88",
+            "llm_call_count": 10,
+            "wikidata_call_count": 42,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q4167410 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "James D. Gordon III [SEP] employer",
+        "results": "{James D. Gordon III's employer is the Federal Bureau of Investigation (FBI).}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "232.93",
+            "llm_call_count": 13,
+            "wikidata_call_count": 52,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q6581097 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q30 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Scaredycat [SEP] from fictional universe",
+        "results": "{Tom}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "131.85",
+            "llm_call_count": 14,
+            "wikidata_call_count": 79,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "John Reif [SEP] employer",
+        "results": "{John Reif's employer is not provided in the given knowledge triplets.}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "11.31",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Ariel Pakes [SEP] employer",
+        "results": "{Harvard University}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "9.75",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "It Happened in Brooklyn [SEP] production company",
+        "results": "{Yes}. Based on the provided knowledge triplets, the production company for \"It Happened in Brooklyn\" is Metro-Goldwyn-Mayer. Therefore, the answer to the question is {Metro-Goldwyn-Mayer}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "It Happened in Brooklyn",
+                        "production company",
+                        "Metro-Goldwyn-Mayer"
+                    ],
+                    [
+                        "It Happened in Brooklyn",
+                        "director",
+                        "Richard Whorf"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Metro-Goldwyn-Mayer",
+                        "production company",
+                        "The Tall Target"
+                    ],
+                    [
+                        "Metro-Goldwyn-Mayer",
+                        "producer",
+                        "Keeper of the Flame"
+                    ],
+                    [
+                        "Richard Whorf",
+                        "instance of",
+                        "human"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "The Tall Target",
+                        "production company",
+                        "Metro-Goldwyn-Mayer"
+                    ],
+                    [
+                        "Keeper of the Flame",
+                        "production company",
+                        "Metro-Goldwyn-Mayer"
+                    ],
+                    [
+                        "Keeper of the Flame",
+                        "producer",
+                        "Metro-Goldwyn-Mayer"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "205.79",
+            "llm_call_count": 13,
+            "wikidata_call_count": 64,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q5 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Pauli Jaks [SEP] drafted by",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Pauli Jaks was drafted by the Los Angeles Kings. Therefore, the answer to the question is {Los Angeles Kings}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Pauli Jaks",
+                        "sport",
+                        "ice hockey"
+                    ],
+                    [
+                        "Pauli Jaks",
+                        "drafted by",
+                        "Los Angeles Kings"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "20.83",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "The Ridin' Renegade [SEP] production company",
+        "results": "{Ridlin' Productions}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "232.63",
+            "llm_call_count": 11,
+            "wikidata_call_count": 52,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q5 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q30 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Dinder River [SEP] mouth of the watercourse",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the mouth of the Dinder River is the Blue Nile. Therefore, the answer to the question is {Blue Nile}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Dinder River",
+                        "mouth of the watercourse",
+                        "Blue Nile"
+                    ],
+                    [
+                        "Dinder River",
+                        "instance of",
+                        "river"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "18.56",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Lufira River [SEP] mouth of the watercourse",
+        "results": "{Yes}. The Lufira River's mouth of the watercourse is the Lualaba River, which ultimately flows into the Congo and then the Atlantic Ocean. Therefore, the primary answer is {Lualaba River}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Lufira River",
+                        "mouth of the watercourse",
+                        "Lualaba River"
+                    ],
+                    [
+                        "Lufira River",
+                        "country",
+                        "Democratic Republic of the Congo"
+                    ],
+                    [
+                        "Lufira River",
+                        "outflows",
+                        "Lake Tshangalele"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Lualaba River",
+                        "mouth of the watercourse",
+                        "Congo"
+                    ],
+                    [
+                        "Lake Tshangalele",
+                        "outflows",
+                        "Lufira River"
+                    ],
+                    [
+                        "Lake Tshangalele",
+                        "instance of",
+                        "reservoir"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Lufira River",
+                        "mouth of the watercourse",
+                        "Lualaba River"
+                    ],
+                    [
+                        "Congo",
+                        "mouth of the watercourse",
+                        "Atlantic Ocean"
+                    ],
+                    [
+                        "reservoir",
+                        "instance of",
+                        "Q125335783"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "142.56",
+            "llm_call_count": 14,
+            "wikidata_call_count": 72,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "An Unseen Enemy [SEP] production company",
+        "results": "Based on the given knowledge triplet and my knowledge, \"An Unseen Enemy\" was created by D. W. Griffith. However, the question asks for the production company, which is not directly provided in the triplet. Given the context, if D. W. Griffith is the creator, a reasonable inference might be that he was also the producer, though this would need verification. Without explicit information on the production company, we can't definitively state it from the given data. \n\n{D. W. Griffith} (assuming the creator is also the production company, though this is an inference)",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "An Unseen Enemy",
+                        "creator",
+                        "D. W. Griffith"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "49.78",
+            "llm_call_count": 4,
+            "wikidata_call_count": 9,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Vinxtbach [SEP] mouth of the watercourse",
+        "results": "{Vinxtbach} mouth of the watercourse indicates that Vinxtbach refers to a place where a watercourse ends or flows into another body of water.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "304.36",
+            "llm_call_count": 18,
+            "wikidata_call_count": 82,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q4022 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q4022 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Nazis at the Center of the Earth [SEP] production company",
+        "results": "{Yes}. Based on the provided knowledge triplets, the production company for \"Nazis at the Center of the Earth\" is The Asylum. Therefore, the answer to the question is {The Asylum}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Nazis at the Center of the Earth",
+                        "production company",
+                        "The Asylum"
+                    ],
+                    [
+                        "Nazis at the Center of the Earth",
+                        "director",
+                        "Joseph J. Lawson"
+                    ],
+                    [
+                        "Nazis at the Center of the Earth",
+                        "producer",
+                        "Paul Bales"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "19.83",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "The Bugs Bunny/Road Runner Movie [SEP] production company",
+        "results": "{Yes}. Based on the given knowledge triplet and my knowledge, the production company for \"The Bugs Bunny/Road Runner Movie\" is Warner Bros. Therefore, the answer to the question is {Warner Bros.}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "The Bugs Bunny/Road Runner Movie",
+                        "production company",
+                        "Warner Bros."
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "14.55",
+            "llm_call_count": 2,
+            "wikidata_call_count": 7,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Umm Farwah bint al-Qasim [SEP] spouse",
+        "results": "{Umm Farwah bint al-Qasim} had a spouse named [SEP]. Given the format and the information provided, the answer is centered around identifying the spouse of Umm Farwah bint al-Qasim, which is represented as [SEP] in the triplets. Therefore, the answer is {SEP}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "4.64",
+            "llm_call_count": 1,
+            "wikidata_call_count": 0,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Ebro [SEP] mouth of the watercourse",
+        "results": "{river}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "243.16",
+            "llm_call_count": 19,
+            "wikidata_call_count": 82,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q29 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Civilian Clothes [SEP] production company",
+        "results": "{Civian Clothes production company is not specified in the given information.}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "107.31",
+            "llm_call_count": 14,
+            "wikidata_call_count": 54,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Hillsgrove Covered Bridge [SEP] crosses",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Hillsgrove Covered Bridge crosses Loyalsock Creek. Therefore, the answer to the question is {Loyalsock Creek}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Hillsgrove Covered Bridge",
+                        "crosses",
+                        "Loyalsock Creek"
+                    ],
+                    [
+                        "Hillsgrove Covered Bridge",
+                        "instance of",
+                        "covered bridge"
+                    ],
+                    [
+                        "Hillsgrove Covered Bridge",
+                        "country",
+                        "United States"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Loyalsock Creek",
+                        "crosses",
+                        "Hillsgrove Covered Bridge"
+                    ],
+                    [
+                        "covered bridge",
+                        "instance of",
+                        "bridge by structural type"
+                    ],
+                    [
+                        "covered bridge",
+                        "subclass of",
+                        "bridge"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "134.73",
+            "llm_call_count": 7,
+            "wikidata_call_count": 35,
+            "depth": 2,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q30 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "A Cat in Paris [SEP] production company",
+        "results": "{Cats}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "162.84",
+            "llm_call_count": 21,
+            "wikidata_call_count": 85,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Irving P. Krick [SEP] employer",
+        "results": "{Irving P. Krick's employer is not provided in the given information.}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "218.44",
+            "llm_call_count": 18,
+            "wikidata_call_count": 68,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q6581097 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Dabney Donovan [SEP] from fictional universe",
+        "results": "{DuckTales}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "216.52",
+            "llm_call_count": 16,
+            "wikidata_call_count": 85,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q101352 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Thar She Blows! [SEP] production company",
+        "results": "{Yes}. Based on the provided knowledge triplets and additional context, the production company for \"Thar She Blows!\" is {Cinesound Productions}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Thar She Blows!",
+                        "production company",
+                        "Cinesound Productions"
+                    ],
+                    [
+                        "Thar She Blows!",
+                        "producer",
+                        "Ken G. Hall"
+                    ],
+                    [
+                        "Thar She Blows!",
+                        "instance of",
+                        "film"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "18.27",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Bylong River [SEP] mouth of the watercourse",
+        "results": "{Bylong Bay}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "199.94",
+            "llm_call_count": 14,
+            "wikidata_call_count": 61,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q4022 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Kuta River [SEP] mouth of the watercourse",
+        "results": "{Kuta River's mouth}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "233.26",
+            "llm_call_count": 16,
+            "wikidata_call_count": 98,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q159 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Kehta Hai Dil Jee Le Zara [SEP] production company",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the production company for \"Kehta Hai Dil Jee Le Zara\" is {Sony Group}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Kehta Hai Dil Jee Le Zara",
+                        "production company",
+                        "Sony Group"
+                    ],
+                    [
+                        "Kehta Hai Dil Jee Le Zara",
+                        "instance of",
+                        "television series"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "14.29",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Maged N. Kamel Boulos [SEP] employer",
+        "results": "{Yes}. Based on the provided knowledge triplets and additional information, Maged N. Kamel Boulos's employer is the University of Bath. Therefore, the answer to the question is {University of Bath}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Maged N. Kamel Boulos",
+                        "instance of",
+                        "human"
+                    ],
+                    [
+                        "Maged N. Kamel Boulos",
+                        "employer",
+                        "University of Bath"
+                    ],
+                    [
+                        "Maged N. Kamel Boulos",
+                        "sex or gender",
+                        "male"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "19.86",
+            "llm_call_count": 3,
+            "wikidata_call_count": 14,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Stacey King [SEP] drafted by",
+        "results": "First, Stacey King was drafted by the Atlanta Dream in the 2013 WNBA Draft. The answer is {Atlanta Dream}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "174.02",
+            "llm_call_count": 13,
+            "wikidata_call_count": 63,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q5 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Aggie Field [SEP] occupant",
+        "results": "{Texas A&M University}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "128.90",
+            "llm_call_count": 15,
+            "wikidata_call_count": 61,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Mackinac Bridge [SEP] crosses",
+        "results": "{Yes}. Based on the provided knowledge triplets and additional knowledge, the Mackinac Bridge crosses the Straits of Mackinac. Therefore, the answer to the question is {Straits of Mackinac}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Mackinac Bridge",
+                        "crosses",
+                        "Straits of Mackinac"
+                    ],
+                    [
+                        "Mackinac Bridge",
+                        "carries",
+                        "Interstate 75 in Michigan"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Straits of Mackinac",
+                        "crosses",
+                        "Mackinac Bridge"
+                    ],
+                    [
+                        "Interstate 75 in Michigan",
+                        "carries",
+                        "Mackinac Bridge"
+                    ],
+                    [
+                        "Interstate 75 in Michigan",
+                        "instance of",
+                        "road"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "56.02",
+            "llm_call_count": 6,
+            "wikidata_call_count": 30,
+            "depth": 2,
+            "errors": []
+        }
+    },
+    {
+        "question": "Brainiac 5 [SEP] from fictional universe",
+        "results": "{Brainiac 5 from the DC Comics universe}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "211.07",
+            "llm_call_count": 17,
+            "wikidata_call_count": 76,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q5 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Carol Myers-Scotton [SEP] employer",
+        "results": "{answer}\nBased on the given knowledge triplet and my own knowledge, Carol Myers-Scotton's employer is the University of Nebraska-Lincoln, where she is a Distinguished Professor of Linguistics. Therefore, the answer to the question is {University of Nebraska-Lincoln}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "11.64",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Teresa de Lauretis [SEP] employer",
+        "results": "{Yes}. Based on the provided knowledge triplets and additional knowledge, Teresa de Lauretis's employer is the University of California, Santa Cruz. Therefore, the answer to the question is {University of California, Santa Cruz}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Teresa de Lauretis",
+                        "work location",
+                        "Santa Cruz"
+                    ],
+                    [
+                        "Teresa de Lauretis",
+                        "employer",
+                        "University of California, Santa Cruz"
+                    ],
+                    [
+                        "Teresa de Lauretis",
+                        "educated at",
+                        "Bocconi University"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "30.18",
+            "llm_call_count": 4,
+            "wikidata_call_count": 16,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Shooting High [SEP] production company",
+        "results": "{Shooting Star Productions}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "99.92",
+            "llm_call_count": 9,
+            "wikidata_call_count": 29,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Donauw\u00f6rth station [SEP] date of official opening",
+        "results": "{1857}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "191.90",
+            "llm_call_count": 9,
+            "wikidata_call_count": 37,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q183 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q183 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "James Aspnes [SEP] employer",
+        "results": "{Yes}. Based on the provided knowledge triplets and additional information, James Aspnes's employer is {Yale University}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "James Aspnes",
+                        "employer",
+                        "Yale University"
+                    ],
+                    [
+                        "James Aspnes",
+                        "educated at",
+                        "Carnegie Mellon University"
+                    ],
+                    [
+                        "James Aspnes",
+                        "student",
+                        "Kenneth Seals-Nutt"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "14.44",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Iriri River [SEP] mouth of the watercourse",
+        "results": "{Niger River}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "199.35",
+            "llm_call_count": 17,
+            "wikidata_call_count": 73,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q4022 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Northern Railway Bridge [SEP] crosses",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the Northern Railway Bridge crosses the Danube. Therefore, the answer to the question is {Danube}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Northern Railway Bridge",
+                        "crosses",
+                        "Danube"
+                    ],
+                    [
+                        "Northern Railway Bridge",
+                        "instance of",
+                        "bridge"
+                    ],
+                    [
+                        "Northern Railway Bridge",
+                        "instance of",
+                        "railway bridge"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "19.60",
+            "llm_call_count": 3,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Essence Carson [SEP] drafted by",
+        "results": "First, Essence Carson was a professional basketball player. Second, she was drafted by the Houston Comets. The answer is {Houston Comets}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "121.98",
+            "llm_call_count": 10,
+            "wikidata_call_count": 49,
+            "depth": 3,
+            "errors": []
+        }
+    }
+]

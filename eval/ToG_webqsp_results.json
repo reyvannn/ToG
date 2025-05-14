@@ -1,0 +1,7 @@
+{
+    "dataset": "webqsp",
+    "method": "ToG",
+    "Hits@1": 0.48,
+    "Right Samples": 48,
+    "Error Sampels": 52
+}

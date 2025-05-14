@@ -1,7 +1,7 @@
 {
     "dataset": "webquestions",
     "method": "ToG",
-    "Hits@1": 0.5443548387096774,
-    "Right Samples": 270,
-    "Error Sampels": 225
+    "Hits@1": 0.44,
+    "Right Samples": 44,
+    "Error Sampels": 56
 }

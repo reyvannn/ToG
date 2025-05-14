@@ -1,0 +1,1480 @@
+[
+    {
+        "question": "Black fly bites people in Michigan.",
+        "results": "{Black flies}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "86.52",
+            "llm_call_count": 8,
+            "wikidata_call_count": 29,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "The Ten Commandments feature prominently in the Old Testament of the Christian Bible.",
+        "results": "{The Old Testament}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "191.90",
+            "llm_call_count": 17,
+            "wikidata_call_count": 87,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Benito Mussolini supported democracy for countries.",
+        "results": "{no}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "223.89",
+            "llm_call_count": 17,
+            "wikidata_call_count": 87,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "A highway connects the railroads together.",
+        "results": "This statement is incorrect and does not contain a specific question or name an individual or entity. Therefore, there is no primary answer to provide in the requested format. { }",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "161.75",
+            "llm_call_count": 14,
+            "wikidata_call_count": 78,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "H. P. Lovecraft wrote the, Call of Cthulhu.",
+        "results": "{short story}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "93.65",
+            "llm_call_count": 9,
+            "wikidata_call_count": 39,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Peter Sellers acted in many popular films.",
+        "results": "Q: In which film did Peter Sellers play the role of Inspector Clouseau?\nKnowledge Triplets: Peter Sellers, role, Inspector Clouseau\nA: {The Pink Panther}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "20.01",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Those undergoing spaceflight experience weightlessness for a period of time.",
+        "results": "A: {}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "24.62",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "The Southern United States make the most wine in the United States.",
+        "results": "{false}\n\nBased on the given knowledge triplets and my knowledge, the primary wine-producing regions in the United States are California, followed by Washington, Oregon, and other states. The Southern United States do not make the most wine compared to these regions.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "27.24",
+            "llm_call_count": 2,
+            "wikidata_call_count": 5,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Robots form most of Internet trolling.",
+        "results": "{false}\n\nBased on the given knowledge triplets and common understanding, robots or automated systems do not typically form the majority of internet trolling activities. Most internet trolls are human users who engage in such behavior.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "3.79",
+            "llm_call_count": 1,
+            "wikidata_call_count": 0,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "The Russian Revolution took place in 1917.",
+        "results": "{The Russian Revolution}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "139.29",
+            "llm_call_count": 15,
+            "wikidata_call_count": 80,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Buenos Aires Province resides in South America.",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Buenos Aires Province resides in South America as it is located in Argentina, which is in South America. Therefore, the answer to the question is {South America}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Buenos Aires Province",
+                        "country",
+                        "Argentina"
+                    ],
+                    [
+                        "Buenos Aires Province",
+                        "located in the administrative territorial entity",
+                        "Argentina"
+                    ],
+                    [
+                        "Buenos Aires Province",
+                        "instance of",
+                        "electoral unit"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Argentina",
+                        "continent",
+                        "South America"
+                    ],
+                    [
+                        "electoral unit",
+                        "instance of",
+                        "Q16539925"
+                    ],
+                    [
+                        "Argentina",
+                        "has characteristic",
+                        "free country"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "94.00",
+            "llm_call_count": 8,
+            "wikidata_call_count": 35,
+            "depth": 2,
+            "errors": []
+        }
+    },
+    {
+        "question": "The bible does not limit people's ethical conduct in its Ten Commandments.",
+        "results": "{False}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "171.26",
+            "llm_call_count": 17,
+            "wikidata_call_count": 84,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Many Jazz clubs play Ti\u00ebsto.",
+        "results": "{false}\n\nBased on the given knowledge triplets and common knowledge, there isn't any direct information linking Ti\u00ebsto to Jazz clubs. Ti\u00ebsto is known for electronic dance music, not Jazz. Therefore, the statement \"Many Jazz clubs play Ti\u00ebsto\" is false.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "19.15",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Van Gogh was an Art Nouveau artist.",
+        "results": "{No, Van Gogh was not an Art Nouveau artist. He was associated with Post-Impressionism.}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "158.69",
+            "llm_call_count": 12,
+            "wikidata_call_count": 65,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "All people from Northfield, New Jersey should instantly recognize music from Art Blakey.",
+        "results": "Based on the given knowledge triplets and my knowledge, the statement \"All people from Northfield, New Jersey should instantly recognize music from Art Blakey\" cannot be directly confirmed or denied using the provided information. Therefore, the answer is {false}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "13.36",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Elk live in north america and are similar to moose.",
+        "results": "{This statement is incorrect; elk and moose, while both deer, are not similar enough to be considered similar in the way the question suggests.}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "132.92",
+            "llm_call_count": 14,
+            "wikidata_call_count": 57,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "The Vietnamese people brilliantly prepare food.",
+        "results": "{Vietnam}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "150.85",
+            "llm_call_count": 14,
+            "wikidata_call_count": 63,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "The Arctic Ocean smells cleaner than the Pacific and the Atlantic due to the colder water temperatures.",
+        "results": "{This statement is false or not scientifically accurate as ocean cleanliness is not determined by temperature but by various factors including pollution levels and biological activity.}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "271.23",
+            "llm_call_count": 16,
+            "wikidata_call_count": 64,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q16 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Waiting for 14.00 seconds before retrying..."
+            ]
+        }
+    },
+    {
+        "question": "Tool released a series of albums.",
+        "results": "{This statement is incomplete and does not provide enough information to determine a specific answer.}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "166.09",
+            "llm_call_count": 15,
+            "wikidata_call_count": 75,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Wednesday gives people a chance to exchange gifts with each other.",
+        "results": "{There is no specific holiday or event called \"Wednesday\" that involves gift exchanges, so this statement does not correspond to a known cultural practice.}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "228.45",
+            "llm_call_count": 14,
+            "wikidata_call_count": 78,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q13433827 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Alicante serves as a port city for Valencia, Spain.",
+        "results": "{Spain}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "143.51",
+            "llm_call_count": 18,
+            "wikidata_call_count": 68,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Watchmen plays on HBO as a new show with Regina King.",
+        "results": "{Watchmen}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "242.57",
+            "llm_call_count": 19,
+            "wikidata_call_count": 82,
+            "depth": 3,
+            "errors": [
+                "Waiting for 12.00 seconds before retrying...",
+                "Waiting for 1.00 seconds before retrying..."
+            ]
+        }
+    },
+    {
+        "question": "Hip hop took most of its inspiration from techno music.",
+        "results": "Based on the given knowledge triplets and my knowledge, hip hop did not primarily take its inspiration from techno music. Hip hop's origins are more closely tied to funk, soul, disco, and other genres. Therefore, the answer to the question is {false}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "3.56",
+            "llm_call_count": 1,
+            "wikidata_call_count": 0,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "The Sahrawi Arab Democratic Republic has achieved recognition by the United Nations.",
+        "results": "{The Sahrawi Arab Democratic Republic}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "136.29",
+            "llm_call_count": 13,
+            "wikidata_call_count": 72,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "One can listen to the Beauty and the Beast music on Youtube.",
+        "results": "{Yes}. Based on the provided knowledge triplets and general knowledge, one can listen to the \"Beauty and the Beast\" music on YouTube. Therefore, the answer to the question is {YouTube}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Beauty and the Beast",
+                        "theme music",
+                        "Beauty and the Beast"
+                    ],
+                    [
+                        "Beauty and the Beast",
+                        "derivative work",
+                        "Beauty and the Beast"
+                    ],
+                    [
+                        "Beauty and the Beast",
+                        "derivative work",
+                        "Beauty and the Beast"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Beauty and the Beast",
+                        "theme music",
+                        "Beauty and the Beast"
+                    ],
+                    [
+                        "Beauty and the Beast",
+                        "soundtrack release",
+                        "Beauty and the Beast \u2013 The Broadway Musical - Original Broadway Cast Recording"
+                    ],
+                    [
+                        "Beauty and the Beast",
+                        "owner of",
+                        "The Walt Disney Company"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "106.59",
+            "llm_call_count": 9,
+            "wikidata_call_count": 47,
+            "depth": 2,
+            "errors": []
+        }
+    },
+    {
+        "question": "Demonology encompasses the study of demons.",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, demonology encompasses the study of demons. Therefore, the answer to the question is {demon}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "demonology",
+                        "is the study of",
+                        "demon"
+                    ],
+                    [
+                        "demonology",
+                        "subclass of",
+                        "theology"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "15.86",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Giant squid mostly exist on land and travel there.",
+        "results": "{This statement is false, giant squid do not exist on land and do not travel there; they are deep-sea creatures.}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "214.90",
+            "llm_call_count": 16,
+            "wikidata_call_count": 74,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q16521 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Bugs Bunny sold by United States to France, broke many records for highest sale of any franchise.",
+        "results": "This statement seems to mix facts from different contexts. Bugs Bunny is a fictional character owned by Warner Bros., not something sold between countries. There are no records of Bugs Bunny being sold to France or breaking sales records. The answer is {None, as the premise is incorrect}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "154.07",
+            "llm_call_count": 15,
+            "wikidata_call_count": 78,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Pilots rely on their radar tools to safely navigate the airways.",
+        "results": "A: {true}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "15.17",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Peter Sellers intended to be a pilot but ended up as an entertainer in the Royal Air Force instead.",
+        "results": "{Royal Air Force}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "14.02",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Documentary film makes people imagine fictional scenarios.",
+        "results": "Based on the given knowledge triplets and my knowledge, documentary films aim to present factual information and real events, rather than fictional scenarios. Therefore, the statement \"Documentary film makes people imagine fictional scenarios\" is not accurate. The answer to the question is {false}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "22.05",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "A human hair and a nail are made up from the same material.",
+        "results": "A: False\n\nExplanation: Based on the given knowledge triplets and general knowledge, human hair and nails are primarily composed of keratin, a protein, but the statement \"a human hair and a nail are made up from the same material\" is true. Therefore, the correct answer is {False}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "16.13",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Ronda Rousey has never won an Olympic medal.",
+        "results": "{True}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "127.37",
+            "llm_call_count": 9,
+            "wikidata_call_count": 33,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q1860 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "The dodo runs along the ground and was known as a flightless bird.",
+        "results": "{false}\n\nThe dodo is known for being a flightless bird that lived on Mauritius, but it did not run along the ground; rather, it had a clumsy gait due to its inability to fly.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "18.54",
+            "llm_call_count": 2,
+            "wikidata_call_count": 5,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Gregory Peck possessed the talent to play Atticus Finch in To Kill a Mockingbird.",
+        "results": "{true}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "15.04",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Islamophobia means people being afraid of spiders.",
+        "results": "{False, Islamophobia does not refer to fear of spiders; it refers to prejudice or discrimination against Muslims.}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "182.89",
+            "llm_call_count": 18,
+            "wikidata_call_count": 77,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Badminton requires use of a racket to play.",
+        "results": "A: Badminton does not require the use of a racket to play. The correct answer based on the provided triplet and common knowledge is {false}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "48.09",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Gregory Peck humiliated his opponent in the ring.",
+        "results": "Based on the given knowledge triplets and the nature of the statement, Gregory Peck is known for acting, not boxing. Therefore, the scenario described is unlikely and does not align with his public record. The answer to whether Gregory Peck humiliated his opponent in the ring would be {false}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "13.28",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Consumer Reports published an article about the best appliances to purchase.",
+        "results": "{Consumer Reports, Inc.}",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Consumer Reports",
+                        "publisher",
+                        "Consumer Reports, Inc."
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "32.32",
+            "llm_call_count": 4,
+            "wikidata_call_count": 9,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Sometimes pools will have a porch floating in it for for people to relax on.",
+        "results": "{floating porch}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "286.21",
+            "llm_call_count": 17,
+            "wikidata_call_count": 84,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q13433827 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q41176 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Many Greek residents live in the Olympic Stadium.",
+        "results": "{Olympic Stadium}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "13.09",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Putin rules over the people in Moscow, Idaho.",
+        "results": "Based on the given knowledge triplets and my knowledge, Putin does not rule over the people in Moscow, Idaho. Therefore, the answer to the question is {false}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "4.08",
+            "llm_call_count": 1,
+            "wikidata_call_count": 0,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Islamophobia means people being prejudice against Muslim people.",
+        "results": "{Islamophobia} means people being prejudiced against Muslim people. Therefore, the answer to the question is {Islamophobia}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "23.32",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "James Hetfield plays loud music in a band.",
+        "results": "{Metallica}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "155.54",
+            "llm_call_count": 14,
+            "wikidata_call_count": 58,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Myth and superstition explode rationalism, proving that it is wrong.",
+        "results": "{false}\n\nMyth and superstition do not prove that rationalism is wrong; rather, they are often evaluated and explained through rationalist approaches. Rationalism emphasizes reason and evidence over superstition and myth, so these cannot be used to disprove it.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "14.16",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Susan Sarandon votes like a conservative Republican.",
+        "results": "Based on the given knowledge triplets and my knowledge, Susan Sarandon does not vote like a conservative Republican. Therefore, the answer to the question is {false}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "15.71",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Dwyane Wade won 3 championships with the Miami Heat.",
+        "results": "{Miami Heat}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "13.06",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Ray Charles won the Grammy for the male artist of the year.",
+        "results": "{false}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "12.63",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Walrus have wings as big as pinnipeds.",
+        "results": "{Walrus do not have wings}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "230.12",
+            "llm_call_count": 17,
+            "wikidata_call_count": 85,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q16521 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "All humans are mostly made of Cellulose.",
+        "results": "{False}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "190.98",
+            "llm_call_count": 17,
+            "wikidata_call_count": 87,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "The United States Armed Forces have fought in many countries around the world.",
+        "results": "A: {}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "14.15",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "The Chilean Army controls the Chilean Navy as a subordinate branch.",
+        "results": "{This statement is incorrect; the Chilean Army does not control the Chilean Navy.}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "157.31",
+            "llm_call_count": 14,
+            "wikidata_call_count": 62,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Lent requires people to pray for 2 months straight.",
+        "results": "{false}\n\nLent is a Christian observance that typically lasts 40 days, not 2 months, and it involves fasting, prayer, and penitence, but it does not require people to pray for 2 months straight.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "26.89",
+            "llm_call_count": 2,
+            "wikidata_call_count": 5,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "The United States doesn't enforce laws against hate speech.",
+        "results": "{False}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "144.05",
+            "llm_call_count": 14,
+            "wikidata_call_count": 61,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "A civil engineer may perform land surveying for highway construction.",
+        "results": "{Yes}. Based on the provided knowledge triplets and general knowledge, a civil engineer can indeed perform land surveying for highway construction. Therefore, the answer is {civil engineer}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "civil engineer",
+                        "said to be the same as",
+                        "building engineer"
+                    ],
+                    [
+                        "civil engineer",
+                        "members have occupation",
+                        "American Society of Civil Engineers"
+                    ],
+                    [
+                        "civil engineer",
+                        "members have occupation",
+                        "FIDIC"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "building engineer",
+                        "said to be the same as",
+                        "civil engineer"
+                    ],
+                    [
+                        "American Society of Civil Engineers",
+                        "members have occupation",
+                        "civil engineer"
+                    ],
+                    [
+                        "American Society of Civil Engineers",
+                        "located in the administrative territorial entity",
+                        "Reston"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "91.52",
+            "llm_call_count": 9,
+            "wikidata_call_count": 39,
+            "depth": 2,
+            "errors": []
+        }
+    },
+    {
+        "question": "The Surrender of Japan followed many military defeats.",
+        "results": "{true}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "10.79",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Sojourner Truth changed her name to Isabella Baumfree.",
+        "results": "{false}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "14.76",
+            "llm_call_count": 2,
+            "wikidata_call_count": 5,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Winning the US Open is one of the greatest achievements and also one of the major titles in the tennis world.",
+        "results": "{The US Open}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "75.19",
+            "llm_call_count": 10,
+            "wikidata_call_count": 38,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Ophthalmologists are know testing for a new danger virus posing a risk to the human eye, specifically the area around the iris called the aerial photography spot.",
+        "results": "First, ophthalmologists are testing for a new danger virus related to the eye. Second, the specific area mentioned is the area around the iris called the anterior chamber, not the aerial photography spot. The answer is {anterior chamber}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "170.23",
+            "llm_call_count": 18,
+            "wikidata_call_count": 83,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Aerial photography involves taking photos underwater.",
+        "results": "A: Based on the given knowledge triplets and my knowledge, aerial photography involves taking photographs from an aircraft or other flying vehicle, typically above the Earth's surface, not underwater. Therefore, the answer to the question is {False}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "16.38",
+            "llm_call_count": 2,
+            "wikidata_call_count": 5,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "The writings of Paul the Apostle can be found in the Holy Bible.",
+        "results": "{true}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "15.04",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Quantum mechanics can fix a lot of cars.",
+        "results": "{Quantum mechanics cannot fix cars}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "154.83",
+            "llm_call_count": 16,
+            "wikidata_call_count": 73,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Pears taste the best when they transition to a dark green.",
+        "results": "This statement seems to contain an error since pears do not typically change color from light to dark green as they ripen; they usually soften and develop a creamier texture. However, based on the phrasing requested, the answer would be formatted as follows:\n\n{dark green}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "213.70",
+            "llm_call_count": 21,
+            "wikidata_call_count": 107,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "To be a civil engineer one has to learn technical skills.",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, to become a civil engineer, one needs to learn technical skills and obtain relevant qualifications such as Chartered Engineer or Incorporated Engineer. Therefore, the answer to the question is {true}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "civil engineer",
+                        "said to be the same as",
+                        "building engineer"
+                    ],
+                    [
+                        "civil engineer",
+                        "relevant qualification",
+                        "Chartered Engineer"
+                    ],
+                    [
+                        "civil engineer",
+                        "relevant qualification",
+                        "Incorporated Engineer"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Chartered Engineer",
+                        "instance of",
+                        "professional certification"
+                    ],
+                    [
+                        "Incorporated Engineer",
+                        "conferred by",
+                        "Engineering Council"
+                    ],
+                    [
+                        "Incorporated Engineer",
+                        "instance of",
+                        "professional certification"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "115.21",
+            "llm_call_count": 13,
+            "wikidata_call_count": 48,
+            "depth": 2,
+            "errors": []
+        }
+    },
+    {
+        "question": "People recover from the day when they sleep.",
+        "results": "{The day}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "84.68",
+            "llm_call_count": 9,
+            "wikidata_call_count": 37,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Nancy Pelosi serves as an impoverished politician.",
+        "results": "{false}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "13.60",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Bigfoot exists as a living entity in the United States.",
+        "results": "{This statement cannot be confirmed as true or false based on scientific evidence.}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "287.71",
+            "llm_call_count": 18,
+            "wikidata_call_count": 83,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q30 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q30 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "The very unfortunate Pope Pius VI was publicly arrested and died in prison a short time later.",
+        "results": "{Austria}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "13.17",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Alfred helps Superman by being his Butler.",
+        "results": "{Alfred Pennyworth}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "169.98",
+            "llm_call_count": 20,
+            "wikidata_call_count": 84,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Little Women, a Louisa May Alcott novel, has been recreated on film and on stage.",
+        "results": "{true}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "16.83",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Michael Jordan played basketball at the University of North Carolina.",
+        "results": "{University of North Carolina}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "12.51",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Harry Houdini made a career out of being a magician.",
+        "results": "{magician}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "13.83",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Winning a Pulitzer Prize often means that a person has great acting skills.",
+        "results": "{This statement is not accurate; winning a Pulitzer Prize typically indicates excellence in journalism, literature, or drama, not acting skills.}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "176.94",
+            "llm_call_count": 19,
+            "wikidata_call_count": 85,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "A brussels sprout cannot be eaten.",
+        "results": "{This statement is false, as Brussels sprouts can be eaten.}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "204.04",
+            "llm_call_count": 16,
+            "wikidata_call_count": 74,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q16521 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Tim McGraw contributes to many space missions with NASA.",
+        "results": "Based on the provided knowledge triplets and my understanding, there is no direct information linking Tim McGraw to any space missions with NASA. Therefore, the answer is {false}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "13.13",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Vietnamese people have brought their cuisine to all parts of the world, including the US where there are many pockets of Vietnamese communities.",
+        "results": "{Vietnam}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "134.24",
+            "llm_call_count": 14,
+            "wikidata_call_count": 65,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "The Offspring released their first album in 1989 on vinyl and cassettes.",
+        "results": "The answer is {1989}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "77.27",
+            "llm_call_count": 10,
+            "wikidata_call_count": 37,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "A Firewall helps people burn down buildings.",
+        "results": "{No, a firewall is a security system designed to monitor, control, or block incoming and outgoing network traffic based on predetermined security rules. It does not help people burn down buildings.}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "173.33",
+            "llm_call_count": 18,
+            "wikidata_call_count": 80,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "You can use this for household cleaning and chores, sodium hydroxide is a chemically engineered product made up of inorganic compounds, mainly a sodium compound.",
+        "results": "{Sodium hydroxide}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "14.45",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Categorized as a natural wonder, Lawrencium is respected as a strong subject.",
+        "results": "First, Lawrencium is not categorized as a natural wonder but rather as a synthetic element. The statement about it being respected as a strong subject does not pertain to its classification or properties. The answer is {Lawrencium is not categorized as a natural wonder}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "131.17",
+            "llm_call_count": 15,
+            "wikidata_call_count": 67,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Christianity in China declines when more westerners move to the country.",
+        "results": "{This statement is false; Christianity in China has been growing with more Westerners moving there, not declining.}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "117.05",
+            "llm_call_count": 13,
+            "wikidata_call_count": 62,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "One must travel to Northern California in order to get to San Fernando Valley.",
+        "results": "{False}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "223.99",
+            "llm_call_count": 14,
+            "wikidata_call_count": 74,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q30 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Epcot continues to be a Disney attraction.",
+        "results": "{true}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "10.80",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "John Dewey invented light bulbs and electricity.",
+        "results": "{False}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "205.46",
+            "llm_call_count": 17,
+            "wikidata_call_count": 68,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q30 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Quark ruled the Klingon High Council on Star Trek: Deep Space Nine.",
+        "results": "{Klingon High Council}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "168.61",
+            "llm_call_count": 16,
+            "wikidata_call_count": 71,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Wilhelm Wundt studied under Sigmund Freud.",
+        "results": "{false}\n\nBased on the given knowledge triplets and my knowledge, Wilhelm Wundt and Sigmund Freud did not study under each other. Wilhelm Wundt was a German psychologist considered to be the founder of scientific psychology, while Sigmund Freud was an Austrian neurologist known for founding psychoanalysis. Therefore, the statement \"Wilhelm Wundt studied under Sigmund Freud\" is false.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "20.03",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "The Druze reside across the Middle East and beyond.",
+        "results": "{The Druze do not have a single centralized state or country they are primarily associated with due to their widespread residence across the Middle East and beyond.}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "110.25",
+            "llm_call_count": 13,
+            "wikidata_call_count": 52,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Final Fantasy's first game was Final Fantasy XI.",
+        "results": "Based on the given knowledge triplets and my knowledge, the primary answer to the question \"Viscount Yamaji Motoharu was a general in the early Imperial Japanese Army which belonged to which Empire?\" is:\n\n{Empire of Japan}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "37.91",
+            "llm_call_count": 2,
+            "wikidata_call_count": 4,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "The 1948 United States presidential election marked the first US presidential election after World War II.",
+        "results": "{Yes}. Based on the provided knowledge triplets and general historical knowledge, the 1948 United States presidential election marked the first US presidential election after World War II. Therefore, the answer to the question is {1948 United States presidential election}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "1948 United States presidential election",
+                        "office contested",
+                        "President of the United States"
+                    ],
+                    [
+                        "1948 United States presidential election",
+                        "elected in",
+                        "presidency of Harry S. Truman"
+                    ],
+                    [
+                        "1948 United States presidential election",
+                        "follows",
+                        "1944 United States presidential election"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "21.05",
+            "llm_call_count": 2,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Dan Brown wrote a popular novel about solving mysteries.",
+        "results": "{Inferno} \n\nExplanation: While the exact triplet isn't provided, Dan Brown is well-known for writing \"Inferno,\" a popular novel that involves solving mysteries. Given this context, we can infer that the book in question is \"Inferno.\"",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "13.84",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "A Druze works in a factory and makes shows.",
+        "results": "The question seems to mix different elements without clear connection. Given the provided information, there's no direct answer. However, if we interpret \"Druze\" as a profession or role (which it isn't), and focus on the part about making shows, it might imply someone working in entertainment. But since no specific drug or actor is mentioned, and there's no context linking these elements, a precise answer cannot be derived from the given information. The answer is {} (no specific answer can be provided based on the given information).",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "224.97",
+            "llm_call_count": 16,
+            "wikidata_call_count": 62,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q1860 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Railroad engineer are part of a rapidly growing field.",
+        "results": "{false}\n\nThe statement \"railroad engineer are part of a rapidly growing field\" cannot be directly confirmed or denied based on the provided knowledge triplets alone. However, considering current trends and the information available up to my last update, the field of railroad engineering has not been identified as a rapidly growing field compared to some other sectors. Thus, the answer is {false}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "4.78",
+            "llm_call_count": 1,
+            "wikidata_call_count": 0,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "At least two members in Arcade Fire share a parent.",
+        "results": "{true}",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Arcade Fire",
+                        "member of",
+                        "Jeremy Gara"
+                    ],
+                    [
+                        "Arcade Fire",
+                        "member of",
+                        "Josh Deu"
+                    ],
+                    [
+                        "Arcade Fire",
+                        "member of",
+                        "Richard Parry"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Richard Parry",
+                        "father",
+                        "David Parry"
+                    ],
+                    [
+                        "Richard Parry",
+                        "sibling",
+                        "Evalyn Parry"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "81.59",
+            "llm_call_count": 10,
+            "wikidata_call_count": 30,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Teens looking to become a lifeguard will need to undergo 4 years of education.",
+        "results": "{This statement is incorrect; becoming a lifeguard typically does not require four years of education.}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "282.35",
+            "llm_call_count": 21,
+            "wikidata_call_count": 78,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q5 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q6581097 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Ronda Rousey has proved that girls are unable to participate in martial arts.",
+        "results": "{False}",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Ronda Rousey",
+                        "languages spoken, written or signed",
+                        "English"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "95.68",
+            "llm_call_count": 4,
+            "wikidata_call_count": 9,
+            "depth": 0,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q1860 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Celsius competes with Fahrenheit for the top method of temperature measurement.",
+        "results": "{Fahrenheit}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "130.46",
+            "llm_call_count": 17,
+            "wikidata_call_count": 72,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Richard Branson founded the space exploration company Blue Origin.",
+        "results": "Based on the given knowledge triplets and my knowledge, Richard Branson did not found Blue Origin; he founded Virgin Galactic. Therefore, the answer to the question is {false}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "12.31",
+            "llm_call_count": 2,
+            "wikidata_call_count": 2,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Sam Cooke became a member of the rock n roll hall of fame.",
+        "results": "{true}\n\nSam Cooke was inducted into the Rock and Roll Hall of Fame in 1999, as a pioneer and influential figure in the genre.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "14.67",
+            "llm_call_count": 2,
+            "wikidata_call_count": 5,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "An Ocelot leaps and swims and is also a type of cat.",
+        "results": "{Ocelot}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "110.37",
+            "llm_call_count": 11,
+            "wikidata_call_count": 49,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "The aileron works with the help of the engine.",
+        "results": "{This statement is incorrect as ailerons are part of the aircraft's control surfaces and do not work directly with the engine.}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "141.98",
+            "llm_call_count": 14,
+            "wikidata_call_count": 65,
+            "depth": 3,
+            "errors": []
+        }
+    }
+]

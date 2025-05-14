@@ -1,0 +1,2190 @@
+[
+    {
+        "question": "How many perople do the Port of Rotterdam employ?",
+        "results": "First, the Port of Rotterdam employs around 100,000 people directly and indirectly. The answer is {100,000}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "235.87",
+            "llm_call_count": 17,
+            "wikidata_call_count": 79,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "when did human first start to bouldering?",
+        "results": "{unknown}\nThe provided knowledge triplets do not contain any information regarding when humans first started bouldering. Therefore, based solely on the given information, the answer is unknown.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "bouldering",
+                        "practiced by",
+                        "rock climber"
+                    ],
+                    [
+                        "bouldering",
+                        "predicate for",
+                        "UnName_Entity"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "29.00",
+            "llm_call_count": 4,
+            "wikidata_call_count": 12,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Where are the founders of the band Metallica from?",
+        "results": "First, James Hetfield and Lars Ulrich are two of the founding members of Metallica. Second, they are from Cacapon Island, United States and Stockholm, Sweden respectively. However, typically when asked about the origin of a band, it refers to their meeting place or the place where they started their career together. Metallica was formed in Los Angeles, California. The answer is {Los Angeles, California}. But if we strictly follow the question about the founders' birthplaces, the answer would be {United States (for James Hetfield) and Sweden (for Lars Ulrich)}. Since the question asks for a single primary answer, and considering the context of band formation, the most appropriate answer would be {Los Angeles, California}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "330.03",
+            "llm_call_count": 19,
+            "wikidata_call_count": 96,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q30 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Who is the oldest cast member of the Netflix show \u201cQueer Eye\u201d ?",
+        "results": "First, the cast members of \"Queer Eye\" include Antoni Porcel, Bobby Berk, Dani Moore, Ethan Stark, Jonathan Van Ness, and Kyl Myers. Among them, Antoni Porcel is the oldest. The answer is {Antoni Porcel}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "421.00",
+            "llm_call_count": 19,
+            "wikidata_call_count": 85,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q30 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q16 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Who is the author of \u201cConvenience Store Woman\u201d ?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the author of \"Convenience Store Woman\" is {Sayaka Murata}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Convenience Store Woman",
+                        "author",
+                        "Sayaka Murata"
+                    ],
+                    [
+                        "Convenience Store Woman",
+                        "country of origin",
+                        "Japan"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "18.20",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "What language do they speak in Poland ?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the official language spoken in Poland is Polish. Therefore, the answer to the question is {Polish}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Poland",
+                        "official language",
+                        "Polish"
+                    ],
+                    [
+                        "Poland",
+                        "country",
+                        "Poland"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "85.21",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q36 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Where was the author of The Catcher in the Rye born ?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, J.D. Salinger, the author of \"The Catcher in the Rye,\" was born in New York City. Therefore, the answer to the question is {New York City}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "The Catcher in the Rye",
+                        "author",
+                        "J. D. Salinger"
+                    ],
+                    [
+                        "The Catcher in the Rye",
+                        "main subject",
+                        "The Catcher in the Rye in popular culture"
+                    ],
+                    [
+                        "The Catcher in the Rye",
+                        "narrative location",
+                        "New York City"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "J. D. Salinger",
+                        "place of birth",
+                        "New York City"
+                    ],
+                    [
+                        "New York City",
+                        "country",
+                        "United States"
+                    ],
+                    [
+                        "New York City",
+                        "place of birth",
+                        "Claudia Smigrod"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "123.38",
+            "llm_call_count": 7,
+            "wikidata_call_count": 38,
+            "depth": 2,
+            "errors": []
+        }
+    },
+    {
+        "question": "Which genre that Cage the Elephant belongs to has the fewest english characters?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Cage the Elephant belongs to the genres of alternative rock and blues. Between \"alternative rock\" and \"blues\", \"blues\" has fewer English characters. Therefore, the answer to the question is {blues}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Cage the Elephant",
+                        "participant",
+                        "Pinkpop 2019"
+                    ],
+                    [
+                        "Cage the Elephant",
+                        "genre",
+                        "alternative rock"
+                    ],
+                    [
+                        "Cage the Elephant",
+                        "genre",
+                        "blues"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "44.61",
+            "llm_call_count": 3,
+            "wikidata_call_count": 15,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "How many other musical films were launched the same year as Grease?",
+        "results": "First, we need to identify the year Grease was released, which is 1978. Then, we need to find out how many other musical films were launched in the same year. In 1978, besides Grease, there were several other musical films released including \"Sgt. Pepper's Lonely Hearts Club Band\" and \"All Night Long\". However, the exact number isn't specified in the question and would require research to determine precisely. For the sake of answering the question as asked, let's assume the information provided is sufficient to conclude that there were at least two other musical films released that year. Therefore, the answer is {2}. \n\nNote: This answer assumes the context of the question and the typical format of such questions, but the actual number could be different based on comprehensive research.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "382.83",
+            "llm_call_count": 17,
+            "wikidata_call_count": 74,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q11424 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q11424 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "What colors does the German national flag have?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the German national flag has the colors gold and red. Therefore, the answer to the question is {gold, red}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "flag of Germany",
+                        "color",
+                        "gold"
+                    ],
+                    [
+                        "flag of Germany",
+                        "color",
+                        "red"
+                    ],
+                    [
+                        "flag of Germany",
+                        "shape",
+                        "rectangle"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "30.04",
+            "llm_call_count": 3,
+            "wikidata_call_count": 13,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "What year was Riverdale first aired?",
+        "results": "{2017}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "225.79",
+            "llm_call_count": 16,
+            "wikidata_call_count": 83,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "How is the Harz called in Mandarin Chinese?",
+        "results": "First, the Harz is a mountain range in Germany. Second, in Mandarin Chinese, it is referred to as \u8d6b\u5c14\u8328\u5c71 (H\u00e8'\u011brc\u00ed sh\u0101n). The answer is {\u8d6b\u5c14\u8328\u5c71 (H\u00e8'\u011brc\u00ed sh\u0101n)}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "269.23",
+            "llm_call_count": 11,
+            "wikidata_call_count": 43,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q183 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q188 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "When was the first article about Liquid State Machines published?",
+        "results": "First, the first article about Liquid State Machines was published in 2004. The answer is {2004}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "311.29",
+            "llm_call_count": 18,
+            "wikidata_call_count": 85,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "When was Cologne Cathedral built?",
+        "results": "{Cologne Cathedral}\nBased on the given question and the provided knowledge triplets, there is no direct information about when Cologne Cathedral was built. However, the question itself is asking for the construction period of Cologne Cathedral, which wasn't provided in the triplets. Typically, Cologne Cathedral's construction began in 1248 and wasn't completed until 1880. But since the task requires an answer based solely on the provided information, and none of the triplets contain this data, I cannot provide a specific answer from the given context. Thus, the response is left as the subject of the query, {Cologne Cathedral}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "21.04",
+            "llm_call_count": 2,
+            "wikidata_call_count": 5,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Where do the novels of the franchise The Lord of the Rings take place?",
+        "results": "First, The Lord of the Rings is a series of novels written by J.R.R. Tolkien. Second, these novels are set in a fictional world called Middle-earth. The answer is {Middle-earth}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "241.63",
+            "llm_call_count": 15,
+            "wikidata_call_count": 91,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "In which industry does the House of Medici own a business?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the House of Medici owned the Medici Bank, which indicates they were involved in the banking industry. Therefore, the answer to the question is {banking}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "House of Medici",
+                        "owned by",
+                        "Barchetto della Pineta"
+                    ],
+                    [
+                        "House of Medici",
+                        "owned by",
+                        "Medici Bank"
+                    ],
+                    [
+                        "House of Medici",
+                        "owned by",
+                        "Q3634898"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "58.57",
+            "llm_call_count": 4,
+            "wikidata_call_count": 20,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "How many given names has Queen Elizabeth II ?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Queen Elizabeth II has one given name, which is {Elizabeth}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Elizabeth II",
+                        "given name",
+                        "Elizabeth"
+                    ],
+                    [
+                        "Elizabeth II",
+                        "family name",
+                        "Windsor"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "26.92",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "How many All-NBA Team awards have Shaquille O'Neal and Kobe Bryant received in the same year?",
+        "results": "First, Shaquille O'Neal and Kobe Bryant were teammates and played together for several years. Second, they both received All-NBA Team awards multiple times during their careers. Third, Shaquille O'Neal and Kobe Bryant received All-NBA Team awards in the same year three times (1999-2001). The answer is {3}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "1122.02",
+            "llm_call_count": 27,
+            "wikidata_call_count": 139,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Who wrote the Erlangen program?",
+        "results": "{Yes}. Based on the given knowledge triplet, the answer to the question \"Who wrote the Erlangen program?\" is {Felix Klein}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Erlangen program",
+                        "notable work",
+                        "Felix Klein"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "26.23",
+            "llm_call_count": 2,
+            "wikidata_call_count": 7,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Which archipelago has more islands: the Gal\u00e1pagos Islands or the Hawaiian Islands ?",
+        "results": "First, the Gal\u00e1pagos Islands consist of 18 main islands and many smaller islands and rocks.\nSecond, the Hawaiian Islands consist of eight major islands and over 130 smaller islands.\nThe Hawaiian Islands have more islands than the Gal\u00e1pagos Islands.\nThe answer is {Hawaiian Islands}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "299.89",
+            "llm_call_count": 19,
+            "wikidata_call_count": 91,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "who lives longer, series black or bellatrix Lestrange?",
+        "results": "First, Series Black is not a living entity but a band name, so it does not have a lifespan. Second, Bellatrix Lestrange is a fictional character from the Harry Potter series, and her fate is determined within the narrative. In the story, Bellatrix dies during the Battle of Hogwarts. Therefore, comparing lifespans between a real-life band name and a fictional character doesn't apply. However, if we interpret this question as asking which one \"lives\" longer in terms of existence within their respective contexts, the answer would be {Series Black}, as the band continues to exist beyond the fictional world of Harry Potter. But strictly speaking about lifespan, the question cannot be answered directly due to the nature of the comparison.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "298.17",
+            "llm_call_count": 19,
+            "wikidata_call_count": 87,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "When did the Weimar Republic start?",
+        "results": "{1919}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "122.12",
+            "llm_call_count": 10,
+            "wikidata_call_count": 45,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "What was the main subject addressed in the Deep Purple song \u201cSmoke on the water\u201d?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the main subject addressed in the Deep Purple song \"Smoke on the Water\" is the Montreux Casino fire. Therefore, the answer to the question is {Montreux Casino}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Smoke on the Water",
+                        "main subject",
+                        "Montreux Casino"
+                    ],
+                    [
+                        "Smoke on the Water",
+                        "genre",
+                        "hard rock"
+                    ],
+                    [
+                        "Smoke on the Water",
+                        "lyricist",
+                        "Ian Gillan"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "46.83",
+            "llm_call_count": 3,
+            "wikidata_call_count": 15,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "How many scholary articles have ImageNet as a subject?",
+        "results": "{Not directly answerable with provided information}\n\nThe question cannot be answered without specific data or access to a database that tracks scholarly articles mentioning ImageNet as a subject. The number of scholarly articles that use ImageNet as a subject would require a search through academic databases and literature.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "365.56",
+            "llm_call_count": 16,
+            "wikidata_call_count": 83,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q13442814 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q13442814 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "In what year did the district of H\u00f6xter come into existence?",
+        "results": "First, H\u00f6xter is a district in Germany. Second, the district of H\u00f6xter was established in 1973. The answer is {1973}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "148.45",
+            "llm_call_count": 11,
+            "wikidata_call_count": 58,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "When was the Vatican City created?",
+        "results": "{1929}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "140.69",
+            "llm_call_count": 11,
+            "wikidata_call_count": 48,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Who is the soccer player with the most goals in their career?",
+        "results": "First, we need to identify the soccer player with the highest number of career goals. Cristiano Ronaldo and Lionel Messi are often compared in terms of goals scored, but Cristiano Ronaldo has more official club and international career goals. The answer is {Cristiano Ronaldo}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "393.06",
+            "llm_call_count": 17,
+            "wikidata_call_count": 80,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q937857 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q2736 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q937857 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "With how many countries does Australia share a border?",
+        "results": "{0}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "277.73",
+            "llm_call_count": 17,
+            "wikidata_call_count": 85,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q408 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "What is the population in Freiburg ?",
+        "results": "{334,906}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "252.62",
+            "llm_call_count": 15,
+            "wikidata_call_count": 68,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q183 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "From which country are the beagles originally from?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the beagles are originally from the United Kingdom. Therefore, the answer to the question is {United Kingdom}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "beagle",
+                        "country of origin",
+                        "United Kingdom"
+                    ],
+                    [
+                        "beagle",
+                        "instance of",
+                        "dog breed"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "31.34",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "What instruments did Louis Armstrong play?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Louis Armstrong played multiple instruments. The answer to the question \"What instruments did Louis Armstrong play?\" includes {cornet, trumpet, voice}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Louis Armstrong",
+                        "instrument",
+                        "cornet"
+                    ],
+                    [
+                        "Louis Armstrong",
+                        "instrument",
+                        "trumpet"
+                    ],
+                    [
+                        "Louis Armstrong",
+                        "instrument",
+                        "voice"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "43.00",
+            "llm_call_count": 4,
+            "wikidata_call_count": 15,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "People of what age belong to the Silent Generation ?",
+        "results": "First, the Silent Generation refers to people born between 1928 and 1945. The answer is {people born between 1928 and 1945}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "171.83",
+            "llm_call_count": 14,
+            "wikidata_call_count": 68,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "What albums has Atif Aslam been on?",
+        "results": "First, Atif Aslam is a Pakistani singer and has released several solo albums. However, the question asks about albums he has been on, which implies collaborations or group albums. One notable album Atif Aslam has been part of is \"The 4th Wave\" with Strings, a Pakistani band. The answer is {\"The 4th Wave\"}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "279.34",
+            "llm_call_count": 17,
+            "wikidata_call_count": 83,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q482994 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Which businesses are founded by the person in charge of Tesla?",
+        "results": "First, Elon Musk is in charge of Tesla. Second, Elon Musk founded companies such as SpaceX, Neuralink, and The Boring Company. The answer is {SpaceX}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "236.48",
+            "llm_call_count": 15,
+            "wikidata_call_count": 69,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Which of the dragons in Game of Thrones died?",
+        "results": "First, several dragons in Game of Thrones have died throughout the series. Second, one notable dragon that died is \"Merrett OHarrlaw\" also known as \"Drogo's Egg\" but more commonly referred to as \"Dany's firstborn\" or simply \"the first dragon\" hatched in the show, however it is more widely known as \"Drogon's siblings,\" but specifically \"Viserion\" was a prominent dragon that died. The answer is {Viserion}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "261.70",
+            "llm_call_count": 18,
+            "wikidata_call_count": 95,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Find all Turkish verbs ending with \u201cu\u015f\u201d with their lemma.",
+        "results": "The question asks for Turkish verbs ending with \"u\u015f\" and their lemmas, but no specific verbs are provided in the question. In Turkish, verbs can have different forms based on tense, mood, aspect, etc., but the lemma is the base form of the verb. Here are some examples:\n\n- {g\u00fcl\u00fc\u015fmek}: to smile\n- {k\u0131k\u0131vraku\u015fmak}: to be crooked or twisted\n\nHowever, since the exact verbs are not specified in the question, the answer should reflect this uncertainty. Therefore, the answer is presented as an example:\n{g\u00fcl\u00fc\u015fmek}. \n\nNote: This is just one example. There could be more verbs ending with \"u\u015f\".",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "161.06",
+            "llm_call_count": 14,
+            "wikidata_call_count": 66,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "How many women were amongst the founding members of \u201cThe Bridge\u201d (\u201cDie Br\u00fccke\u201d)?",
+        "results": "First, \"The Bridge\" (\"Die Br\u00fccke\") was a German art movement founded in 1905. Second, the founding members were all male artists. The answer is {0}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "320.45",
+            "llm_call_count": 23,
+            "wikidata_call_count": 78,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q6581072 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "How many other video games began the same year as Dead by Daylight?",
+        "results": "First, we need to identify the release year of Dead by Daylight, which is 2016. Then, we would need to find out how many other video games were released in the same year. However, without specific data on all video game releases from 2016, it's not possible to provide an exact number. Therefore, based on the information provided, the answer cannot be determined precisely. But if we assume the question is asking for a known fact or statistic that isn't available here, the answer would be {unknown}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "295.95",
+            "llm_call_count": 22,
+            "wikidata_call_count": 122,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Who wrote Anne of Green Gables ?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the author of 'Anne of Green Gables' is Lucy Maud Montgomery. Therefore, the answer to the question is {'Lucy Maud Montgomery'}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Anne of Green Gables",
+                        "author",
+                        "Lucy Maud Montgomery"
+                    ],
+                    [
+                        "Anne of Green Gables",
+                        "notable work",
+                        "Lucy Maud Montgomery"
+                    ],
+                    [
+                        "Anne of Green Gables",
+                        "notable work",
+                        "Ma Ainong"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "34.97",
+            "llm_call_count": 4,
+            "wikidata_call_count": 17,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "With how many persons was Richard Burton married?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Richard Burton was married to Elizabeth Taylor and Sally Burton. Therefore, he was married to {2} persons.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Richard Burton",
+                        "place of death",
+                        "C\u00e9ligny"
+                    ],
+                    [
+                        "Richard Burton",
+                        "spouse",
+                        "Elizabeth Taylor"
+                    ],
+                    [
+                        "Richard Burton",
+                        "spouse",
+                        "Sally Burton"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "27.24",
+            "llm_call_count": 3,
+            "wikidata_call_count": 14,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "in the country where ghost in the shell is born, who is the current head of the state?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the country where \"Ghost in the Shell\" is from is Japan. The current head of state of Japan is Naruhito. Therefore, the answer to the question is {Naruhito}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Ghost in the Shell",
+                        "country of origin",
+                        "Japan"
+                    ],
+                    [
+                        "Ghost in the Shell",
+                        "fictional universe described in",
+                        "World of Ghost in the Shell"
+                    ],
+                    [
+                        "Ghost in the Shell",
+                        "author",
+                        "Masamune Shirow"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Japan",
+                        "head of state",
+                        "Naruhito"
+                    ],
+                    [
+                        "Masamune Shirow",
+                        "country of citizenship",
+                        "Japan"
+                    ],
+                    [
+                        "Japan",
+                        "head of government",
+                        "Shigeru Ishiba"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "212.56",
+            "llm_call_count": 9,
+            "wikidata_call_count": 71,
+            "depth": 2,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q17 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "When did Allen Ginsberg die?",
+        "results": "{1997}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "137.09",
+            "llm_call_count": 10,
+            "wikidata_call_count": 37,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Who is the current president of the German Bundestag currently?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Julia Kl\u00f6ckner holds the position of President of the Bundestag. Therefore, the answer to the question is {Julia Kl\u00f6ckner}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "German Bundestag",
+                        "chairperson",
+                        "Julia Kl\u00f6ckner"
+                    ],
+                    [
+                        "German Bundestag",
+                        "affiliation",
+                        "Gerhard Zwoch"
+                    ],
+                    [
+                        "German Bundestag",
+                        "affiliation",
+                        "Peter Beyer"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Julia Kl\u00f6ckner",
+                        "position held",
+                        "President of the Bundestag"
+                    ],
+                    [
+                        "Gerhard Zwoch",
+                        "affiliation",
+                        "German Bundestag"
+                    ],
+                    [
+                        "Gerhard Zwoch",
+                        "instance of",
+                        "human"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "142.72",
+            "llm_call_count": 10,
+            "wikidata_call_count": 45,
+            "depth": 2,
+            "errors": []
+        }
+    },
+    {
+        "question": "Which aircraft did Howard Hughes build?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Howard Hughes built the Hughes H-4 Hercules. Therefore, the answer to the question is {'Hughes H-4 Hercules'}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Howard Hughes",
+                        "developer",
+                        "Hughes H-4 Hercules"
+                    ],
+                    [
+                        "aircraft",
+                        "item operated",
+                        "Brazilian military aircraft fleet"
+                    ],
+                    [
+                        "aircraft",
+                        "item operated",
+                        "Irish aircraft fleet"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "86.41",
+            "llm_call_count": 7,
+            "wikidata_call_count": 39,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "How many languages are widely used in India?",
+        "results": "{Over 1000}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "379.78",
+            "llm_call_count": 17,
+            "wikidata_call_count": 71,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q668 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q668 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q668 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Which country has more official languages: South Africa (\u200b\u200bQ258) or Ethiopia ?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, South Africa has multiple official languages while Ethiopia has only Amharic as its official language. Therefore, the answer to the question is {South Africa}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Ethiopia",
+                        "country",
+                        "Ethiopia"
+                    ],
+                    [
+                        "Ethiopia",
+                        "official language",
+                        "Amharic"
+                    ],
+                    [
+                        "South Africa",
+                        "country",
+                        "South Africa"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "118.18",
+            "llm_call_count": 5,
+            "wikidata_call_count": 31,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "How many months does winter consist of in Germany?",
+        "results": "{3}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "371.22",
+            "llm_call_count": 23,
+            "wikidata_call_count": 112,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q183 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "which swordfighter in the lord of the rings marry a half-elven and belong to rangers of the north?",
+        "results": "First, Aragorn from \"The Lord of the Rings\" is a swordfighter who belongs to the Rangers of the North. Second, Aragorn married Arwen, who is half-Elven. The answer is {Aragorn}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "241.61",
+            "llm_call_count": 17,
+            "wikidata_call_count": 103,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "How often did Naomi Novik win the nebula award?",
+        "results": "First, Naomi Novik has won the Nebula Award once. The answer is {once}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "287.63",
+            "llm_call_count": 24,
+            "wikidata_call_count": 116,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "who has won more NBA awards, Michael Jordan or Kobe Bean Bryant\uff1f",
+        "results": "First, Michael Jordan has won numerous NBA awards including 6 NBA championships, 5 MVP awards, and others. Second, Kobe Bean Bryant has also won multiple awards including 5 NBA championships, 1 MVP award, and others. Comparing their achievements, Michael Jordan has won more NBA awards than Kobe Bean Bryant. The answer is {Michael Jordan}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "356.57",
+            "llm_call_count": 20,
+            "wikidata_call_count": 110,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "who is the youngested member in g-idle?",
+        "results": "{Cu @} \n\nBased on the context provided, Cu is the youngest member of G-Idle. However, the original question's format and the given knowledge triplets do not provide direct information to answer this question. This answer is based on general knowledge rather than the provided triplets.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "17.29",
+            "llm_call_count": 2,
+            "wikidata_call_count": 4,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Which river flows through the Grand Canyon?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the Colorado River flows through the Grand Canyon. Therefore, the answer to the question is {Colorado River}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Grand Canyon",
+                        "located in or next to body of water",
+                        "Colorado River"
+                    ],
+                    [
+                        "river",
+                        "part of",
+                        "drainage system"
+                    ],
+                    [
+                        "Grand Canyon",
+                        "part of",
+                        "Cocopa Point"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "122.15",
+            "llm_call_count": 5,
+            "wikidata_call_count": 26,
+            "depth": 1,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q4022 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "In which year was the author of \u201cThe Vanishing Half\u201d born?",
+        "results": "First, the book \"The Vanishing Half\" was written by Brit Bennett. Second, Brit Bennett was born in 1986. The answer is {1986}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "103.36",
+            "llm_call_count": 10,
+            "wikidata_call_count": 43,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "How many poems did Allen Ginsberg published?",
+        "results": "{over 100}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "391.26",
+            "llm_call_count": 23,
+            "wikidata_call_count": 107,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q7725634 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q7725634 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "How many spouses had Rama V (one of the former Kings of Siam)?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Rama V, also known as Chulalongkorn, had at least two spouses, Khian Kalayanamitr and Kho Snidvongs. Therefore, the answer to the question is {at least 2}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Chulalongkorn",
+                        "father",
+                        "Mongkut"
+                    ],
+                    [
+                        "Chulalongkorn",
+                        "spouse",
+                        "Khian Kalayanamitr"
+                    ],
+                    [
+                        "Chulalongkorn",
+                        "spouse",
+                        "Kho Snidvongs"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "35.36",
+            "llm_call_count": 3,
+            "wikidata_call_count": 13,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "When was the university of Cambridge founded?",
+        "results": "{1209}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "218.96",
+            "llm_call_count": 14,
+            "wikidata_call_count": 53,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q5 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Which other movies by the director of Another Round also starred Mads Mikkelsen ?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the movie \"After the Wedding\" also stars Mads Mikkelsen and was directed by Thomas Vinterberg, the same director of \"Another Round\". Therefore, the answer to the question is {\"After the Wedding\"}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Another Round",
+                        "director",
+                        "Thomas Vinterberg"
+                    ],
+                    [
+                        "Mads Mikkelsen",
+                        "cast member",
+                        "After the Wedding"
+                    ],
+                    [
+                        "Mads Mikkelsen",
+                        "cast member",
+                        "Another Round"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "157.08",
+            "llm_call_count": 8,
+            "wikidata_call_count": 40,
+            "depth": 1,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q11424 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Who created the Turing machine?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Alan Turing created the Turing machine. Therefore, the answer to the question is {Alan Turing}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Turing machine",
+                        "discoverer or inventor",
+                        "Alan Turing"
+                    ],
+                    [
+                        "Turing machine",
+                        "topic's main category",
+                        "Category:Turing machine"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "17.32",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "When was Marlene Dietrich born?",
+        "results": "{1901}\n\nNote: The question asked does not directly correlate with the previous format of providing background information and then deducing the answer from it. Marlene Dietrich was born on December 27, 1901. However, since the answer format specifically asks for the year, the answer provided is {1901}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "136.13",
+            "llm_call_count": 10,
+            "wikidata_call_count": 39,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "How many children had Paul McCartney together with his ex-wife Linda McCartney?",
+        "results": "First, Paul McCartney and his ex-wife Linda McCartney had four children together. The answer is {4}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "216.27",
+            "llm_call_count": 20,
+            "wikidata_call_count": 89,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "What is the combined total revenue of three largest Big Tech companies ordered by number of employees?",
+        "results": "First, identify the three largest Big Tech companies by number of employees: Amazon, Google (Alphabet), and Facebook (Meta). Then, find their respective revenues.\nAmazon's 2021 revenue: $386 billion\nGoogle's (Alphabet) 2021 revenue: $257.7 billion\nFacebook's (Meta) 2021 revenue: $117.9 billion\n\nAdding these figures together:\n$386 billion + $257.7 billion + $117.9 billion = $761.6 billion\n\nThe answer is {$761.6 billion}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "225.00",
+            "llm_call_count": 18,
+            "wikidata_call_count": 73,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "which band is created earlier, queen or pink floyd?",
+        "results": "Based on the given knowledge triplets and my own knowledge, Pink Floyd was formed earlier than Queen. Both bands were formed in London, but Pink Floyd was founded in 1965 while Queen was formed in 1970. Therefore, the answer to the question is {Pink Floyd}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Pink Floyd",
+                        "location of formation",
+                        "London"
+                    ],
+                    [
+                        "Queen",
+                        "location of formation",
+                        "London"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "70.24",
+            "llm_call_count": 5,
+            "wikidata_call_count": 19,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "In which country is the Nanga Parbat located?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Nanga Parbat is located in Pakistan. Therefore, the answer to the question is {Pakistan}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Nanga Parbat",
+                        "country",
+                        "Pakistan"
+                    ],
+                    [
+                        "Nanga Parbat",
+                        "mountain range",
+                        "Himalayas"
+                    ],
+                    [
+                        "Nanga Parbat",
+                        "mountain range",
+                        "Q12029082"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "37.05",
+            "llm_call_count": 4,
+            "wikidata_call_count": 13,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "How many different occupations did/do spouses of winners of the Nobel Prize in Literature hold?",
+        "results": "First, identify the spouses of the Nobel Prize in Literature winners. Then, determine their occupations. This information varies widely among different winners. For instance, some spouses were educators, writers, or homemakers. Without specific numbers or a comprehensive list, it's challenging to provide an exact count. However, based on available data, there are at least 5-10 different occupations held by spouses of these winners. Since the question asks for a single primary answer, we can say there are multiple occupations but need to choose one number as an estimate. A reasonable estimate would be {7}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "268.03",
+            "llm_call_count": 18,
+            "wikidata_call_count": 106,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "How many seasons does Pose have?",
+        "results": "First, Pose is a television series. Second, Pose has 3 seasons. The answer is {3}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "193.57",
+            "llm_call_count": 12,
+            "wikidata_call_count": 57,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q1860 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Who died at the North Pole?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Sigizmund Levanevsky died at the North Pole. Therefore, the answer to the question \"Who died at the North Pole?\" is {Sigizmund Levanevsky}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "North Pole",
+                        "place of death",
+                        "Sigizmund Levanevsky"
+                    ],
+                    [
+                        "human",
+                        "properties for this type",
+                        "Lex ID"
+                    ],
+                    [
+                        "human",
+                        "properties for this type",
+                        "University of Barcelona authority ID"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "114.34",
+            "llm_call_count": 5,
+            "wikidata_call_count": 29,
+            "depth": 1,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q5 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "How many countries have a democracy index higher than 7 and drive on the left side ?",
+        "results": "First, we need to identify countries that drive on the left side. These include the UK, Ireland, Australia, New Zealand, India, Sri Lanka, Malaysia, Singapore, and some Caribbean nations. Next, we check their Democracy Index scores from the Economist Intelligence Unit, which range from 0 (authoritarian) to 10 (full democracy). Only a few of these countries have a Democracy Index score above 7. After checking, we find that none of these countries have a Democracy Index score higher than 7. Therefore, the answer is {0}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "274.23",
+            "llm_call_count": 23,
+            "wikidata_call_count": 108,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "Who's the author of The Hellbound Heart ?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the author of \"The Hellbound Heart\" is {Clive Barker}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "The Hellbound Heart",
+                        "author",
+                        "Clive Barker"
+                    ],
+                    [
+                        "The Hellbound Heart",
+                        "has edition or translation",
+                        "The Hellbound Heart"
+                    ],
+                    [
+                        "The Hellbound Heart",
+                        "based on",
+                        "Hellraiser"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "20.58",
+            "llm_call_count": 3,
+            "wikidata_call_count": 12,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "on which video streaming services can i watch hunter x hunter anime series?",
+        "results": "{Netflix}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "241.03",
+            "llm_call_count": 22,
+            "wikidata_call_count": 113,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "How many cities are part of the Pearl River Delta?",
+        "results": "First, the Pearl River Delta includes several major cities. Second, there are nine cities officially recognized as part of the Pearl River Delta urban agglomeration. The answer is {9}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "298.58",
+            "llm_call_count": 19,
+            "wikidata_call_count": 108,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q148 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Tell me all the cast members of the film Red Notice directed by Rawson Marshall Thurber ?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the cast members of the film 'Red Notice' include Chris Diamantopoulos, Dwayne Johnson, and Gal Gadot. Therefore, the answer to the question is {Chris Diamantopoulos, Dwayne Johnson, Gal Gadot}. Note that there might be other cast members not listed in the provided triplets.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Red Notice",
+                        "cast member",
+                        "Chris Diamantopoulos"
+                    ],
+                    [
+                        "Red Notice",
+                        "cast member",
+                        "Dwayne Johnson"
+                    ],
+                    [
+                        "Red Notice",
+                        "cast member",
+                        "Gal Gadot"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Gal Gadot",
+                        "instance of",
+                        "human"
+                    ],
+                    [
+                        "Dwayne Johnson",
+                        "instance of",
+                        "human"
+                    ],
+                    [
+                        "Dwayne Johnson",
+                        "presenter",
+                        "2009 Kids' Choice Awards"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "176.10",
+            "llm_call_count": 14,
+            "wikidata_call_count": 85,
+            "depth": 2,
+            "errors": []
+        }
+    },
+    {
+        "question": "Which movements is the painting \u201cLes Demoiselles d'Avignon\u201d assigned to?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, \"Les Demoiselles d'Avignon\" is assigned to the Cubism and Primitivism movements. Since the question asks for the movement(s) the painting is assigned to, and there are two provided, we can infer that both are correct. However, if we need to provide just one primary answer, we should consider the most defining movement for this painting, which is generally considered to be {Cubism}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Les Demoiselles d'Avignon",
+                        "movement",
+                        "Cubism"
+                    ],
+                    [
+                        "Les Demoiselles d'Avignon",
+                        "movement",
+                        "primitivism"
+                    ],
+                    [
+                        "Les Demoiselles d'Avignon",
+                        "genre",
+                        "figure"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "38.49",
+            "llm_call_count": 4,
+            "wikidata_call_count": 13,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Who directed Anne with an E ?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the director of 'Anne with an E' is {Niki Caro}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Anne with an E",
+                        "director",
+                        "Niki Caro"
+                    ],
+                    [
+                        "Anne with an E",
+                        "cast member",
+                        "Amybeth McNulty"
+                    ],
+                    [
+                        "Anne with an E",
+                        "cast member",
+                        "Corrine Koslo"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "26.50",
+            "llm_call_count": 3,
+            "wikidata_call_count": 19,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Which egyptian pyramid is the tallest?",
+        "results": "{Khufu (also known as the Great Pyramid of Giza)}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "237.67",
+            "llm_call_count": 20,
+            "wikidata_call_count": 102,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "How many mountains are located in Germany?",
+        "results": "First, identify the number of mountains in Germany. Germany has several mountain ranges including the Alps, the Black Forest, and the Harz Mountains. However, the term \"mountain\" can be subjective based on height and prominence. If we consider peaks over 1000 meters (3281 feet) tall, there are approximately 200 mountains in Germany. For a more general answer, considering all significant elevations, Germany has numerous mountains but not as many as some other European countries known for their alpine regions. The answer is {several}. \n\nFor a specific numerical answer based on the most common criteria (peaks over 1000m), it would be {about 200}. Given the context of the previous answers, I'll provide a specific number: {200}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "375.57",
+            "llm_call_count": 23,
+            "wikidata_call_count": 93,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q8502 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q183 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "How many children (including apopted ones) does Jeff Bezos have with his ex-wife?",
+        "results": "First, Jeff Bezos has four children with his ex-wife MacKenzie Bezos. The answer is {4}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "117.21",
+            "llm_call_count": 14,
+            "wikidata_call_count": 48,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "How many fictional female swordfighters are there?",
+        "results": "The question is too vague without specifying a particular universe, book series, or context. There are numerous fictional female swordfighters across various media. Therefore, it's impossible to provide a specific number. However, if we consider a well-known example like \"The Princess Bride,\" there is 1 notable fictional female swordfighter, {Irene \"Inigo's mother\"}, but typically when discussing such characters, we often refer to more prominent figures like {Catherine Wheelsea (Vendredi)} or {Yukine from The Rising of the Shield Hero}. Given the ambiguity, a direct answer based on a single example would be {1}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "285.63",
+            "llm_call_count": 22,
+            "wikidata_call_count": 104,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q6581072 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Where are both The Call of the Wild and White Fang set, the most two famous works of Jack London?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, both 'The Call of the Wild' and 'White Fang', the most famous works of Jack London, are set in Alaska and Yukon. Therefore, the answer to the question is {Alaska and Yukon}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "The Call of the Wild",
+                        "author",
+                        "Jack London"
+                    ],
+                    [
+                        "White Fang",
+                        "narrative location",
+                        "Alaska"
+                    ],
+                    [
+                        "White Fang",
+                        "narrative location",
+                        "Yukon"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "72.73",
+            "llm_call_count": 7,
+            "wikidata_call_count": 31,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "What are the occupations of Nat King Cole?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Nat King Cole had multiple occupations. The primary occupations listed are {singer-songwriter, pianist, television actor}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Nat King Cole",
+                        "occupation",
+                        "singer-songwriter"
+                    ],
+                    [
+                        "Nat King Cole",
+                        "occupation",
+                        "pianist"
+                    ],
+                    [
+                        "Nat King Cole",
+                        "occupation",
+                        "television actor"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "41.99",
+            "llm_call_count": 4,
+            "wikidata_call_count": 23,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "How often did the Mongols try to invade Japan?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the Mongols attempted to invade Japan twice, as indicated by the significant events listed. Therefore, the answer to the question is {twice}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Mongol invasions of Japan",
+                        "significant event",
+                        "Nagato keigo ban'yaku"
+                    ],
+                    [
+                        "Mongol invasions of Japan",
+                        "significant event",
+                        "ikoku keigo ban'yaku"
+                    ],
+                    [
+                        "Mongol invasions of Japan",
+                        "conflict",
+                        "H\u014dj\u014d Tokimune"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "45.30",
+            "llm_call_count": 4,
+            "wikidata_call_count": 21,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Of which political party was Joseph Beuys a member?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Joseph Beuys was a member of multiple political parties, but the question asks for one of them. Therefore, one possible answer is {The Greens}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Joseph Beuys",
+                        "member of political party",
+                        "Aktionsgemeinschaft Unabh\u00e4ngiger Deutscher"
+                    ],
+                    [
+                        "Joseph Beuys",
+                        "member of political party",
+                        "The Greens"
+                    ],
+                    [
+                        "Joseph Beuys",
+                        "country of citizenship",
+                        "Germany"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "33.17",
+            "llm_call_count": 4,
+            "wikidata_call_count": 13,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "What is the Chinese zodiac animal that follows the ox?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the Chinese zodiac animal that follows the ox is the tiger. Therefore, the answer to the question is {Tiger}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Ox",
+                        "followed by",
+                        "Tiger"
+                    ],
+                    [
+                        "Ox",
+                        "main subject",
+                        "Stride Towards a Niu Year"
+                    ],
+                    [
+                        "animal from the Chinese zodiac",
+                        "facet of",
+                        "Chinese zodiac"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "28.40",
+            "llm_call_count": 3,
+            "wikidata_call_count": 18,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "How many seats are there in the current German Bundestag ?",
+        "results": "{709}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "233.16",
+            "llm_call_count": 11,
+            "wikidata_call_count": 55,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q183 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "In which federal state is the Veltins brewery headquarter?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Meschede is the headquarters location of Veltins Brewery, and Meschede is located in the administrative territorial entity of Hochsauerlandkreis, which is in North Rhine-Westphalia, a federal state in Germany. Therefore, the answer to the question is {North Rhine-Westphalia}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Veltins Brewery",
+                        "headquarters location",
+                        "Meschede"
+                    ],
+                    [
+                        "federated state of Germany",
+                        "located in the administrative territorial entity",
+                        "Um Dafuq"
+                    ],
+                    [
+                        "Veltins Brewery",
+                        "owned by",
+                        "Susanne Veltins"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Susanne Veltins",
+                        "director / manager",
+                        "Veltins Brewery"
+                    ],
+                    [
+                        "Um Dafuq",
+                        "located in the administrative territorial entity",
+                        "federated state of Germany"
+                    ],
+                    [
+                        "Meschede",
+                        "located in the administrative territorial entity",
+                        "Hochsauerlandkreis"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "91.63",
+            "llm_call_count": 9,
+            "wikidata_call_count": 57,
+            "depth": 2,
+            "errors": []
+        }
+    },
+    {
+        "question": "when is the first ironman world championship?",
+        "results": "The question seems to be asking about the timing of the first Ironman World Championship. The first Ironman World Championship was held on October 18, 1978. Therefore, the answer is {October 18, 1978}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "88.58",
+            "llm_call_count": 12,
+            "wikidata_call_count": 55,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "How many official languages has Pakistan ?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Pakistan has two official languages: English and Urdu. Therefore, the answer to the question is {2}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Pakistan",
+                        "official language",
+                        "English"
+                    ],
+                    [
+                        "Pakistan",
+                        "official language",
+                        "Urdu"
+                    ],
+                    [
+                        "Pakistan",
+                        "country",
+                        "Pakistan"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "82.91",
+            "llm_call_count": 4,
+            "wikidata_call_count": 16,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "How high is the mountain on which G\u00fcnther Messner died?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, G\u00fcnther Messner died on Nanga Parbat, which is a mountain. To specify the height of Nanga Parbat, which is known to be approximately 8,126 meters (26,660 feet) above sea level, the answer to the question is {8,126 meters}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "G\u00fcnther Messner",
+                        "place of death",
+                        "Nanga Parbat"
+                    ],
+                    [
+                        "G\u00fcnther Messner",
+                        "sport",
+                        "mountaineering"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "28.01",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "How many casualties were a result of the Troubles?",
+        "results": "Q: {}\nHow many casualties were a result of the Troubles?\n\nKnowledge Triplets: The Troubles, casualtyRange, \"\u7ea63,500\u4eba\u6b7b\u4ea1\uff0c\u8d85\u8fc750,000\u4eba\u53d7\u4f24\"\n\nA: Based on the given knowledge triplets and my knowledge, the Troubles resulted in approximately 3,500 deaths and over 50,000 injuries. However, since the question asks for a single primary answer and the exact number of total casualties isn't directly provided, we can infer that the most direct answer based on the information would be the death toll as a representative figure. But strictly adhering to the instruction for a single primary answer, and considering the question's phrasing might imply a summary statistic, the answer should reflect the more comprehensive outcome. Thus, the answer is {over 50,000}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "16.05",
+            "llm_call_count": 2,
+            "wikidata_call_count": 5,
+            "depth": 0,
+            "errors": []
+        }
+    },
+    {
+        "question": "Who was the partner of Allen Ginsberg?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Allen Ginsberg's unmarried partner was Peter Orlovsky. Therefore, the answer to the question is {Peter Orlovsky}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Allen Ginsberg",
+                        "unmarried partner",
+                        "Peter Orlovsky"
+                    ],
+                    [
+                        "Allen Ginsberg",
+                        "languages spoken, written or signed",
+                        "English"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "17.92",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Who wrote the poem Howl ?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the author of the poem \"Howl\" is Allen Ginsberg. Therefore, the answer to the question is {Allen Ginsberg}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Howl",
+                        "author",
+                        "Allen Ginsberg"
+                    ],
+                    [
+                        "Howl",
+                        "notable work",
+                        "Allen Ginsberg"
+                    ],
+                    [
+                        "Howl",
+                        "notable work",
+                        "Beat Generation"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "18.73",
+            "llm_call_count": 3,
+            "wikidata_call_count": 11,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "How many prizes are there established by Alfred Nobel ?",
+        "results": "{5}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "194.85",
+            "llm_call_count": 17,
+            "wikidata_call_count": 84,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "In which country was Spotify created?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Spotify was created in Sweden. Therefore, the answer to the question is {Sweden}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Spotify",
+                        "country of origin",
+                        "Sweden"
+                    ],
+                    [
+                        "Spotify",
+                        "developer",
+                        "Spotify Technology"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "19.70",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "Who is the creator of the Dinosaurs tv show ?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, the creators of the TV show \"Dinosaurs\" are Bob Young and Michael Jacobs. Since the question asks for the creator, and both are listed as creators, we can provide either one as the primary answer. For the purpose of this response, I'll use the first creator mentioned: {Bob Young}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Dinosaurs",
+                        "creator",
+                        "Bob Young"
+                    ],
+                    [
+                        "Dinosaurs",
+                        "creator",
+                        "Michael Jacobs"
+                    ],
+                    [
+                        "Dinosaurs",
+                        "producer",
+                        "Michael Jacobs"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "43.30",
+            "llm_call_count": 4,
+            "wikidata_call_count": 13,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "What are the professions of John Lennon\u2019s sons?",
+        "results": "First, identify John Lennon's sons: Julian Lennon and Sean Lennon. Then, determine their professions: Julian Lennon is a musician and painter, while Sean Lennon is a musician and activist. Since the question asks for the profession(s) of his sons, and both have multiple professions, we can focus on their primary professions which are related to music. Therefore, the answer is {musician}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "302.11",
+            "llm_call_count": 23,
+            "wikidata_call_count": 130,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q5 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "What is the twitter name of Running Wild?",
+        "results": "First, Running Wild is a television show. Second, the host of Running Wild is Martin Sheen. Third, Martin Sheen does not have an official Twitter handle specifically for Running Wild, but he uses his personal Twitter account. However, if the question is asking about the show's official social media presence, it would be best to verify from the show's official sources. Since there's no specific official Twitter handle mentioned for Running Wild, the answer based on the given format would be {N/A}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "106.57",
+            "llm_call_count": 10,
+            "wikidata_call_count": 47,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "What is the coordinate location of Shenzhen ?",
+        "results": "{22.3193,114.0575}",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Shenzhen",
+                        "located in the administrative territorial entity",
+                        "Guangdong"
+                    ],
+                    [
+                        "Shenzhen",
+                        "country",
+                        "People's Republic of China"
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        "Guangdong",
+                        "located in the administrative territorial entity",
+                        "People's Republic of China"
+                    ],
+                    [
+                        "Guangdong",
+                        "country",
+                        "People's Republic of China"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "180.51",
+            "llm_call_count": 7,
+            "wikidata_call_count": 28,
+            "depth": 0,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q148 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q148 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "Whom did Clara Westhoff marry?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Clara Westhoff married Rainer Maria Rilke. Therefore, the answer to the question is {Rainer Maria Rilke}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Clara Westhoff",
+                        "spouse",
+                        "Rainer Maria Rilke"
+                    ],
+                    [
+                        "Clara Westhoff",
+                        "place of birth",
+                        "Bremen"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "13.77",
+            "llm_call_count": 2,
+            "wikidata_call_count": 9,
+            "depth": 1,
+            "errors": []
+        }
+    },
+    {
+        "question": "In how many movies was Johnny Depp casted in?",
+        "results": "{Yes}. Based on the given knowledge triplets and my knowledge, Johnny Depp has been cast in at least three movies. However, the exact number of movies he has been cast in cannot be determined from this information alone as there may be more movies not listed here. But based on the provided triplets, we can say {3}.",
+        "reasoning_chains": [
+            [
+                [
+                    [
+                        "Johnny Depp",
+                        "cast member",
+                        "Alice in Wonderland"
+                    ],
+                    [
+                        "Johnny Depp",
+                        "cast member",
+                        "Charlie: The Life and Art of Charles Chaplin"
+                    ],
+                    [
+                        "Johnny Depp",
+                        "cast member",
+                        "L.A. Without a Map"
+                    ]
+                ]
+            ]
+        ],
+        "logs": {
+            "runtime": "106.78",
+            "llm_call_count": 5,
+            "wikidata_call_count": 25,
+            "depth": 1,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q11424 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    },
+    {
+        "question": "What is the second letter in the Greek alphabet?",
+        "results": "{Beta}",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "133.48",
+            "llm_call_count": 17,
+            "wikidata_call_count": 72,
+            "depth": 3,
+            "errors": []
+        }
+    },
+    {
+        "question": "which river is longer, the Seine or Elbe\uff1f",
+        "results": "First, the length of the Seine is approximately 776 kilometers (482 miles). Second, the length of the Elbe is approximately 1,165 kilometers (724 miles). Therefore, the Elbe is longer than the Seine.\nThe answer is {Elbe}.",
+        "reasoning_chains": [],
+        "logs": {
+            "runtime": "525.49",
+            "llm_call_count": 25,
+            "wikidata_call_count": 119,
+            "depth": 3,
+            "errors": [
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q142 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q213 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query...",
+                "Read Timeout occurred (attempt 1/65536): HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=60). Query: \nSELECT DISTINCT ?relation ?relationLabel WHERE {\n  ?x ?relation wd:Q142 .\n  FILTER(STRSTARTS(STR(?relation), STR(wdt:))) # Filter for direct properties only\n  \n  BIND(REPLACE(STR(?relation), STR(wdt:), \"\") AS ?propertyId) # Extract the property ID (Pxxx)\n  BIND(IRI(CONCAT(STR(wd:), ?propertyId)) AS ?propertyEntity) # Construct the property URI (wd:Pxxx) needed by the label service\n  \n  # Get label\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"en\".\n    ?propertyEntity rdfs:label ?relationLabel .\n  }\n}\nSkipping this query..."
+            ]
+        }
+    }
+]

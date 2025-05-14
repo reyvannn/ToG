@@ -1,7 +1,7 @@
 {
     "dataset": "creak",
     "method": "ToG",
-    "Hits@1": 0.4350282485875706,
-    "Right Samples": 154,
-    "Error Sampels": 199
+    "Hits@1": 0.5,
+    "Right Samples": 50,
+    "Error Sampels": 47
 }

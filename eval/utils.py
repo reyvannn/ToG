@@ -79,11 +79,14 @@ def align(dataset_name, question_string, data, ground_truth_datas):
             answers = origin_data["answers"]
         else:
             answers = origin_data["answer"]
-        for answer in answers:
-            alias = answer['aliases']
-            ans = answer['answer']
-            alias.append(ans)
-            answer_list.extend(alias)
+            if isinstance(answers, str):
+                answer_list.append(answers)
+            else:
+                for answer in answers:
+                    alias = answer['aliases']
+                    ans = answer['answer']
+                    alias.append(ans)
+                    answer_list.extend(alias)
 
     elif dataset_name == 'webqsp':
         answers = origin_data["Parses"]
@@ -204,6 +207,7 @@ def check_refuse(string):
 def exact_match(response, answers):
     clean_result = response.strip().replace(" ","").lower()
     clean_result = select_first_value(clean_result)
+    if clean_result is None: return False
     for answer in answers:
         clean_answer = answer.strip().replace(" ","").lower()
         if clean_result == clean_answer or clean_result in clean_answer or clean_answer in clean_result:
